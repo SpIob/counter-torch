@@ -4,7 +4,7 @@ On Earth, a flame rises because hot gas floats upward. Aboard a spacecraft nothi
 
 Project Counter-Torch is a web dashboard built for the NASA Space Apps Challenge 2026 entry "Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion Data". It reads investigation records built from NASA's Physical Sciences Informatics (PSI) repository and shows where the evidence reaches, and where it stops, for habitats such as a Moon base. It does not say what is safe. It shows where the evidence ends.
 
-> **AI disclosure.** This project was built with AI assistance. DeepSeek V4.1 Flash extracted the investigation records and NVIDIA Nemotron 3 Ultra 550B verified them, both through the Hermes agent framework. Claude wrote the backend and the web app in a Claude Code session and drafted the documents. I reviewed the verifier's changes, ruled on the disputed records and directed the design. The interface contains no AI-generated images, audio or video, and it uses no NASA logos or mission marks. Full details are in [docs/ai-disclosure.md](docs/ai-disclosure.md).
+> **AI disclosure.** This project was built with AI assistance. DeepSeek V4.1 Flash extracted the investigation records and NVIDIA Nemotron 3 Ultra 550B verified them, both through the Hermes agent framework. Claude wrote the backend and the web app in a Claude Code session and drafted the documents. I reviewed the verifier's changes, ruled on the disputed records and directed the design. The interface contains no AI-generated images, audio or video, and it uses no NASA logos or mission marks. Full details are in [ai-disclosure.md](ai-disclosure.md).
 
 ## What it does
 
