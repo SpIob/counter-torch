@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "habitats": [
+    {
+      "id": "earth_sea_level",
+      "name": "Earth sea-level air (reference)",
+      "o2_percent": { "min": 21, "max": 21, "unit": "%" },
+      "pressure_psi": { "min": 14.7, "max": 14.7, "unit": "psi" },
+      "gravity_g": { "min": 1, "max": 1, "unit": "g" },
+      "basis": "Pressure from the challenge brief; 21% O2 is the standard approximation (the brief says 30% O2 is a >40% increase over Earth air)."
+    },
+    {
+      "id": "spacesuit",
+      "name": "Spacesuit",
+      "o2_percent": { "min": 100, "max": 100, "unit": "%" },
+      "pressure_psi": { "min": 4.3, "max": 4.3, "unit": "psi" },
+      "gravity_g": null,
+      "basis": "Challenge brief: 100% oxygen at 4.3 psi. Gravity depends on location, so it is left null."
+    },
+    {
+      "id": "lunar_habitat_expected",
+      "name": "Moon base (expected intermediate atmosphere)",
+      "o2_percent": { "min": 30, "max": null, "unit": "%" },
+      "pressure_psi": { "min": null, "max": 10.2, "unit": "psi" },
+      "gravity_g": { "min": 0.166, "max": 0.166, "unit": "g" },
+      "basis": "Brief: likely 30% O2 or greater with pressure of 10.2 psi or less. Lunar surface gravity is a general reference value, not from the brief."
+    },
+    {
+      "id": "pressurized_rover",
+      "name": "Pressurized lunar rover (expected)",
+      "o2_percent": { "min": 30, "max": null, "unit": "%" },
+      "pressure_psi": { "min": null, "max": 10.2, "unit": "psi" },
+      "gravity_g": { "min": 0.166, "max": 0.166, "unit": "g" },
+      "basis": "Brief expects Moon base and pressurized rover(s) at an atmosphere between spacesuit and Earth conditions; same expected bounds as the Moon base."
+    },
+    {
+      "id": "mars_surface_habitat",
+      "name": "Mars surface habitat",
+      "o2_percent": null,
+      "pressure_psi": null,
+      "gravity_g": { "min": 0.38, "max": 0.38, "unit": "g" },
+      "basis": "Atmosphere not specified in the brief (null). Martian surface gravity is a general reference value."
+    },
+    {
+      "id": "orbital_spacecraft",
+      "name": "Spacecraft / space station in orbit",
+      "o2_percent": null,
+      "pressure_psi": null,
+      "gravity_g": { "min": 0, "max": 0, "unit": "g" },
+      "basis": "Microgravity. Cabin atmosphere is not specified in the brief (null); fill from a cited source if needed."
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "id": "same",
+  "name": "Smoke and Aerosol Measurement Experiment (SAME)",
+  "aliases": [
+    "SAME",
+    "SAME-1",
+    "Smoke Aerosol Measurement Experiment"
+  ],
+  "family": "same",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+  "platform": {
+    "value": "ISS (Microgravity Science Glovebox / MSG, Destiny laboratory)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA ISS experiment page: SAME was conducted in the Microgravity Science Glovebox (MSG) on the ISS during Expedition 15 and reflown on Expeditions 23/24."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief: fire detection was tested in microgravity through SAME and SAME-R."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Characterize the size distribution of smoke particulate produced in low gravity by overheated spacecraft materials, in order to evaluate and improve spacecraft smoke detectors.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+        "note": "SAME final report (NASA TM, NIST): characterize smoke particle size distribution from overheated spacecraft materials; develop the moment method; assess ISS and Shuttle detector performance."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: SAME measures the size distribution of smoke particles to support smoke-detection requirements and improve future spacecraft detectors."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+        "note": "NASA SAME one-pager: assess size/distribution of smoke particles from spacecraft materials and evaluate ionization and photoelectric detector performance."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "detection"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief: fire detection was tested in microgravity through the SAME and SAME-R studies."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: SAME evaluates ionisation and photoelectric smoke detectors for spacecraft fire detection."
+      }
+    ]
+  },
+  "fuel_phase": {
+    "value": "mixed",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: crew pyrolyzed solid spacecraft materials (Kapton, silicone rubber, Teflon, cellulose lamp wick) plus a liquid baseline material, dibutyl-phthalate."
+      },
+      {
+        "kind": "publication",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+        "note": "SAME final report: four solid materials plus a fifth liquid reference material, dibutyl-phthalate (DBP) retained in a cotton wick."
+      }
+    ],
+    "note": "Samples were heated below the ignition point (oxidative pyrolysis), not burned as a flame. Both solid polymers and a liquid reference material were tested, so the phase is recorded as mixed."
+  },
+  "fuel_materials": {
+    "value": [
+      "Teflon (PTFE)",
+      "Kapton (polyimide)",
+      "silicone rubber",
+      "cellulose (cotton lamp wick)",
+      "Pyrell (polyurethane foam)",
+      "dibutyl-phthalate (DBP) on a porous/cotton wick (reference material)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: 30 samples of five materials - Teflon, Kapton, silicone rubber, cellulose, and dibutyl-phthalate deposited on a porous wick."
+      },
+      {
+        "kind": "publication",
+        "url": "https://doi.org/10.1016/j.firesaf.2018.04.004",
+        "note": "Meyer et al., Fire Safety Journal 98 (2018): fuels were Teflon, Pyrell (polyurethane foam), cellulose (cotton lamp wick), Kapton, silicone rubber, and DBP on a porous wick."
+      },
+      {
+        "kind": "publication",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+        "note": "SAME final report lists the same spacecraft materials; DBP retained in a cotton wick was the reference material."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Small samples of material heated below ignition by a resistively heated stainless-steel wire filament to generate smoke; pre-weighed samples held in a rotatable six-sample carousel; DBP deposited on a porous wick.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+        "note": "SAME final report: samples supported and heated by the same stainless-steel wire coil, six pre-weighed samples per carousel; DBP held on a wick."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nist.gov/news-events/news/2018/05/nistnasa-study-shows-one-detector-doesnt-fit-all-smoke-spacecraft",
+        "note": "NIST/NASA: samples wrapped in wire filaments and loaded into a rotatable carousel; current applied to the wires heats the materials to produce smoke."
+      }
+    ],
+    "note": "Combined from two sources describing the sample mounting and heating."
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG) aboard the ISS",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+          "note": "SAME final report: experiment conducted in the Microgravity Science Glovebox (MSG) on the ISS."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+          "note": "NASA: SAME hardware operated within the MSG in the U.S. Destiny laboratory."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Modular SAME hardware: smoke-generation flow duct with heated-wire sample carousel, an aging chamber with a moving piston, and a diagnostics duct holding a P-Trak condensation nuclei counter, two DustTraks, a modified ionisation detector, a thermal precipitator (TEM grids), and ISS and Space Shuttle smoke detectors.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+          "note": "NASA: after pyrolysis the smoke is aged in a chamber then run through P-Trak, DustTrak, a modified home ionisation detector, and the ISS and Shuttle smoke detectors; smoke also trapped on a TEM grid in the Thermal Precipitator Module."
+        },
+        {
+          "kind": "publication",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+          "note": "SAME final report: smoke generation duct, sample carousel, aging chamber driven by a piston, diagnostics duct with the moment instruments, thermal precipitator and ISS/STS detectors."
+        }
+      ]
+    },
+    "shared_with": [
+      "same-r",
+      "daft"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": []
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": []
+    },
+    "airflow": {
+      "value": {
+        "min": 5.0,
+        "max": 10.0,
+        "unit": "cm/s"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+          "note": "PSI PSI-102 experimental table PSI-102_Experimental table_SAME.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 8 test rows of PSI-102_Experimental table_SAME.csv, columns: Air Flow (cm/s). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+          "note": "NASA: experiment flew on the ISS and studied smoke production in low gravity (microgravity)."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS; microgravity is treated as 0 g."
+        }
+      ],
+      "note": "ISS platform treated as microgravity (~0 g), consistent with the seed. Purely a platform-based deduction; no source states a measured g level."
+    },
+    "diluents": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": []
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "sample material (Teflon, Kapton, silicone rubber, cellulose lamp wick, Pyrell; DBP reference)",
+      "sample heating temperature",
+      "air flow rate past the sample (quiescent to ~8 cm/s)",
+      "smoke aging duration (about 10-11 s to 1800 s)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: samples tested at different airflow rates, heating temperatures, and smoke aging durations."
+      },
+      {
+        "kind": "publication",
+        "url": "https://doi.org/10.1016/j.firesaf.2018.04.004",
+        "note": "Meyer et al. (2018): the controlled parameters were heating temperature, air flow past the samples and duration of aging."
+      },
+      {
+        "kind": "publication",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+        "note": "SAME final report: aging chamber held smoke for times from 10 s to 1800 s to emulate a range of fire scenarios."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "sample heating duration of approximately 60 seconds per test",
+      "SAME apparatus and the moment-method measurement instrumentation across tests"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=904707",
+        "note": "SAME final report: sample heating time is approximately 60 seconds and air flow was synchronized to give a steady stream over the sample."
+      },
+      {
+        "kind": "publication",
+        "url": "https://doi.org/10.1016/j.firesaf.2018.04.004",
+        "note": "Meyer et al. (2018): each material's baseline temperature was chosen to give 1-2 mg mass loss in 60 s of heating, holding mass loss roughly constant across tests."
+      }
+    ],
+    "note": "Sources stress that sample temperature and air flow were controlled to be repeatable; the mass-loss basis (1-2 mg in 60 s) was held roughly constant across materials."
+  },
+  "sensors": {
+    "value": [
+      "P-Trak condensation nuclei counter (zeroth moment, particle number concentration)",
+      "DustTrak light-scattering mass monitors, two units with 1 um and 10 um impactors (third moment, mass concentration)",
+      "modified residential ionisation smoke detector / ionisation chamber (first moment, diameter concentration)",
+      "thermal precipitator with Transmission Electron Microscope (TEM) grids (post-flight particle morphology and size)",
+      "ISS photoelectric (light-scattering) smoke detector",
+      "Space Shuttle ionisation smoke detector",
+      "MPASS two-moment aerosol scattering sensor (SAME-2)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: smoke measured by P-Trak, DustTrak, a modified home ionisation detector, TEM grids in the Thermal Precipitator Module, and the ISS and Shuttle smoke detectors."
+      },
+      {
+        "kind": "publication",
+        "url": "https://doi.org/10.1016/j.firesaf.2018.04.004",
+        "note": "Meyer et al. (2018): three commercial real-time instruments for mass and number concentration, an ionisation detector for the first moment, a thermal precipitator for microscopy, plus ISS and Shuttle detectors."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/news/same.html",
+        "note": "NASA news: the MPASS two-moment sensor was flown on the SAME reflight."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "SAME is the microgravity fire-detection study named in the challenge brief. Its key finding for fire safety is that the ISS light-scattering detector missed the smallest smoke particles (from Kapton and Teflon), showing that current single-moment spacecraft detectors are not sensitive to all relevant smoke types.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief: fire detection was tested in microgravity through the SAME and SAME-R studies."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nist.gov/news-events/news/2018/05/nistnasa-study-shows-one-detector-doesnt-fit-all-smoke-spacecraft",
+        "note": "NIST/NASA: the ISS detector failed to detect the smaller Teflon and Kapton smoke particles; no single current method detects all smoke sizes."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "smoke detectors for other extreme/confined environments such as submarines and underwater laboratories",
+      "more nuisance-free (false-alarm-resistant) smoke detectors for homes and buildings",
+      "portable real-time particulate sensor (MPASS) for first responders and air-quality monitoring in mines and factories"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/280.html",
+        "note": "NASA: smoke detectors developed from SAME results can be useful in other extreme environments on Earth such as submarines or underwater laboratories."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/news/same.html",
+        "note": "NASA news: better nuisance-free detectors for homes; the small MPASS sensor could help first responders and measure particles in mines and factories."
+      }
+    ],
+    "note": "Combined from two NASA sources."
+  },
+  "publications": [
+    {
+      "title": "Measurement of Smoke Particle Size under Low-Gravity Conditions (SAE 2008-01-2089)",
+      "url": "https://doi.org/10.4271/2008-01-2089"
+    },
+    {
+      "title": "Pyrolysis smoke generated under low-gravity conditions (Aerosol Science and Technology, 2015)",
+      "url": "https://doi.org/10.1080/02786826.2015.1025125"
+    },
+    {
+      "title": "Evaluation of spacecraft smoke detector performance in the low-gravity environment (Fire Safety Journal 98, 2018)",
+      "url": "https://doi.org/10.1016/j.firesaf.2018.04.004"
+    },
+    {
+      "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2 (AIAA 2012-3536)",
+      "url": "https://ntrs.nasa.gov/citations/20130000422"
+    },
+    {
+      "title": "Smoke Aerosol Measurement Experiment (SAME) - NASA Technical Memorandum, final report (2010)",
+      "url": "https://www.nist.gov/publications/smoke-aerosol-measuremen-experiment-same"
+    }
+  ],
+  "psi_accession": "PSI-102",
+  "project_type": "Microgravity",
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Local PSI record data/source/psi/PSI-102.json and PSI-102.search.json were not present on disk this session, so PSI could not be read. This record uses only web-readable NASA/NIST/journal sources; PSI is cited only for the accession PSI-102, which is what data/source/psi-map.json states.",
+      "O2 concentration and pressure are not stated in any readable source for SAME and are left unknown, consistent with AGENTS.md rule 9 and the note that overview documents for these investigations omit O2 and pressure.",
+      "diluents left unknown: nitrogen appears only as a dilution gas added to the aerosol sample fed to the P-Trak particle counter, not as a combustion-chamber diluent, so it is not recorded as a test-condition diluent.",
+      "psi_url left null: psi-map.json supplies the accession (PSI-102) but no URL, and the local PSI record could not be read this session.",
+      "fuel_phase recorded as 'mixed' because both solid spacecraft materials and a liquid reference material (dibutyl-phthalate on a wick) were tested; the samples were pyrolyzed below ignition rather than burned as a flame.",
+      "gravity_g is a platform-based deduction (ISS = microgravity), not a value stated in a source; confidence kept at medium."
+    ]
+  }
+}

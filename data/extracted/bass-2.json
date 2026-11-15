@@ -1,0 +1,350 @@
+{
+  "id": "bass-2",
+  "name": "Burning and Suppression of Solids II (BASS-II)",
+  "aliases": [
+    "BASS-II",
+    "BASS II"
+  ],
+  "family": "msg",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 flightProgram 'International Space Station (ISS)'; tests run in the Microgravity Science Glovebox aboard the ISS"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief lists BASS-II among microgravity combustion studies on the ISS"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Study the ignition, flame growth, flame spread and extinction limits of solid fuels burning in low-velocity forced flows in microgravity; begin to bridge the gap between the normal-gravity NASA-STD-6001 Test 1 screening method and actual microgravity material flammability (including thicker fuels as rods, slabs and spherical sections); and feed combustion models used in the design of fire detection and suppression systems in space and on Earth.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 'objective' field: four stated objectives (flame spread/extinction limits in low-velocity forced flow, bridging the NASA-STD-6001 gap, providing SoFIE data, and testing thicker fuels)"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention",
+      "suppression"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 SubResearch Area 'Spacecraft Fire Safety' and the investigation name includes 'Suppression'; objective cites fire detection and suppression system design"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief: flammability studies of solids such as fabrics and plastics (BASS, BASS-II) support prevention / material selection"
+      }
+    ],
+    "note": "Suppression from the name and the nitrogen-suppressant tests; prevention from the flammability-limit / material-selection framing."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 tests solid fuels (PMMA, SIBAL fabric, Nomex, wax candle) in forced flow"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "polymethylmethacrylate (PMMA) - films, rods, slabs and a spherical section",
+      "SIBAL cotton-fiberglass composite fabric",
+      "Nomex (Nomex III) fabric",
+      "Japan wax candle"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 experimental table (data/source/psi/tables/PSI-25.csv) fuel-sample column: PMMA films 0.1-5 mm, clear/black PMMA rods, 4 cm spherical section, SIBAL sheets, Nomex natural (Nomex III), Japan wax candle"
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Films/flat sheets (1-2 cm wide, ~0.1-5 mm thick); cylindrical PMMA rods (1/4 to 1/2 inch diameter, clear and black); a 4 cm spherical section; PMMA slabs; and SIBAL fabric sheets.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 objectives list slabs, cylinders and spherical sections; the per-test table gives the actual sample geometries and widths"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+          "note": "PSI-25 experimentHardware 'Microgravity Science Glovebox (MSG)'; tests run inside the sealed MSG work volume"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Small fan-driven flow duct / wind tunnel (modified SPICE hardware) with an igniter and a nitrogen injection nozzle; samples mounted in the duct.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+          "note": "PSI-25 approach: fuel samples mounted inside a small wind tunnel in the MSG that could impose airflow up to 40 cm/s"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief 'Hardware': BASS/BASS-II used the modular fan-driven flow duct built for SPICE inside the MSG"
+        }
+      ]
+    },
+    "shared_with": [
+      "bass",
+      "bass-m",
+      "spice",
+      "slice"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 13.6,
+        "max": 22.2,
+        "unit": "%"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+          "note": "PSI PSI-25 experimental table PSI-25_Experimental table_BASS-II.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 129 test rows of PSI-25_Experimental table_BASS-II.csv, columns: Calibrated  initial O2 % by vol. Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states a pressure for BASS-II tests: the PSI per-test table has no pressure column and the BASS overview PDF gives no pressure. Left unknown rather than inferred."
+    },
+    "airflow": {
+      "value": {
+        "min": 1,
+        "max": 40,
+        "unit": "cm/s"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+          "note": "PSI-25 approach: the small wind tunnel 'could impose airflow speeds up to 40 cm/s'"
+        },
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20150008962",
+          "note": "BASS/BASS-II SIBAL fabric paper: flow speed varied from 40 cm/s down to 1 cm/s in the duct"
+        }
+      ],
+      "note": "Recorded 1-40 cm/s (SIBAL fabric tests and the 40 cm/s tunnel limit). The BASS overview PDF instead gives a crew-adjustable 5-50 cm/s for the BASS family, so confidence is medium (see review.notes)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+          "note": "PSI-25 Project Type is 'Microgravity Investigation'"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief frames BASS-II as a low-gravity (microgravity) combustion study aboard the ISS"
+        }
+      ],
+      "note": "PSI Project Type states microgravity; recorded as ~0 g."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+          "note": "PSI-25 objective: 'Ambient oxygen concentration (via working volume nitrogen vitiation)'; approach: oxygen varied below 21% by adding nitrogen"
+        }
+      ],
+      "note": "Nitrogen is the vitiating gas used to lower oxygen; nitrogen was also injected below the sample as the fire suppressant."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Forced flow velocity (speed and direction: concurrent vs opposed flow)",
+      "Ambient oxygen concentration (lowered by working-volume nitrogen vitiation)",
+      "Fuel sample geometry and material (films, rods, slabs, spherical section, fabrics)",
+      "Fuel thickness (about 0.1 mm to 5 mm PMMA)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 objective lists the primary variables: forced flow velocity (speed and direction), ambient oxygen concentration, and sample geometry; approach names airflow speed and oxygen as the main variables"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Oxygen mole fraction held roughly constant within a test run while flow speed was varied"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 hypothesis: 'Testing at constant O2 mole fractions permits studying flame spread and extinction at low and high flow speed'"
+      }
+    ],
+    "note": "PSI states the varied variables explicitly but does not enumerate the constants; only the constant-O2-within-a-test point is directly supported."
+  },
+  "sensors": {
+    "value": [
+      "Radiometer (flame radiative output)",
+      "Anemometer (airflow rate)",
+      "Video camera (flame imaging, concurrent and second views)",
+      "Still camera",
+      "On-board combustion-product gas sensors (CSA-CP and CDM: CO/CO2)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 per-test table has a 'Radiometer gain' column; the file list shows raw video and still-sequence files; PSI publication list includes a paper on CSA-CP and CDM sensor readings during BASS-II"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS overview (covers BASS, BASS-II, BASS-M): an anemometer measures flow, a radiometer measures flame output, and video/still cameras record each test"
+      }
+    ],
+    "note": "Radiometer and combustion-product sensors are BASS-II-specific; the anemometer and cameras come from the family-level BASS document."
+  },
+  "relevance_notes": {
+    "value": "BASS-II is a solid-fuel flammability and suppression study in low-velocity forced flow in microgravity, directly relevant to fire prevention (material selection and flame-spread/extinction limits) and suppression in crewed spacecraft. PSI lists it under Combustion Science / Spacecraft Fire Safety, and the brief names BASS and BASS-II as the solid-material flammability studies for prevention.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 SubResearch Area 'Spacecraft Fire Safety'; objectives cover solid-fuel flame spread and extinction limits and fire detection/suppression models"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS and BASS-II)"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Validated microgravity combustion models are used to build more complex models for flames in normal gravity, applicable to wildfires, building fires, waste-to-energy combustion and other terrestrial combustion problems",
+      "Improved selection of safe materials and improved firefighting methods"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+        "note": "PSI-25 'Research Impacts/Earth Benefits': models can be used to study flames on Earth such as wildfires, building fires and energy recapture from waste recycling; BASS-II helps engineers select safer materials and improve firefighting methods"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Microgravity flammability boundary for PMMA rods in axial stagnation flow: Experimental results and energy balance analyses",
+      "url": "https://doi.org/10.1016/j.combustflame.2017.03.001"
+    },
+    {
+      "title": "Opposed-flow flame spread: A comparison of microgravity and normal gravity experiments to establish the thermal regime",
+      "url": "https://doi.org/10.1016/j.firesaf.2015.11.011"
+    },
+    {
+      "title": "The critical flow velocity for radiative extinction in opposed-flow flame spread in a microgravity environment",
+      "url": "https://doi.org/10.1016/j.combustflame.2015.10.023"
+    },
+    {
+      "title": "Radiative, thermal, and kinetic regimes of opposed-flow flame spread: A comparison between experiment and theory",
+      "url": "https://doi.org/10.1016/j.proci.2016.06.025"
+    },
+    {
+      "title": "Concurrent flame growth, spread, and quenching over composite fabric samples in low speed purely forced flow in microgravity",
+      "url": "https://doi.org/10.1016/j.proci.2016.06.028"
+    },
+    {
+      "title": "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity",
+      "url": "https://ntrs.nasa.gov/citations/20150008962"
+    },
+    {
+      "title": "Temperature and CO2 fields of a downward spreading flame over thin cellulose: A comparison of experimental and computational results",
+      "url": "https://doi.org/10.1016/j.proci.2014.05.093"
+    },
+    {
+      "title": "Experimental validation of a correlation capturing the boundary layer effect on spread rate in the kinetic regime of opposed-flow flame spread",
+      "url": "https://doi.org/10.1016/j.proci.2014.06.125"
+    },
+    {
+      "title": "Fire in Microgravity",
+      "url": "https://doi.org/10.1511/2016.118.44"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Local PSI record read this session: data/source/psi/PSI-25.json (objective, approach, hypothesis, experimentHardware, projectType, publications), PSI-25.search.json, and the per-test table data/source/psi/tables/PSI-25.csv. The PSI JS detail page was not loaded.",
+      "Oxygen percent was deliberately not set: data/source/psi/tables/conditions.json has an entry for PSI-25 (O2 13.6-22.2% from the CSV), and AGENTS.md rule 11 assigns that field to scripts/psi_apply_conditions.py. The NTRS SIBAL fabric paper instead states oxygen varied 21% down to 16%, and the CSV shows values up to 22.2%.",
+      "Airflow conflict: PSI approach says the wind tunnel could impose up to 40 cm/s; the SIBAL fabric paper reports 40 cm/s down to 1 cm/s; the BASS overview PDF gives a crew-adjustable 5-50 cm/s for the BASS family. Recorded 1-40 cm/s at medium confidence.",
+      "The BASS overview PDF's drop-tower results (2 cm PMMA sphere in 17% O2, 1 atm) are ground/reduced-gravity facility tests, not microgravity ISS data, so they were not recorded as BASS-II conditions (rule 9).",
+      "Pressure left unknown: no readable source states a pressure for BASS-II and the PSI per-test table has no pressure column.",
+      "PSI data files (694 entries, about 274.6 GB total): metadata zip, an engineering-requirements PPTX, representative image, and many raw-data items (raw/2nd-view video MP4s, still-sequence MP4s and large ISS camcorder zip archives, e.g. iss040e030906.zip ~2.4 GB). No files were downloaded; names, formats and sizes only.",
+      "This record references bass, bass-m, spice and slice in hardware.shared_with, matching the brief's shared SPICE flow duct."
+    ]
+  },
+  "psi_accession": "PSI-25",
+  "project_type": "Microgravity"
+}

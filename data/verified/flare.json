@@ -1,0 +1,363 @@
+{
+  "id": "flare",
+  "name": "Flammability Limits at Reduced-g Experiment (FLARE)",
+  "aliases": [
+    "FLARE",
+    "Flammability Limits at Reduced Gravity Experiment"
+  ],
+  "family": "other",
+  "status": "active",
+  "in_psi": null,
+  "psi_url": null,
+  "platform": {
+    "value": "International Space Station (ISS), Kibo Japanese Experiment Module (JEM)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://science.nasa.gov/mission/flare/",
+        "note": "NASA Science FLARE page lists Location 'International Space Station' and launch Sept. 24, 2019; status 'Active Mission'"
+      },
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE investigation page: experiments run in the Multi-purpose Small Payload Rack (MSPR) in the Kibo module of the ISS"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Develop and verify a methodology that correlates the flammability limits of solid materials in normal gravity with those in microgravity, allowing the microgravity minimum limiting oxygen concentration (MLOC) to be predicted from ground-based data; verify the correlation with on-orbit experiments in the Kibo module; and use it to propose a new international standard test method for screening spacecraft materials that covers the gravity effect that NASA-STD-6001 does not.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+        "note": "NASA FLARE page: objective to develop a methodology correlating material flammability limits in normal gravity and microgravity, and to propose a new fire-safety standard test method addressing NASA-STD-6001B shortcomings"
+      },
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page: find the minimum limiting oxygen concentration (MLOC) for flame spread over solids in microgravity and verify a new prediction methodology as the basis of a planned new international standard"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+        "note": "NASA FLARE page: the project proposes a new fire-safety standard test method for screening spacecraft materials and calls material selection the first line of fire defence"
+      },
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page, Space Applications: current material-flammability screening tests ignore gravity; the work improves material selection/fire safety aboard spacecraft"
+      }
+    ],
+    "note": "Classed as prevention: the project targets flammability-limit prediction and material screening (material selection). NASA's page also frames it as fundamental flammability science, and JAXA's ground work compared test methods, but no detection or suppression method is developed."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page: 'Various solid fuels are burned under different conditions and observed inside a flow tunnel'"
+      },
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/kibouser/pickout/73995.html",
+        "note": "JAXA 2024 result announcement: on-orbit flame-spread tests over a thin filter-paper solid sample"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "filter paper (first on-orbit sample)",
+      "poly(methyl methacrylate) (PMMA) sheet and plate",
+      "cotton fabric sheet",
+      "NOMEX sheet",
+      "polyethylene-insulated wire and rod",
+      "ETFE-insulated wire",
+      "LDPE (low-density polyethylene) insulated wire"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://iss.jaxa.jp/kiboexp/news/images/2018ams_flare.pdf",
+        "note": "JAXA AMS-2018 FLARE slides, 'Overview of the ISS Experiments': samples are PMMA sheet and plate, filter paper sheet, cotton fabric sheet, NOMEX sheet, polyethylene-insulated wire and rod, and polyethylene/ETFE-insulated wire"
+      },
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/kibouser/pickout/73995.html",
+        "note": "JAXA 2024: the first on-orbit experimental sample was a 130 mm thin 'filter paper'; further materials are planned"
+      }
+    ],
+    "note": "JAXA lists these solid samples for the ISS experiments; the first flown series used filter paper, and JAXA states more materials will follow. Material list is a plan, so confidence is medium."
+  },
+  "fuel_geometry": {
+    "value": "Flat sheet/plate samples (filter paper about 130 mm x 40 mm x 0.125 mm; PMMA sheet and plate; cotton fabric; NOMEX), cylindrical rod samples, and insulated-wire samples (a thin polymer-insulated metal wire, e.g. polyethylene, ETFE or LDPE over a metal core). Samples sit on a sample card in a flow duct with the gas flow parallel to the sample surface.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page: multiple sample configurations (flat, rod, and insulated wire); flow is parallel to the sample surface"
+      },
+      {
+        "kind": "other",
+        "url": "https://www.jaxa.jp/press/2022/07/20220726-1_j.html",
+        "note": "JAXA 2022 press release gives the first sample: filter paper 13 cm long x 4 cm wide x 0.0125 cm thick"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Multi-purpose Small Payload Rack (MSPR) in the Kibo (JEM) module, ISS",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "other",
+          "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+          "note": "JAXA FLARE page: FLARE is run in the MSPR in the Kibo module; SCEM is installed in the MSPR Work Volume and the gas bottle in the MSPR Small Experiment Area"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Solid Combustion Experiment Module (SCEM): a sealed combustion vessel with a fan and flow-straightening honeycomb that recirculates the gas, a remotely exchanged sample card, upstream and downstream hot-wire (electric) igniters that give opposed- or concurrent-flow spread, camera units (visible and infrared), and a power/communications control unit. The investigation is operated from the ground at Tsukuba Space Center.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "other",
+          "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+          "note": "JAXA FLARE page: SCEM assembled on-orbit, installed in the MSPR Work Volume; gas bottle in the MSPR Small Experiment Area; operated from SSIPC at Tsukuba"
+        },
+        {
+          "kind": "other",
+          "url": "https://www.jaxa.jp/press/2022/07/20220726-1_j.html",
+          "note": "JAXA 2022 press release: combustion vessel contains a fan and flow-straightening honeycomb for a recirculating flow; a sample card is exchanged by remote command; a heating wire ignites one end; upstream/downstream igniters give opposed or concurrent flow"
+        }
+      ]
+    },
+    "shared_with": []
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 15,
+        "max": 34,
+        "unit": "%"
+      },
+      "confidence": "low",
+      "sources": [
+        {
+          "kind": "other",
+          "url": "https://humans-in-space.jaxa.jp/kibouser/pickout/73995.html",
+          "note": "JAXA 2024 result announcement: for filter paper in opposed flow the microgravity flame-spread limiting oxygen concentration was about 15% (ground value 16.58%); runs used 21% and 17% initial O2"
+        },
+        {
+          "kind": "other",
+          "url": "https://www.jaxa.jp/press/2022/07/20220726-1_j.html",
+          "note": "JAXA 2022 press release: the first high-oxygen material combustion test on the ISS (2022-06-23) used 34% O2 with the filter-paper sample; SCEM is capable of experiments up to 45% O2"
+        }
+      ],
+      "note": "SCEM sets the vessel oxygen concentration. Reported on-orbit values: filter-paper limiting O2 of about 15% (lowest spread-sustaining) and a 34% O2 high-concentration run; other runs used 17% and 21% initial O2, and the hardware is capable up to 45%. Recorded as the 15-34% span; low confidence because it merges a measured limiting value with test set points rather than one stated tested range."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states the vessel pressure actually tested. JAXA says SCEM can run at low pressure and that the planned lunar habitat atmosphere is 0.56 atm / 34% O2, and the operations list air-pressure setting - but no FLARE test pressure value is given, so it is left unknown rather than inferred."
+    },
+    "airflow": {
+      "value": {
+        "min": 0,
+        "max": 30,
+        "unit": "cm/s"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "other",
+          "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+          "note": "JAXA FLARE page: low-speed external gas flow of less than 30 cm/s parallel to the sample surface, in opposed and concurrent directions"
+        },
+        {
+          "kind": "other",
+          "url": "https://humans-in-space.jaxa.jp/kibouser/pickout/73995.html",
+          "note": "JAXA 2024: the first (filter-paper) series formed an ambient flow up to about 25 cm/s; one run varied flow 2.6-0 cm/s and another used 25 cm/s, so quiescent (~0 cm/s) conditions were also run"
+        }
+      ],
+      "note": "Investigation envelope is a low-speed flow below 30 cm/s parallel to the sample; the flown filter-paper series used up to about 25 cm/s and included 0 cm/s (quiescent) periods. Recorded 0-30 cm/s at medium confidence (envelope vs flown-series values)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "other",
+          "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+          "note": "JAXA FLARE page: the on-orbit experiments run in microgravity aboard the ISS/Kibo to find the microgravity MLOC"
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://science.nasa.gov/mission/flare/",
+          "note": "NASA Science page lists FLARE's location as the International Space Station"
+        }
+      ],
+      "note": "Records the on-orbit FLARE experiment (ISS/Kibo), which is microgravity (~0 g). The FLARE project also ran 1-g ground tests and parabolic-flight tests as supporting/comparison work; per AGENTS.md rules 8-9 those ground and transient reduced-g values are not recorded as microgravity conditions."
+    },
+    "diluents": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "The vessel oxygen concentration is varied (enriched above air for the 34% test), so a diluent gas is implied, but no readable source names it (e.g. nitrogen). Left unknown rather than inferred."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Vessel oxygen concentration",
+      "External gas-flow velocity",
+      "Flow direction (opposed flow vs concurrent flow)",
+      "Solid fuel material and configuration (flat sheet/plate, cylindrical rod, insulated wire)",
+      "Sample thickness and width (flat samples); wire diameter and core-wire material (wire samples)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page: oxygen concentration that extinguishes the flame is measured while external flow velocity and direction are varied; multiple sample configurations (flat, rod, insulated wire) are used"
+      },
+      {
+        "kind": "other",
+        "url": "https://iss.jaxa.jp/kiboexp/news/images/2018ams_flare.pdf",
+        "note": "JAXA AMS-2018 slides: opposed and concurrent flow, flat and wire/rod samples, and wire tests that vary diameter, core-wire material and pressure; flame-spread limits are sought by varying flow and O2"
+      },
+      {
+        "kind": "other",
+        "url": "https://www.jaxa.jp/press/2022/07/20220726-1_j.html",
+        "note": "JAXA 2022 press release: repeated experiments change conditions such as oxygen concentration and ambient flow velocity"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Microgravity environment (on-orbit ISS/Kibo)",
+      "Gas flow parallel to the sample surface",
+      "SCEM apparatus and combustion vessel",
+      "Ignition by an electric heating wire at one end of the sample"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page: flame spreading is observed under flow parallel to the sample surface, all in the microgravity environment of the Kibo module"
+      },
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/kibouser/pickout/73995.html",
+        "note": "JAXA 2024: the sample is ignited at its downstream end with a heating wire while the surrounding flow and O2 are set"
+      }
+    ],
+    "note": "Sources state the varied conditions explicitly but do not enumerate all constants; only these are directly supported."
+  },
+  "sensors": {
+    "value": [
+      "Visible (colour) camera for flame-spread imaging",
+      "Infrared (IR) camera for sample-surface temperature distribution"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/kibouser/pickout/73995.html",
+        "note": "JAXA 2024: composite images from an infrared camera (filter-paper surface temperature distribution) and a visible camera (flame spread); SCEM also observes flame spread by camera"
+      },
+      {
+        "kind": "other",
+        "url": "https://www.jaxa.jp/press/2022/07/20220726-1_j.html",
+        "note": "JAXA 2022 press release: flame-spread behaviour is observed by cameras; recorded video/images are downlinked"
+      }
+    ],
+    "note": "The 2024 JAXA note also refers to an on-orbit velocity distribution (velocity boundary layer) measured near the sample surface, but no instrument is named for it, so it is not listed as a sensor."
+  },
+  "relevance_notes": {
+    "value": "FLARE studies how solid-material flammability limits change with gravity, predicting the microgravity minimum limiting oxygen concentration (MLOC) from ground data and testing the prediction on orbit. It is directly relevant to fire prevention through material selection and flammability screening for spacecraft and for the elevated-oxygen, reduced-pressure atmospheres planned for lunar habitats; it underpins a new international screening standard that accounts for gravity, which NASA-STD-6001/microgravity screening tests do not. JAXA states it is the first systematic microgravity MLOC dataset for flat, rod and wire configurations.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page: gravity's effect on the surrounding flow field is examined; MLOC data for flat, rod and insulated-wire samples are obtained systematically for the first time and compared with normal-gravity tests to reveal the gravity effect"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+        "note": "NASA FLARE page: improved methodology reduces spacecraft material-screening time and cost and improves fire safety in space and on Earth"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "New methods for evaluating the flammability of materials under high flow-velocity conditions could help evaluate and reduce fire hazards on Earth"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "other",
+        "url": "https://humans-in-space.jaxa.jp/en/biz-lab/experiment/theme/detail/000807.html",
+        "note": "JAXA FLARE page, Earth Applications: new methods for evaluating material flammability in high flow-velocity conditions have potential applications for evaluating and reducing fire hazards on Earth"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+        "note": "NASA FLARE page lists terrestrial fire safety as an impact area"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Quantitative prediction of the flammability limits of filter paper in microgravity conditions",
+      "url": "https://doi.org/10.1016/j.proci.2024.105200"
+    },
+    {
+      "title": "Recent Advances in Solid Combustion Research under Microgravity: The FLARE Project",
+      "url": "https://www.jstage.jst.go.jp/article/jcombsj/66/218/66_66.218_239/_article/-char/en"
+    },
+    {
+      "title": "Flammability Limits at Reduced-g Experiment (FLARE) Task Group 5: Fundamental Research on International Standard of Fire Safety in Space on the ISS/JEM",
+      "url": "https://ntrs.nasa.gov/citations/20160001023"
+    },
+    {
+      "title": "Investigation of flame spread over a thin wire under simulated lunar and terrestrial gravity using a centrifuge during parabolic flight",
+      "url": "https://doi.org/10.1016/j.combustflame.2026.114800"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T15:27:37Z",
+    "notes": [
+      "Verified all fields against JAXA and NASA web sources. No contradicted or unsupported fields found.",
+      "Oxygen range (15-34%) correctly marked low confidence: merges measured microgravity MLOC (~15%) with test set points (34% high-O2 run, plus 17% and 21% initial O2 runs); hardware capability up to 45%.",
+      "Pressure and diluents correctly left unknown: no source states tested vessel pressure or names the balance/diluent gas.",
+      "Gravity correctly recorded as 0 g for on-orbit ISS/Kibo experiment; ground/parabolic tests excluded per AGENTS.md rules 8-9.",
+      "All four publications verified via web search (DOI, NTRS, journal pages)."
+    ]
+  },
+  "psi_accession": null,
+  "project_type": null
+}

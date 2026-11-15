@@ -1,0 +1,363 @@
+{
+  "id": "acme-cfi-g",
+  "name": "ACME Cool Flames Investigation with Gases (CFI-G)",
+  "aliases": [
+    "CFI-G",
+    "ACME CFI-G"
+  ],
+  "family": "acme",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+  "psi_accession": "PSI-159",
+  "project_type": "Microgravity",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 search record, field 'Flight Platform': International Space Station (ISS); Project Type 'Microgravity Investigation'"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief frames the combustion investigations as microgravity studies aboard the ISS"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Determine the conditions under which cool diffusion flames occur for propane, n-butane and n-pentane, in normal and inverse spherical diffusion flames, over a broad range of stoichiometric mixture fraction (Zst), adiabatic flame temperature (Tad), flow rate and pressure; support the ISS tests with CFD simulations, identify a chemical-kinetics mechanism that matches the measurements, and disseminate the results.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'objective' (local data/source/psi/PSI-159.json): determine conditions for cool diffusion flames in propane/n-butane/n-pentane, normal and inverse flames, wide Zst/Tad/flow range; CFD support; kinetic mechanism"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: observe quasi-steady spherical cool diffusion flames on porous burners with gaseous fuel; support cool-flame kinetics modelling"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, fields 'objective' and 'researchImpacts': the study determines cool-diffusion-flame conditions and develops a chemical-kinetics mechanism - fundamental combustion science"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: ACME is fundamental microgravity research whose secondary objective is spacecraft fire prevention; CFI-G itself is framed as cool-flame kinetics"
+      }
+    ],
+    "note": "No source labels CFI-G with prevention, detection or suppression; classified fundamental."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 proposalTitle 'Spherical Cool Diffusion Flames Burning Gaseous Fuels'; objective names propane, n-butane, n-pentane"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': all six ACME experiments featured flames of gaseous fuels"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "propane",
+      "n-butane",
+      "n-pentane"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'objective' and search keywords: cool diffusion flames for propane, n-butane and n-pentane"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief names propane as an example flammable gas in the CFI-G chamber"
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Spherical porous burner producing an inside-out flame: 'normal' diffusion flames (fuel/inert from the burner into the chamber) and 'inverse' diffusion flames (oxidizer/inert from the burner, fuel in the chamber)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'approach' (spherical diffusion flame tests) and experimentalTable file names 'CFI-G_Normal Flames.csv' and 'CFI-G_Inverse Flames.csv'"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: CFI-G observes quasi-steady spherical flames on a porous burner with gaseous fuel"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief: an oxygen-nitrogen mixture flowed from the spherical burner, creating an inside-out flame"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR), International Space Station",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "note": "PSI-159 detail record, field 'experimentHardware': 'ACME, Combustion Integrated Rack (CIR)'"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': the six ACME experiments were conducted in the Combustion Integrated Rack (CIR)"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "ACME modular experiment hardware set with a spherical porous burner (chamber insert in the ~90 L CIR chamber; constant-volume tests)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "note": "PSI-159 detail record, field 'experimentHardware': 'ACME, Combustion Integrated Rack (CIR)'"
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "note": "ACME overview: all ACME experiments use a single modular hardware set; constant-volume studies, chamber free volume about 90 L"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': all six ACME experiments used the same modular ACME hardware in the CIR"
+        }
+      ]
+    },
+    "shared_with": [
+      "acme-bre",
+      "acme-cld-flame",
+      "acme-e-field",
+      "acme-s-flames",
+      "acme-flame-design"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 12.0,
+        "max": 85.0,
+        "unit": "%"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "note": "PSI PSI-159 experimental table PSI-159_Experimental table_CFI-G_Normal Flames.csv, PSI-159_Experimental table_CFI-G_Inverse Flames.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 1194 test rows of PSI-159_Experimental table_CFI-G_Normal Flames.csv, PSI-159_Experimental table_CFI-G_Inverse Flames.csv, columns: XO2 before test; XO2. Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "pressure_psi": {
+      "value": {
+        "min": 7.185,
+        "max": 48.006,
+        "unit": "psi"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "note": "PSI PSI-159 experimental table PSI-159_Experimental table_CFI-G_Normal Flames.csv, PSI-159_Experimental table_CFI-G_Inverse Flames.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 1194 test rows of PSI-159_Experimental table_CFI-G_Normal Flames.csv, PSI-159_Experimental table_CFI-G_Inverse Flames.csv, columns: approx p (bar); approx p (bar). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "The PSI experimental tables record fuel/oxidizer mass flow rates (mg/s), not an air velocity; no airflow value is stated in the sources read."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "note": "PSI-159 search record, field 'Project Type': 'Microgravity Investigation'; flight platform ISS"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+        }
+      ],
+      "note": "Microgravity environment represented as 0 g per the project convention."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+          "note": "PSI-159 detail record: chamber of nitrogen plus a flammable gas; approach mentions 'a range of reactant dilutions'; search keywords include 'dilution'"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: the chamber was filled with a mixture of nitrogen and a flammable gas"
+        }
+      ],
+      "note": "Nitrogen is the balance/diluent gas; an oxygen-nitrogen mixture is supplied to the burner."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Fuel (propane, n-butane, n-pentane)",
+      "Reactant dilution",
+      "Flow rate",
+      "Pressure",
+      "Convection direction (normal vs inverse flames)",
+      "Stoichiometric mixture fraction (Zst) and adiabatic flame temperature (Tad)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'approach': multiple fuels, a range of reactant dilutions, flow rates and pressures, for normal and inverse convection directions; objective adds a broad range of Zst and Tad"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Spherical porous burner geometry",
+      "Microgravity (ISS) environment"
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'approach': spherical diffusion flame tests aboard the ISS"
+      }
+    ],
+    "note": "Inferred (own deduction): no source explicitly lists held-constant variables; the burner type and the microgravity environment were common to all CFI-G tests."
+  },
+  "sensors": {
+    "value": [
+      "Cameras (broad suite; incl. intensified video cameras)",
+      "Radiometers (thermopile, ~0.2-11 micron)",
+      "Photomultiplier tubes (PMT modules; OH* 310 nm and CH* 430 nm bandpass filters)",
+      "Thermocouples",
+      "CIR gas chromatograph (pre-/post-test chamber atmosphere)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'approach': observe the flames with a broad suite of cameras, radiometers, photomultiplier tubes and thermocouples"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: diagnostics include thermopile radiometers (~0.2-11 micron), three PMT modules (310 nm and 430 nm bandpass for OH* and CH*), and the CIR gas chromatograph for pre-/post-test chamber analysis"
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "The brief identifies CFI-G as the microgravity tests with the highest oxygen concentrations (up to 85% O2 flowing from the spherical burner), directly relevant to the 30% or more O2 / 10.2 psi or less lunar-habitat atmospheres. The investigation is fundamental cool-flame kinetics rather than a suppression or detection test.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Spacesuits and oxygen concentration': highest-oxygen microgravity tests were part of ACME CFI-G; lunar habitats expected at 30%+ O2 and 10.2 psi or less"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'objective'"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "More efficient and cleaner internal combustion engines (improved cool-flame kinetics; ultra-lean combustion)",
+      "Improved CFD and chemical-kinetics models for practical terrestrial combustion"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+        "note": "PSI-159 detail record, field 'researchImpacts': better cool-flame kinetics could raise engine thermal efficiency toward 60% via ultra-lean combustion"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: primary goal is to improve efficiency and reduce pollutant emissions in practical terrestrial combustion"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Spherical gas-fueled cool diffusion flames (Kim et al., 2022)",
+      "url": "https://doi.org/10.1016/j.proci.2022.07.015"
+    },
+    {
+      "title": "Cool diffusion flames in a stably stratified stagnation flow (Waddell et al., 2023)",
+      "url": "https://doi.org/10.1016/j.combustflame.2023.112852"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Local PSI record read: data/source/psi/PSI-159.json and PSI-159.search.json. Per-test tables are PSI-159_Experimental table_CFI-G_Normal Flames.csv and PSI-159_Experimental table_CFI-G_Inverse Flames.csv; their ranges were read via data/source/psi/tables/conditions.json, not the CSVs directly.",
+      "O2: the brief states up to 85% oxygen (burner-supplied O2/N2 mixture). The PSI table agrees - max XO2 = 85% (Inverse Flames table, range 12-85%); the Normal Flames table chamber XO2 is lower (~18-40%). No conflict with the brief. o2_percent left at its seed value; scripts/psi_apply_conditions.py overwrites it from the table.",
+      "pressure_psi left at the seed value (unknown) for scripts/psi_apply_conditions.py, which fills it from the table (PSI-159 approx p: 7.185-48.006 psi over 1194 rows).",
+      "airflow left unknown: the PSI tables list fuel/oxidizer mass flow rates (mg/s), not an air velocity; no airflow value is stated in the sources read.",
+      "Data set is very large (totalFileSize 2,085,592,429,259 bytes = ~2.09 TB across 3756 files) and was not downloaded. Only names, counts and sizes from the PSI 'added' list were recorded: mostly .zip image/converted-data archives (987), .txt as-run files (1022), .csv (680), .mdipsug instrument data (610), .ts video segments (336), .log (22), plus 93 PDFs (reports, engineering docs, test sheets), 1 xlsx (ACME Chamber Calculator), and 1 representative .png/.jpg.",
+      "psi.nasa.gov is a JavaScript page the web tool cannot render; no PSI web page was consulted and none is claimed. The NASA ACME overview PDF (one web fetch) was read for hardware/diagnostics/context and states no CFI-G O2 or pressure, so it neither supports nor contradicts the condition figures.",
+      "PSI-159 publications: two peer-reviewed papers listed; added to 'publications' with DOI links. PSI record DOI (dataset) is 10.60555/cyt1-kh64."
+    ]
+  }
+}

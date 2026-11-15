@@ -1,0 +1,181 @@
+{
+  "id": "slice",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Matches seed id 'slice' mapped to PSI-106 in psi-map.json",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 title 'Structure and Liftoff In Combustion Experiment' and investigationAcronym 'SLICE' match",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 investigationAcronym is 'SLICE'",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief: SLICE conducted in MSG using SPICE hardware; psi-map.json maps slice to msg family",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 flightProgram 'International Space Station (ISS)' and NASA page confirm flown on ISS",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 record exists in local PSI data",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL format for PSI-106",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 flightProgram 'International Space Station (ISS)'; NASA page: SPICE hardware onboard ISS",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 objective lists 5 specific aims; NASA page lists 2 objectives covering flame base structure and liftoff velocity limits - both consistent",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI researchImpacts: 'Insights into flame stability and behavior to enhance fire safety'; NASA page: flame attachment 'essential importance in both combustion systems and fire safety'. No source labels prevention/detection/suppression, so 'fundamental' inferred is correct",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 approach: 'methane, ethylene, and nitrogen-diluted mixtures'; experimental table lists only gaseous fuels (CH4, C2H4, C2H6, N2-diluted)",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 experimental table (PSI-106_Experimental table_Slice.csv) shows: 100% CH4, 40%/70% CH4 (balance N2), 100% C2H4, 20% C2H4 (balance N2), 100% C2H6",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 approach: fan-driven flow duct, exchangeable burner tubes, controlled coflow air; NASA page: three existing SPICE nozzles, coflow screens possible",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "NASA page: 'SPICE hardware is within the ISS MSG'; Challenge brief: BASS, BASS-II, SPICE, SLICE conducted in MSG",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 approach: fan-driven flow duct, exchangeable burner tubes, integrated sensors, high-resolution camera, derived from ELF; NASA page: SPICE hardware based on ELF, used without modification",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "contradicted",
+      "evidence_note": "Challenge brief lists only BASS, BASS-II, SPICE, and SLICE as using the SPICE hardware in MSG. 'bass-m' has no PSI match (psi-map.json) and is not mentioned in the brief as sharing this hardware.",
+      "correction": "[\"bass\", \"bass-2\", \"spice\"]"
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 experimental table contains only Test Date and Fuel Type columns; NASA page gives no oxygen concentration. Correctly left unknown.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Not stated in PSI-106 detail, experimental table, or NASA page. Correctly left unknown.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "SLICE varied coflow air velocity (increased until liftoff) but no numeric range given in PSI-106 or NASA page. SPICE's tabulated air rates belong to SPICE, not SLICE. Correctly left unknown.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 projectType 'Microgravity Investigation', flown on ISS; NASA page: 'Microgravity testing allows for greater temporal and spatial scales' aboard ISS. Normal-gravity tests referenced only for model comparison.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 objective/approach: evaluate fuel dilution with nitrogen; experimental table: 40%/70% CH4 (balance N2) and 20% C2H4 (balance N2). Nitrogen dilutes fuel stream, not chamber suppressant.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 hypothesis/objective: structure/stability depend on burner diameter, coflow velocity, fuel composition, nitrogen dilution; NASA page: fuel flow fixed, air velocity increased until liftoff; tests vary fuel, burner diameter, flow",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 approach: 'controlled coflow air conditions'; NASA page: flames burning in a coflow of air. Only air coflow clearly common to all tests.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 approach: integrated sensors measure flow rates and temperature, high-resolution camera, calibration for airflow velocity, soot measurement, fans; experimental table notes pyrometry and fan calibration tests",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "NASA page: flame attachment/detachment 'essential importance in both combustion systems and fire safety'; SLICE is precursor to CLD Flame. PSI researchImpacts: insights into flame stability to enhance fire safety.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 researchImpacts lists four Earth benefits matching the extracted values exactly",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 has 5 publications; 4 have DOIs and are included; 1 (Cao et al. 'Effects of Fuel Dilution and Gravity...') has empty DOI and is correctly omitted",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps 'slice' to 'PSI-106'",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-106 projectType 'Microgravity Investigation' maps to 'Microgravity'",
+      "correction": null
+    }
+  ],
+  "summary": "All fields supported except hardware.shared_with which incorrectly includes 'bass-m'. Challenge brief and PSI data confirm only BASS, BASS-II, and SPICE share the SPICE hardware in MSG with SLICE. The 'bass-m' entry has no PSI match and is not mentioned in the brief as using this hardware."
+}

@@ -1,0 +1,181 @@
+{
+  "id": "same",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps seed 'same' to accession PSI-102",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.search.json Title 'Smoke and Aerosol Measurement Experiment' and Acronym 'SAME'",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "SAME from PSI acronym; SAME-1 and Smoke Aerosol Measurement Experiment are common variants consistent with the title",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "Schema enum includes 'same'; seed id is 'same'",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI flightProgram 'International Space Station (ISS)' and investigation dates 2001-2008 confirm flown status",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.json and PSI-102.search.json exist locally; accession confirmed in psi-map.json",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for accession PSI-102; psi-map.json does not supply URL but pattern is documented",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.search.json Flight Platform 'International Space Station (ISS)'; NASA page confirms MSG in Destiny lab; PSI-102.json experimentHardware 'Comparitive Soot Diagnostic Hardware' operated in MSG",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.search.json Objectives and PSI-102.json objective match the extracted text; NASA page and NIST publication confirm smoke particle size characterization for detector evaluation",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief explicitly states fire detection tested via SAME/SAME-R; NASA page confirms evaluation of ionisation and photoelectric detectors",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "NASA page: four solid spacecraft materials plus liquid DBP on wick; Meyer et al. (2018) confirms four solids + liquid reference material; oxidative pyrolysis not flaming combustion, so 'mixed' is correct",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "partly",
+      "evidence_note": "NASA page lists 5 materials (Teflon, Kapton, silicone rubber, cellulose, DBP on wick). Meyer et al. (2018) adds Pyrell (polyurethane foam). SAME final report lists same 5 as NASA. Pyrell may be from SAME-R or ground tests; not confirmed in SAME flight data. List of 6 is plausible but not fully supported by primary SAME sources.",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "SAME final report: samples heated by stainless-steel wire coil, six pre-weighed samples per rotatable carousel; DBP on porous wick. NIST/NASA news confirms wire filaments and carousel.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "SAME final report and NASA page both state Microgravity Science Glovebox (MSG) on ISS in Destiny laboratory.",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "NASA page and SAME final report both describe smoke generation duct with carousel, aging chamber with piston, diagnostics duct with P-Trak, DustTraks, modified ionisation detector, thermal precipitator (TEM grids), and ISS/Shuttle smoke detectors.",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.search.json Related Investigations lists PSI-101 (SAME-R). Challenge brief states SAME/SAME-R instrument used for DAFT/DAFT-2 dust detection.",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI experimental table (PSI-102.csv) has no O2 column; no source states chamber O2 for SAME. Null with unknown confidence is correct.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI experimental table has no pressure column; no source states chamber pressure for SAME. Null with unknown confidence is correct.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.csv column 'Air Flow (cm/s)' shows values 5 and 10 across 8 test rows; min 5, max 10 cm/s matches extracted range.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "partly",
+      "evidence_note": "Extracted as min 0, max 0 g based on ISS platform = microgravity. PSI-102.search.json Project Type 'Microgravity Investigation' and Flight Platform ISS support microgravity context. However, no source states a measured g-level; value is a platform-based deduction (inferred). Confidence 'medium' is appropriate but note should clarify inference.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "No source identifies a combustion-chamber diluent. Nitrogen appears only as sheath gas for P-Trak particle counter, not as test condition. Null with unknown confidence is correct.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "NASA page: different airflow rates, heating temperatures, aging durations. Meyer et al.: controlled parameters were heating temperature, air flow, aging duration. SAME final report: aging 10 s to 1800 s. All four listed variables confirmed.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "SAME final report: sample heating time ~60 s, air flow synchronized for steady stream. Meyer et al.: baseline temperature chosen for 1-2 mg mass loss in 60 s, holding mass loss roughly constant. Apparatus and instrumentation held constant across tests.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "NASA page lists P-Trak, DustTrak, modified ionisation detector, thermal precipitator (TEM), ISS and Shuttle detectors. Meyer et al. confirms three real-time instruments, ionisation detector for first moment, thermal precipitator, ISS/Shuttle detectors. NASA news confirms MPASS two-moment sensor on SAME reflight (SAME-2).",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief names SAME/SAME-R for fire detection. NIST/NASA news states ISS photoelectric detector missed smaller Teflon and Kapton smoke particles; no single current method detects all smoke sizes.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "NASA page: detectors useful in submarines/underwater labs. NASA news: nuisance-free detectors for homes; MPASS sensor for first responders, mines, factories.",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All five publication entries are real SAME-related works verifiable via DOIs and NTRS: SAE 2008-01-2089, Aerosol Sci Tech 2015, Fire Safety J 98 (2018), AIAA 2012-3536, NASA TM final report. PSI-102.search.json Publication Title list includes matching titles.",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps 'same' to PSI-102; PSI-102.json and PSI-102.search.json both have accession PSI-102.",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-102.search.json Project Type 'Microgravity Investigation'; PSI-102.json projectType 'Microgravity Investigation'. Simplified to 'Microgravity' per schema.",
+      "correction": null
+    }
+  ],
+  "summary": "All fields verified against PSI-102 JSON/CSV, NASA pages, and publications. Only fuel_materials (Pyrell inclusion not confirmed in primary SAME flight sources) and gravity_g (platform-based deduction, not measured) received 'partly' verdicts. No contradictions found. Record is ready for verification with status 'verified'."
+}

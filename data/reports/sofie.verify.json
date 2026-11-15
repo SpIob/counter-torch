@@ -1,0 +1,175 @@
+{
+  "id": "sofie",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Identifier matches the seed id used throughout the project.",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 title: 'Solid Fuel Ignition and Extinction (SoFIE) Project on ISS'.",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 uses 'SoFIE' as the acronym throughout.",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "SoFIE is not part of the ACME, MDCA, MSG, SAFFIRE, SAME, or DAFT families listed in the schema; 'other' is correct.",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "NASA SoFIE page (glenn-expertise...) states 'SoFIE Solid Fuel Ignition and Extinction Active Mission'.",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json lists 'sofie' under 'no_psi_match_yet'; no PSI accession exists yet.",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "No PSI record exists; null is correct.",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361: 'experiment insert designed for use within the existing Combustion Integrated Rack (CIR)'; GEL paper: 'aboard the ISS'.",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 lists all six applications (material selection, early fire growth, model validation, suppression techniques, engineering materials, improved 1-g models); NASA page confirms NASA-STD-6001 validation and five sub-investigations.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 explicitly states 'safer selection of cabin materials and validating NASA materials flammability selection' (prevention) and 'determining optimal suppression techniques for burning materials by diluents, flow reduction, and venting' (suppression). Mapping to the brief's categories is a deduction but well-supported; medium confidence is appropriate.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361: 'ignition and flammability of solid spacecraft materials (fuels)'; all sub-experiments use solid PMMA samples.",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 slides list PMMA cylinders, spheres, sheets, and 'engineering-material sheet samples' for SMuRF; Berkeley article confirms 'acrylic plastic, specifically, plexiglass (PMMA)' and applicability to other thermoplastics.",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 slides list geometries per sub-experiment: NCA 10x5x1 cm block; SMuRF 30 cm rods; RTDFS/SMuRF 30x5 cm flat thin; MIST 15 cm rods; GEL sphere. GEL paper (20240007628) states 4-cm diameter PMMA sphere, conflicting with the slide's '40 cm-dia' — the paper is taken as correct. Combined range across five sub-experiments justifies medium confidence.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: 'SoFIE insert is placed inside the Combustion Integrated Rack (CIR) aboard the ISS'; NTRS 20200000361: 'designed for use within the existing Combustion Integrated Rack (CIR)'. NASA images show Destiny laboratory.",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: square flow duct 13.3x13.3x24.6 cm, two fan banks, spherical sample on stainless tube, 3-sample index system, coiled-wire igniter. NTRS 20200000361 slides: ceramic radiant heaters (max 800 W), 24 AWG Kanthal igniter, two internal and one external camera.",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "partly",
+      "evidence_note": "All listed investigations (FLEX, FLEX-2, CFI, ACME-*) use the CIR (brief: 'six experiments in the ACME project... conducted with the same modular set of ACME hardware in the CIR'), but SoFIE is a separate insert, not the ACME hardware. Sharing the CIR facility is true; sharing the same apparatus is not. The field conflates facility-level sharing with apparatus-level sharing.",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: measured O2 range 13–28% at ~1 atm (five tests: 13.54–20.77%). NASA SoFIE page (NCA): design span 'oxygen percentage ranging from atmospheric up to 85%' along normoxic curve. Suite-wide combined range 13–85% with medium confidence is appropriate; the 85% upper bound is a design statement, not yet a measured flight value.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "partly",
+      "evidence_note": "GEL paper: tests at 'one atmosphere total pressure'; table shows ~1.03–1.07 atm (≈15.1–15.7 psi). Berkeley article: MIST microgravity test at 100 kPa (≈14.5 psi). DOI ground paper: 40–100 kPa (5.8–14.5 psi). Record sets max=14.7 psi (nominal 1 atm) but GEL's table goes to ~15.7 psi. Lower bound left null — no source quantifies the lowest flight pressure. The max value slightly understates the measured upper end; partly supported.",
+      "correction": {"min": null, "max": 15.7, "unit": "psi"}
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: 'forced flows ranging from 0.2 to 80 cm/s is generated by two fan banks in the SoFIE insert's flow duct.' SoFIE-MIST page: 'varying parameters including air flow speed'. Range is stated for the GEL runs/facility capability; medium confidence is appropriate.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: 'long-duration microgravity experiments aboard the ISS'. Challenge brief: 'low-gravity combustion experiments are conducted on the ISS'. SoFIE-MIST ground companion (DOI 10.32865/2346/99050) is a 1-g study and correctly excluded from microgravity conditions per rule 9.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "NASA SoFIE page (NCA): 'atmosphere is a mix of oxygen and nitrogen'. NTRS 20200000361: 'oxygen/nitrogen atmospheres for exploration'. Nitrogen is the balance/diluent gas across sub-experiments; diluent-based suppression is an explicit objective.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361 slides: MIST varies flow, O2, external radiant flux; NCA varies opposed-flow velocity, O2, pressure along normoxic curve; GEL varies flow, O2, pressure, internal heating. SoFIE-MIST page: varies air flow speed, oxygen concentration, pressure, level of external radiation. Berkeley article: MIST varied sample size, O2, pressure, planned external radiation. Combined list is accurate.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: all reported tests are microgravity aboard ISS with common flow duct and two-fan-bank arrangement. NASA SoFIE page: NCA, SMuRF, MIST all use O2/N2 exploration atmospheres. Only microgravity environment and nitrogen balance gas clearly held constant across all sub-experiments; low confidence is appropriate.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "GEL paper: CIR equipped with oxygen, pressure, velocity, CO/CO2 sensors, radiometers, four fixed cameras. NTRS 20200000361 slides: two internal and one external camera image the entire flow tube and sample. List is complete and accurate.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20200000361: material selection, validate 1-g protocols for low-g, suppression techniques, engineering materials. Berkeley article: 'in normal gravity materials are flammable at ~18% O2; on the ISS the limit is about 15%' — direct relevance to spacecraft fire safety.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "SoFIE-MIST page: 'results may help scientists refine combustion models that could be used in terrestrial settings'. DOI paper 10.32865/2346/99050: 'data relevant in determination of flammability of combustible materials in confined spaces such as airplanes, submarines, and spacecraft' (ground study).",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All five entries are real, retrievable publications: NTRS 20200000361 (SoFIE overview), NTRS 20240007628 (GEL extinction paper), NASA handle 20150023467 (MIST summary), ScienceDirect 2026 paper (opposed flame spread PMMA rods normal/micro-g), DOI 10.32865/2346/99050 (LOC of PMMA rods, ground companion).",
+      "correction": null
+    },
+    {
+      "field": "review.status",
+      "verdict": "supported",
+      "evidence_note": "Record shows 'extracted' status from the ingestion worker; consistent with workflow.",
+      "correction": null
+    }
+  ],
+  "summary": "The SoFIE extracted record is well-supported by NASA sources (NTRS citations, NASA web pages, peer-reviewed papers). One field (conditions.pressure_psi.max) slightly understates the measured upper bound from the GEL paper's test table (15.7 psi vs 14.7 psi). The hardware.shared_with field conflates facility-level sharing (CIR) with apparatus-level sharing. No fields are contradicted or unsupported; two are partly supported with minor corrections needed."
+}

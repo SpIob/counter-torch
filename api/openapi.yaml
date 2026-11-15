@@ -1,0 +1,287 @@
+openapi: 3.1.0
+info:
+  title: Project Counter-Torch API
+  version: 0.1.0
+  description: >
+    Contract between the web app and the backend. Scoring rules and gap rules live in AGENTS.md.
+    Ranking and coverage gaps are computed in code; the LLM only phrases explanations and answers.
+servers:
+  - url: http://localhost:8000
+paths:
+  /health:
+    get:
+      summary: Liveness check
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status]
+                properties:
+                  status: { type: string, enum: [ok] }
+  /investigations:
+    get:
+      summary: List investigation records
+      parameters:
+        - { name: family, in: query, schema: { type: string } }
+        - { name: safety_function, in: query, schema: { type: string, enum: [prevention, detection, suppression, fundamental] } }
+        - { name: fuel_phase, in: query, schema: { type: string, enum: [solid, gas, liquid_droplet, mixed] } }
+        - { name: status, in: query, schema: { type: string, enum: [flown, active, planned] } }
+        - { name: q, in: query, description: "Free-text filter on name, aliases and objective", schema: { type: string } }
+      responses:
+        "200":
+          description: Records, full schema
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "../schema/investigation.schema.json"
+  /investigations/{id}:
+    get:
+      summary: One investigation record
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "200":
+          description: The record
+          content:
+            application/json:
+              schema:
+                $ref: "../schema/investigation.schema.json"
+        "404":
+          description: Unknown id
+  /coverage:
+    get:
+      summary: Condition-space coverage, habitat zones, and computed gaps
+      responses:
+        "200":
+          description: Coverage data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Coverage"
+  /points:
+    get:
+      summary: Individual tests (oxygen, pressure) from PSI experimental tables
+      description: >
+        One [o2_percent, pressure_psi] pair per test row where both were recorded with a known pressure unit
+        (scripts/psi_points.py). Empty when the tables have not been downloaded.
+      responses:
+        "200":
+          description: Test points per investigation
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [investigations, total]
+                properties:
+                  total: { type: integer }
+                  investigations:
+                    type: array
+                    items:
+                      type: object
+                      required: [id, accession, name, points]
+                      properties:
+                        id: { type: string }
+                        accession: { type: string }
+                        name: { type: string }
+                        points:
+                          type: array
+                          items:
+                            type: array
+                            minItems: 2
+                            maxItems: 2
+                            items: { type: number }
+  /rank:
+    post:
+      summary: Rank investigations for a scenario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RankRequest"
+      responses:
+        "200":
+          description: Ranked investigations with explainable components
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RankResponse"
+  /ask:
+    post:
+      summary: Cited question answering over the verified records
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AskRequest"
+      responses:
+        "200":
+          description: Answer with citations, or an explicit coverage gap
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AskResponse"
+components:
+  schemas:
+    Range:
+      type: object
+      required: [min, max, unit]
+      properties:
+        min: { type: [number, "null"] }
+        max: { type: [number, "null"] }
+        unit: { type: string }
+    Scenario:
+      type: object
+      description: Provide habitat_id, custom values, or both (custom values override the habitat).
+      properties:
+        habitat_id: { type: [string, "null"] }
+        o2_percent: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        pressure_psi: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        gravity_g: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        airflow: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+    RankRequest:
+      type: object
+      required: [scenario, concern, fuel]
+      properties:
+        scenario: { $ref: "#/components/schemas/Scenario" }
+        concern: { type: string, enum: [prevention, detection, suppression, any] }
+        fuel: { type: string, enum: [solid, gas, liquid_droplet, any] }
+        limit: { type: integer, minimum: 1, maximum: 50, default: 10 }
+    SourceRef:
+      type: object
+      required: [kind, url, note]
+      properties:
+        kind: { type: string }
+        url: { type: [string, "null"] }
+        note: { type: string }
+    RankedItem:
+      type: object
+      required: [id, name, score, components, unknown_dims, review_status, why, sources, bounding]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        score: { type: number, minimum: 0, maximum: 1 }
+        components:
+          type: object
+          required: [conditions, function, fuel, evidence]
+          properties:
+            conditions: { type: number, minimum: 0, maximum: 1 }
+            function: { type: number, minimum: 0, maximum: 1 }
+            fuel: { type: number, minimum: 0, maximum: 1 }
+            evidence: { type: number, minimum: 0, maximum: 1 }
+        unknown_dims:
+          type: array
+          items: { type: string, enum: [o2_percent, pressure_psi, gravity_g, airflow] }
+        bounding:
+          type: boolean
+          description: True when a partial-gravity scenario was scored against microgravity data.
+        review_status: { type: string, enum: [seed, extracted, verified, disputed] }
+        why: { type: string }
+        sources:
+          type: array
+          items: { $ref: "#/components/schemas/SourceRef" }
+    RankResponse:
+      type: object
+      required: [items, coverage_note]
+      properties:
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/RankedItem" }
+        coverage_note:
+          type: [string, "null"]
+          description: Computed note about gaps relevant to this scenario, or null.
+    Gap:
+      type: object
+      required: [habitat_id, dimension, message]
+      properties:
+        habitat_id: { type: string }
+        dimension: { type: string, enum: [o2_percent, pressure_psi, gravity_g, airflow, combined] }
+        message: { type: string }
+    CoveragePoint:
+      type: object
+      required: [id, name, family, status, o2_percent, pressure_psi, gravity_g, airflow, unplaced_dims, review_status]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        family: { type: string }
+        status: { type: string, enum: [flown, active, planned] }
+        o2_percent: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        pressure_psi: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        gravity_g: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        airflow: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        unplaced_dims:
+          type: array
+          items: { type: string }
+        review_status: { type: string, enum: [seed, extracted, verified, disputed] }
+        psi_accession: { type: [string, "null"] }
+        project_type: { type: [string, "null"], description: "Microgravity or Ground, from the PSI record" }
+        psi_files: { type: [integer, "null"], description: "Files listed in the PSI record; null when no PSI record is known" }
+        psi_size_mb: { type: [number, "null"] }
+        fuel_phase: { type: [string, "null"] }
+        safety_functions: { type: [array, "null"], items: { type: string } }
+        confidence:
+          type: object
+          description: Confidence label per condition dimension
+          additionalProperties: { type: string }
+    Habitat:
+      type: object
+      required: [id, name, o2_percent, pressure_psi, gravity_g, basis]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        o2_percent: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        pressure_psi: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        gravity_g: { oneOf: [{ type: "null" }, { $ref: "#/components/schemas/Range" }] }
+        basis: { type: string }
+    Coverage:
+      type: object
+      required: [points, habitats, gaps, facts]
+      properties:
+        points:
+          type: array
+          items: { $ref: "#/components/schemas/CoveragePoint" }
+        habitats:
+          type: array
+          items: { $ref: "#/components/schemas/Habitat" }
+        gaps:
+          type: array
+          items: { $ref: "#/components/schemas/Gap" }
+        facts:
+          type: array
+          description: Statements taken from the challenge brief, shown verbatim in the UI.
+          items: { type: string }
+    AskRequest:
+      type: object
+      required: [question]
+      properties:
+        question: { type: string, minLength: 3, maxLength: 1000 }
+        scenario:
+          oneOf:
+            - { type: "null" }
+            - { $ref: "#/components/schemas/Scenario" }
+    Citation:
+      type: object
+      required: [id, url, note]
+      properties:
+        id: { type: string, description: Investigation id }
+        field: { type: [string, "null"] }
+        url: { type: [string, "null"] }
+        note: { type: string }
+    AskResponse:
+      type: object
+      required: [answer, citations, coverage_gap, mode]
+      properties:
+        answer: { type: string }
+        citations:
+          type: array
+          items: { $ref: "#/components/schemas/Citation" }
+        coverage_gap:
+          type: boolean
+          description: True when the verified data does not support an answer.
+        mode: { type: string, enum: [live, offline] }

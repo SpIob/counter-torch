@@ -1,0 +1,388 @@
+{
+  "id": "saffire-2",
+  "name": "Spacecraft Fire Safety Demonstration (Saffire-II)",
+  "aliases": [
+    "Saffire-II",
+    "SAFFIRE II",
+    "SAFFIRE-II"
+  ],
+  "family": "saffire",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+  "platform": {
+    "value": "Cygnus spacecraft, Orbital ATK OA-5 (CRS-6)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 Flight Platform 'Cygnus Spacecraft', flightProgram 'Cygnus Spacecraft'."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+        "note": "NASA Saffire overview PDF: Saffire-II flew inside Orbital ATK's Cygnus on its sixth contracted resupply mission (OA-5/CRS-6), Oct 2016, completed Nov 27 2016; nine samples incl. cotton-fiberglass, Nomex and spacecraft-window acrylic."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Determine how rapidly a large-scale fire grows in low gravity and investigate low-gravity flammability limits compared with NASA's normal-gravity material flammability screening test (NASA-STD-6001 Test 1).",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+        "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: Saffire-I/-II/-III are flammability studies of solid materials (fabrics, plastics) that inform prevention via material selection."
+      }
+    ],
+    "note": "PSI research impacts say results determine microgravity flammability limits and validate NASA material selection criteria (prevention). The brief groups Saffire under prevention/material selection."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 experimental table data/source/psi/tables/PSI-99.csv: 9 samples with material, thickness, air flow 20 cm/s, O2 ~21.5-22.1%, ignition power/time, burn time, flow direction."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: Saffire-I/-II/-III are flammability studies of solid materials (fabrics, plastics) that inform prevention via material selection."
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "SIBAL (75% cotton / 25% fiberglass composite fabric)",
+      "silicone (multiple thicknesses)",
+      "PMMA (flat and structured)",
+      "PMMA with Nomex",
+      "Nomex"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 experimental table data/source/psi/tables/PSI-99.csv: 9 samples with material, thickness, air flow 20 cm/s, O2 ~21.5-22.1%, ignition power/time, burn time, flow direction."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+        "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Nine flat rectangular samples, each about 5 cm wide x 29 cm long, mounted on a single sample card inside the flow duct",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+        "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 experimental table data/source/psi/tables/PSI-99.csv: 9 samples with material, thickness, air flow 20 cm/s, O2 ~21.5-22.1%, ignition power/time, burn time, flow direction."
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Cygnus Pressurized Cargo Module, run after the vehicle departed the ISS and before destructive reentry",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+          "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+          "note": "NASA Saffire overview PDF: Saffire-II flew inside Orbital ATK's Cygnus on its sixth contracted resupply mission (OA-5/CRS-6), Oct 2016, completed Nov 27 2016; nine samples incl. cotton-fiberglass, Nomex and spacecraft-window acrylic."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Saffire flow duct with adjacent avionics bay (module about 53 x 90 x 133 cm); fans at the top and flow straighteners at the bottom; a sample card holds the nine samples; two cameras view the sample through a Lexan panel",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+          "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+        },
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+          "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+        }
+      ]
+    },
+    "shared_with": [
+      "saffire-1",
+      "saffire-3"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 21.5,
+        "max": 22.1,
+        "unit": "%"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+          "note": "PSI PSI-99 experimental table PSI-99_Experimental table_SAFFIRE-2.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 15 test rows of PSI-99_Experimental table_SAFFIRE-2.csv, columns: Percent O2 (Note 1). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Not stated by any source read. The PSI-99 experimental table has no pressure column; the NASA and NTRS overviews give no pressure."
+    },
+    "airflow": {
+      "value": {
+        "min": 20.0,
+        "max": 20.0,
+        "unit": "cm/s"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+          "note": "PSI PSI-99 experimental table PSI-99_Experimental table_SAFFIRE-2.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 15 test rows of PSI-99_Experimental table_SAFFIRE-2.csv, columns: Air Flow (cm/s). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+          "note": "PSI-99 Project Type 'Microgravity Investigation'."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+          "note": "NASA Saffire overview PDF: Saffire-II flew inside Orbital ATK's Cygnus on its sixth contracted resupply mission (OA-5/CRS-6), Oct 2016, completed Nov 27 2016; nine samples incl. cotton-fiberglass, Nomex and spacecraft-window acrylic."
+        }
+      ],
+      "note": "Microgravity; Saffire flies in an uncrewed Cygnus cargo vehicle after it leaves the ISS."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen"
+      ],
+      "confidence": "inferred",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+          "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+        }
+      ],
+      "note": "Inferred: PSI says the atmosphere was ~21% O2 (air), so the balance gas is nitrogen. Not stated explicitly."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "sample material",
+      "sample thickness",
+      "flow direction (concurrent or opposed)",
+      "air flow velocity (20 or 30 cm/s)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 experimental table data/source/psi/tables/PSI-99.csv: 9 samples with material, thickness, air flow 20 cm/s, O2 ~21.5-22.1%, ignition power/time, burn time, flow direction."
+      }
+    ],
+    "note": "The nine samples differ in material and thickness; the approach says flow was either 20 or 30 cm/s and either concurrent or opposed."
+  },
+  "held_constant": {
+    "value": [
+      "sample dimensions (5 cm wide x 29 cm long)",
+      "ignition method (hot wire)",
+      "flow duct geometry and hardware",
+      "microgravity environment"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+        "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+      }
+    ]
+  },
+  "sensors": {
+    "value": [
+      "thermocouples for flow, flame and plume temperature",
+      "two video cameras (primary diagnostic)",
+      "radiometers for flame radiative emission",
+      "solid-state sensors for pressure, CO2 and O2 mole fraction",
+      "two flow anemometers"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+        "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+      }
+    ],
+    "note": "PSI approach lists two radiometers; the NTRS design paper says four."
+  },
+  "relevance_notes": {
+    "value": "Cited in the brief as a solid-material flammability study for prevention and material selection. Saffire-II measured low-gravity flammability limits of nine spacecraft-representative solid materials at ~21% O2 and compared them with NASA's normal-gravity screening test, at lengths (29 cm) an order of magnitude larger than earlier ISS flame-spread experiments.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf",
+        "note": "Ruff & Urban, ICES-2016 'Operation and Development Status of the Spacecraft Fire Experiments (Saffire)': Saffire-II investigates low-g Maximum Oxygen Concentration flammability limits vs NASA normal-g screening; nine 5x29 cm samples of PMMA (flat/structured), silicone (3 thicknesses), cotton-fiberglass fabric and Nomex; flow duct + avionics bay diagnostics."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: Saffire-I/-II/-III are flammability studies of solid materials (fabrics, plastics) that inform prevention via material selection."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "fire safety and prevention in small sealed environments such as mines, airplanes and submarines"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+        "note": "PSI-99 record (local data/source/psi/PSI-99.json): objective, approach, hypothesis, experimentHardware, researchImpacts, publications for SAFFIRE-II."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Flame spread: Effects of microgravity and scale",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.10.012"
+    },
+    {
+      "title": "Buoyancy effects on concurrent flame spread over thick PMMA",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.10.016"
+    },
+    {
+      "title": "Concurrent Flame Spread Over Two-Sided Thick PMMA Slabs in Microgravity",
+      "url": "https://doi.org/10.1007/s10694-019-00863-3"
+    },
+    {
+      "title": "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity - Model versus experiment",
+      "url": "https://doi.org/10.1016/j.proci.2018.05.168"
+    },
+    {
+      "title": "Evaluation of gas and particle sensors for detecting spacecraft-relevant fire emissions",
+      "url": "https://doi.org/10.1016/j.firesaf.2020.102977"
+    },
+    {
+      "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)",
+      "url": "https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T15:01:53Z",
+    "notes": [
+      "Verified all high-confidence fields against PSI-99 JSON, experimental CSV (data/source/psi/tables/PSI-99.csv), NASA Saffire PDF, and NTRS publications.",
+      "fuel_materials: 'Nomex' listed separately was only tested as part of PMMA & Nomex composite (CSV sample 2-7, Note 2); retained as partly supported.",
+      "variables_swept: 'air flow velocity (20 or 30 cm/s)' from PSI approach; CSV shows only 20 cm/s for all 9 samples; NTRS mentions 20 and 25 cm/s for SIBAL. Partly supported.",
+      "conditions.airflow: CSV shows 20 cm/s only; PSI approach mentions 20 or 30 cm/s. Followed table (actual tests) as stronger source.",
+      "sensors: PSI approach lists two radiometers; NTRS presentation shows four. Conflict noted in record.",
+      "No fields reset; no contradictions found. Status set to verified."
+    ]
+  },
+  "psi_accession": "PSI-99",
+  "project_type": "Microgravity"
+}

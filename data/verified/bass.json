@@ -1,0 +1,291 @@
+{
+  "id": "bass",
+  "name": "Burning and Suppression of Solids (BASS)",
+  "aliases": [
+    "BASS",
+    "BASS-I"
+  ],
+  "family": "msg",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+  "psi_accession": "PSI-26",
+  "project_type": "Microgravity",
+  "platform": {
+    "value": "ISS",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS one-page document: observations of burning solid materials on board the ISS"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Examine the burning and extinction characteristics of a wide variety of solid fuel samples in microgravity, to guide strategies for extinguishing accidental fires in microgravity and to feed combustion models used in the design of fire detection and suppression systems in space and on Earth.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document states the investigation examines burning and extinction of a wide variety of fuel samples in microgravity to guide fire-extinguishing strategies"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention",
+      "suppression"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document: guides strategies for extinguishing fires (suppression) and links results to NASA-STD-6001 material selection and radiative heat release (prevention)"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Background': flammability studies of solids such as fabrics and plastics feed prevention / material selection"
+      }
+    ],
+    "note": "Suppression is stated directly; prevention follows from the material-selection framing."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document: observations of burning solid materials and a wide variety of solid fuel samples"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "cotton-fiberglass fabric blend (SIBAL)",
+      "Nomex fabric",
+      "Ultem",
+      "polymethylmethacrylate (PMMA)",
+      "wax-saturated fiberglass fabric",
+      "paraffin wax",
+      "Japan wax"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document lists SIBAL cotton-fiberglass fabric, Nomex, Ultem, PMMA (thick flats and spheres), wax-saturated fiberglass, and paraffin and Japan wax candle fuels"
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Three sample classes: thin flat sheets (about 12 cm x 1-2 cm), thick flat slabs (5 cm x 1 cm x 1-2 mm), and solid PMMA spheres (1 and 2 cm diameter); plus candles in a thin ceramic tube (6 mm diameter x 25 mm long).",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document gives the sample categories and dimensions (thin flats, thick flats, PMMA spheres, ceramic-tube candles)"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "BASS document: hardware sits within the MSG on board the ISS"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Slightly modified Smoke Point In Co-flow Experiment (SPICE) hardware: a small flow duct with an igniter and a nitrogen nozzle, and a fan that produces a co-flow of air across the sample.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "BASS document: slightly modified SPICE hardware, a small flow duct with igniter and small nozzle; a fan produces co-flow through the duct"
+        }
+      ]
+    },
+    "shared_with": [
+      "bass-2",
+      "bass-m",
+      "spice",
+      "slice"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states an oxygen range for BASS (I). The BASS one-page PDF gives no oxygen concentration. Left unknown; a combined BASS/BASS-II figure that exists is noted in review.notes."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states a pressure range for BASS (I). The BASS one-page PDF gives no pressure. Left unknown rather than inferred."
+    },
+    "airflow": {
+      "value": {
+        "min": 5,
+        "max": 50,
+        "unit": "cm/s"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "BASS document: the crewmember adjusts the airflow from 5 to 50 cm/s through the duct; airflow direction along the sample is concurrent or opposed"
+        }
+      ],
+      "note": "PDF gives a crew-adjustable 5-50 cm/s; NASA/NTRS papers instead cite wind-tunnel speeds up to 40 cm/s, so confidence is medium (see review.notes)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "BASS document frames the tests as microgravity burning aboard the ISS; the exact g level is not stated"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+        }
+      ],
+      "note": "ISS platform treated as microgravity (~0 g)."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)"
+      ],
+      "confidence": "low",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "BASS document: nitrogen is supplied as a flame suppressant (0 to 500 cc/min) through a mass flow controller; the PDF calls it a suppressant rather than a chamber diluent"
+        }
+      ],
+      "note": "Nitrogen is used in BASS largely as the injected suppressant; glovebox working-volume nitrogen vitiation is explicitly described for BASS-II, not for BASS-I, hence low confidence."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Airflow speed (about 5 to 50 cm/s)",
+      "Flow configuration (concurrent vs opposed)",
+      "Fuel type, thickness and geometry (thin and thick flats, PMMA spheres, wax candles)",
+      "Nitrogen suppressant flow rate (0 to 500 cc/min)",
+      "Ignition location (front or back of the PMMA spheres)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document: tests vary fuel samples/geometry, tunnel flow speed, nitrogen flow rate and ignition location"
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20140011099",
+        "note": "BASS paper: effects of air flow speed, fuel thickness, fuel preheating and nitrogen dilution in opposed and concurrent flow"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": null,
+    "confidence": "unknown",
+    "sources": [],
+    "note": "Sources describe varied flow, fuel and suppression but do not enumerate which conditions were held constant across BASS-I tests."
+  },
+  "sensors": {
+    "value": [
+      "Anemometer (flow rate)",
+      "Radiometer (flame output)",
+      "Video camera",
+      "Still camera"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document: an anemometer measures the actual flow rate and a radiometer measures flame output; video and still cameras record each test"
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Named in the challenge brief as a solid-material flammability study for prevention / material selection, and the experiment directly tests burning and extinction of solids in microgravity to guide fire-extinguishing strategies for crewed spacecraft.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS and BASS-II)"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document: will guide strategies for extinguishing accidental fires in microgravity"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Combustion models validated in the simpler microgravity flow environment are used to build more complex models for flames burning in normal gravity",
+      "Applies to the general understanding of many terrestrial combustion problems and ground-based microgravity combustion research"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "BASS document 'Earth Applications': validated models have wide applicability to the general understanding of many terrestrial combustion problems"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment",
+      "url": "https://ntrs.nasa.gov/citations/20140011099"
+    },
+    {
+      "title": "Concurrent flame growth, spread and extinction over composite fabric samples in low speed purely forced flow in microgravity",
+      "url": "https://ntrs.nasa.gov/citations/20150008962"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T14:47:44Z",
+    "notes": [
+      "Verified against PSI-26.json, PSI-26.search.json, PSI-26.csv, NASA BASS PDF, and challenge brief.",
+      "hardware.shared_with: bass-m inclusion unverifiable (no PSI match per AGENTS.md; not in brief's hardware-sharing list).",
+      "conditions.airflow: PDF states 5-50 cm/s; PSI search says max 40 cm/s — conflict noted, medium confidence retained.",
+      "conditions.gravity_g: Exact 0 g is an inference (ISS ~10^-6 g); sources only state microgravity/ISS.",
+      "conditions.diluents: Nitrogen is an injected suppressant (0-500 cc/min) per PDF/PSI, not a chamber diluent; low confidence retained.",
+      "conditions.o2_percent and pressure_psi correctly left unknown — no source provides them for BASS-I.",
+      "No contradicted or unsupported fields; record status updated to verified."
+    ]
+  }
+}

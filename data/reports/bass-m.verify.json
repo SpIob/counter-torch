@@ -1,0 +1,169 @@
+{
+  "id": "bass-m",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Seed ID matches data/source/psi-map.json entry for bass-m under no_psi_match_yet",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF uses 'Burning and Suppression of Solids-Milliken (BASS-M)' as the investigation title",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF uses both 'BASS-M' and 'Burning and Suppression of Solids-Milliken'",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: BASS-M uses SPICE hardware in MSG; challenge brief lists BASS/BASS-II/SPICE/SLICE as MSG investigations",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF describes BASS-M as conducted on ISS, confirming flown status",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "data/source/psi-map.json lists bass-m under no_psi_match_yet; null is correct",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "No PSI match exists; null is correct",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF explicitly states 'on board the International Space Station (ISS)' for BASS-M",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF describes all three elements: testing flame-retardant cotton textiles in microgravity, comparing to terrestrial upward-burning screen, and the hypothesis that materials in microgravity burn as well or better than in normal gravity with identical conditions",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "Record correctly labels as inferred. NASA BASS PDF: NASA selects materials from ground flammability tests; BASS-M measures how low gravity changes flame-retardant behavior. Challenge brief defines prevention as material selection via flammability limits. Inference is reasonable.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: BASS-M consists of cotton textile samples; space-based burning tests on cotton textiles",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: 44 textile samples, four of each of eleven types (ten treated + one untreated control/igniter); untreated piece ignited by hot wire, flame impinges on adjacent treated textile",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "partly",
+      "evidence_note": "NASA BASS PDF confirms the arrangement (flat coupons, untreated igniter piece, flame impingement on treated textile). The 1 cm x 3 cm size comes only from Smithsonian magazine article (secondary source), which the record notes.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: BASS-M conducted inside the sealed MSG work volume on ISS",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: BASS-M uses slightly modified SPICE hardware in MSG: small flow duct with igniter and nozzle, exchangeable textile samples, fan producing co-flow",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief: BASS, BASS-II, SPICE, SLICE all use MSG with modular fan-driven flow duct built for SPICE",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "partly",
+      "evidence_note": "Miller & Fletcher decadal topical states 'BASS series of experiments were limited to 1 atmosphere, and oxygen concentrations below 22% due to MSG constraints' — a group statement for BASS/BASS-II/BASS-M, not BASS-M-specific. Record correctly notes this and assigns medium confidence. Min is correctly null (no lower bound stated).",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "partly",
+      "evidence_note": "Same Miller & Fletcher source: 'limited to 1 atmosphere' for BASS series. Record converts 1 atm = 14.7 psi (correct conversion), leaves min null, notes group statement. Medium confidence appropriate.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF (BASS-M protocol): 'crew member adjusts the airflow from 5 to 50 cm/s' — directly stated for BASS-M textile tests",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: 'microgravity observation... on board the ISS'; challenge brief: ISS = low-gravity/microgravity. Exact g-level not stated but ISS ~0g is standard. Medium confidence and note are appropriate.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF BASS-M section does not describe nitrogen suppressant or glovebox nitrogen vitiation (unlike BASS/BASS-II). Record correctly leaves null with explanatory note.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: BASS-M tests ten different treated textiles at various air flow rates; 44 sample test points",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "Record correctly notes sources describe varied variables but do not enumerate held-constant conditions; hypothesis mentions pressure/O2/temperature as expected identical but this is not a recorded held-constant list. Null with note is correct.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: anemometer measures flow rate, radiometer measures flame output, video downlinked during/after tests, digital still photos downlinked after selected tests",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF: compares microgravity results to terrestrial upward burning used to screen materials; Miller & Fletcher paper: NASA-STD-6001B Test 1 upward flame spread test conservatism for microgravity is uncertain",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "NASA BASS PDF Earth Applications section: investigation provides new information on how low gravity affects flame-retardant material behaviour, benefits materials science research on Earth; supports improvement of procedures for testing new flame-retardant materials",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "Miller & Fletcher decadal survey topical paper is cited and references BASS-M in the overview of solid fuel research",
+      "correction": null
+    }
+  ],
+  "summary": "The extracted record is well-supported for most fields. Two fields (O2 and pressure) rely on a BASS-series group statement rather than BASS-M-specific data, correctly noted with medium confidence. Fuel geometry size comes from a secondary source, noted in the record. No fields are contradicted or unsupported. The record honestly reflects source limitations."
+}

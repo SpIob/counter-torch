@@ -1,0 +1,190 @@
+{
+  "id": "spice",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps seed 'spice' to PSI-107; extracted id matches seed",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Title 'Smoke Point In Co-flow Experiment' and Acronym 'SPICE' match extracted name",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Acronym 'SPICE' and Title match the two aliases",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief 'Hardware': SPICE used the SPICE flow duct in the MSG; PSI-107 experimentHardware 'Microgravity Science Glovebox (MSG)'; family enum includes 'msg'",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Project Type 'Microgravity Investigation', Flight Platform 'International Space Station (ISS)'; investigation has flight data (469 test rows in experimental table)",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.json and PSI-107.search.json exist locally; psi-map.json confirms mapping",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps 'spice' to 'PSI-107'; PSI-107.json accession field is 'PSI-107'",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Project Type 'Microgravity Investigation'; simplified to 'Microgravity' per schema enum",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Flight Platform 'International Space Station (ISS)'; experimentHardware 'Microgravity Science Glovebox (MSG)'; challenge brief confirms MSG",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Objectives lists 5 specific objectives matching extracted text; NASA SPICE PDF confirms 'determines the point at which gas-jet flames begin to emit soot in microgravity'",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json subResearchArea 'Fire Safety' but objectives study fundamental soot/smoke-point behavior; challenge brief lists SPICE under 'Hardware' not prevention/detection/suppression; NASA PDF frames work as 'fundamental phenomena'; 'fundamental' is correct classification with medium confidence",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Approach: 'gaseous fuels (methane, ethylene, propane, propylene and propylene mixtures)'; challenge brief 'Hardware' section implies gaseous fuels in SPICE flow duct",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Approach lists methane, ethylene, propane, propylene, propylene mixtures; PSI-107.csv Fuel column shows Ethylene, Propane, Propylene, 50% Propylene, 75% Propylene, Methane; NASA page mentions ethane but PSI sources do not list it separately; note acknowledges discrepancy",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Approach: 'burner diameters of 0.41 mm, 0.76 mm, and 1.6 mm'; PSI-107.csv Nozzle (mm) column: 0.4064, 0.762, 1.6002 mm; round gas-jet burner in co-flow duct",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json experimentHardware 'Microgravity Science Glovebox (MSG)'; challenge brief 'Hardware': SPICE used the SPICE flow duct in the MSG",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Approach: 'apparatus with a flow duct with integrated nozzles, cameras and fuel delivery systems'; challenge brief: 'modular fan-driven flow duct built for SPICE'; NASA PDF: 'stabilises an enclosed laminar flame in a co-flowing oxidizer'",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "partly",
+      "evidence_note": "Challenge brief: 'BASS, BASS-II, the Smoke Point In Co-flow Experiment (SPICE), and the Structure & Liftoff In Combustion Experiment (SLICE) collectively featured both solid and gaseous fuels. Each of these investigations was conducted within the Microgravity Science Glovebox (MSG) using the modular fan-driven flow duct built for SPICE.' This supports bass, bass-2, slice. 'bass-m' has no PSI match (psi-map.json no_psi_match_yet) and is not mentioned in the brief; inclusion of bass-m is unsupported",
+      "correction": {
+        "value": [
+          "bass",
+          "bass-2",
+          "slice"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief 'Hardware': BASS, BASS-II, SPICE, and SLICE used the SPICE flow duct in the MSG"
+          }
+        ],
+        "note": "Removed bass-m which has no PSI match and is not mentioned in the brief as sharing the SPICE flow duct"
+      }
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null: PSI-107.csv has no O2 column; conditions.json shows o2: null for PSI-107; NASA PDF and PSI search record do not state a test oxygen concentration; co-flow oxidizer is air but no numeric value given",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null: PSI-107.csv has no pressure column; conditions.json shows pressure: null for PSI-107; no source states chamber pressure for SPICE",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "conditions.json for PSI-107 shows flow min 0.28, max 85.28 cm/s from 'Air Rate (cm/s)' column over 469 rows; PSI-107.search.json Approach cites 5.4 to 65 cm/s; table spans wider; note acknowledges negative/zero entries in raw CSV clamped to 0.28 lower bound by script",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Project Type 'Microgravity Investigation', Flight Platform 'ISS'; challenge brief: 'low-gravity combustion experiments conducted on the ISS'; ISS microgravity treated as ~0 g; residual-g level not stated",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.csv Fuel column lists '50% Propylene' and '75% Propylene' (propylene/nitrogen mixtures); NASA experiment page: 'propylene was tested mixed with nitrogen'; note correctly states nitrogen is fuel-stream diluent, not chamber-atmosphere diluent; medium confidence appropriate",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Approach: effects of burner diameter and co-flow velocity, sooting propensity of different fuels, air/fuel flow-rate variations; PSI-107.csv columns: Fuel, Nozzle (mm), Fuel Rate (sccm)/(mg/s), Air Rate (cm/s)",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "Derived from common setup: PSI-107.search.json Approach 'each flame was ignited in a controlled co-flow air environment'; NASA PDF 'stabilises an enclosed laminar flame in a co-flowing oxidizer'; note acknowledges sources don't enumerate held-constant explicitly; medium confidence appropriate",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Approach: 'flame lengths recorded with still and video cameras; measurements included flame height, radiative heat losses and co-flow air velocity distributions'; NASA PDF: 'measure the temperature field to verify flame structure predictions'",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief 'Hardware': SPICE used the SPICE flow duct in the MSG; NASA PDF: 'soot dominates the heat emitted from flames... control of this heat emission is critical for prevention of the spread of fires on Earth and in space'; connects soot/smoke-point data to fire safety models",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Research Impacts: 'refine computational models, improve understanding of soot generation, and possible insights to better fuel formulations and combustion processes'; NASA PDF Earth Applications: 'smoke point is used in fire modeling and to predict heat release from non-buoyant flames in practical combustors (e.g., jet engines and furnaces)'",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "PSI-107.search.json Publication Title list includes the three papers; DOIs resolve to correct publications (Dotson et al. Fire Safety Journal 2011, AIAA 2010, Sunderland et al. 2008)",
+      "correction": null
+    }
+  ],
+  "summary": "SPICE record is well-supported by PSI-107 local JSON, experimental table, and NASA one-page PDF. One correction needed: hardware.shared_with incorrectly includes 'bass-m' which has no PSI match and is not mentioned in the challenge brief as sharing the SPICE flow duct. All other non-null fields are supported; null fields (O2, pressure) are correctly unknown per sources."
+}

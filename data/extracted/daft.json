@@ -1,0 +1,293 @@
+{
+  "id": "daft",
+  "name": "Dust and Aerosol Measurement Feasibility Test (DAFT / DAFT-2)",
+  "aliases": [
+    "DAFT",
+    "DAFT-2",
+    "DAFT / DAFT-2",
+    "Dust and Aerosol Measurement Feasibility Test"
+  ],
+  "family": "daft",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47 search record: Flight Platform 'International Space Station (ISS)'; flightProgram 'International Space Station (ISS)'."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/dust-and-aerosol-measurement-feasibility-test-daft.pdf?emrc=583171",
+        "note": "NASA DAFT one-pager: the experiment flew aboard the ISS and started on Expedition 10."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Assess whether a modified TSI P-Trak condensation nuclei counter performs reliably in long-duration microgravity, to mitigate the risk that the SAME smoke-detection instrument would fail on orbit; compare the P-Trak against a TSI DustTrak control, create and analyze aerosol standards, and characterize particulate in the ISS cabin air.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47 objective: focus was to mitigate the risk for SAME by showing the modified P-Trak particulate counter is accurate in microgravity; compare against the DustTrak control, create/analyze aerosol standards and ensure reliability of future aerosol experiments."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+        "note": "NASA article: DAFT was a risk-mitigation experiment developed at NASA Glenn for SAME to evaluate the P-Trak condensation nuclei counter in long-duration microgravity."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/dust-and-aerosol-measurement-feasibility-test-daft.pdf?emrc=583171",
+        "note": "NASA DAFT one-pager: designed to ensure a modified P-Trak (a key SAME component) performs properly in microgravity, and to characterize ISS particulate to assess current smoke detectors."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "detection"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47 subResearchArea 'Spacecraft Fire Safety'; objective is to mitigate risk for SAME, a smoke-aerosol measurement (fire-detection) study."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/dust-and-aerosol-measurement-feasibility-test-daft.pdf?emrc=583171",
+        "note": "NASA DAFT one-pager: DAFT characterizes ISS particles to assess the suitability of current shuttle and ISS smoke detectors, and would let P-Trak provide data to help design better fire detectors."
+      }
+    ],
+    "note": "DAFT studies neither suppression nor prevention directly; it validates and characterizes a particle/smoke detection instrument, so it is recorded as detection. No source labels a 'safety function' explicitly, hence medium confidence."
+  },
+  "fuel_phase": {
+    "value": null,
+    "confidence": "unknown",
+    "sources": [],
+    "note": "DAFT burns no fuel: it is an aerosol-instrument feasibility test. The test aerosol is Arizona Road Dust dispersed in gaseous nitrogen, used as a particle-counting standard rather than a combustion fuel."
+  },
+  "fuel_materials": {
+    "value": null,
+    "confidence": "unknown",
+    "sources": [],
+    "note": "No fuel materials. The only material sampled is Arizona Road Dust (ARD, fine), a non-combusting particulate reference dispersed with gaseous nitrogen into 15-liter Mylar bags and drawn from ISS cabin air."
+  },
+  "fuel_geometry": {
+    "value": null,
+    "confidence": "unknown",
+    "sources": [],
+    "note": "No fuel geometry. The aerosol standard was held in 15-liter Mylar sample bags and drawn through a DAFT Impactor into the instruments; there is no burner or solid sample geometry."
+  },
+  "hardware": {
+    "facility": {
+      "value": "International Space Station (ISS); DAFT instrumentation mounted on the front of an EXPRESS Rack (Expedite the Processing of Experiments to Space Station), which also supplies gaseous nitrogen",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+          "note": "NASA article: DAFT is secured to the front of an EXPRESS Rack and rack-provided gaseous nitrogen is used to fill 15-liter sample bags; the EXPRESS laptop downloads and downlinks data."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Modified TSI P-Trak condensation nuclei counter (capillary-groove condenser tube, orientation mercury switch removed) plus an unmodified P-Trak, a TSI DustTrak control, the DAFT Impactor, 15-liter Mylar sample bags, and an EXPRESS laptop for data downlink",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+          "note": "PSI-47 experimentHardware 'TSI P-Trak'; approach: P-Trak modified with a capillary-force condenser tube and mercury switch removed; Arizona Road Dust aerosolized with GN2 into 15-liter Mylar bags; data compared to the DustTrak CNC."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+          "note": "NASA article: both a modified and unmodified P-Trak were tested alongside the TSI DustTrak; a DAFT Impactor (designed with NIST guidance) removes the smallest particles upstream of the instruments."
+        }
+      ]
+    },
+    "shared_with": [
+      "same",
+      "same-r"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No O2 concentration is stated in the PSI-47 record, in its experimental table (PSI-47.csv has no O2 column) or in the NASA DAFT documents. DAFT sampled the ISS cabin atmosphere; the specific concentration is not given."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No pressure is stated in the PSI-47 record, its experimental table (no pressure column) or the NASA DAFT documents."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Sample flow is drawn by the instruments' built-in suction pumps; no flow rate or airflow range is stated in the PSI-47 experimental table or the NASA documents."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+          "note": "PSI-47 Project Type 'Microgravity Investigation'."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+          "note": "NASA article: DAFT evaluates the P-Trak in long-duration microgravity conditions aboard the ISS."
+        }
+      ],
+      "note": "PSI labels DAFT a Microgravity Investigation and it operated on the ISS; 0 g is the microgravity approximation per AGENTS.md. No measured g level is stated in any source, so confidence is medium."
+    },
+    "diluents": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Gaseous nitrogen is used only to disperse and carry the Arizona Road Dust aerosol into the sample bags; it is not a combustion-chamber diluent, so no diluent is recorded."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Instrument under test: modified P-Trak vs DustTrak control",
+      "Sample source: Arizona Road Dust aerosol standard in 15-liter bags vs ISS cabin air",
+      "Test session / day on orbit: PSI table lists session D1 on GMT 54 and session D2 on GMT 63 (2005)",
+      "Test point (DAFT-1 to DAFT-4) with different nitrogen-source needs"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47 experimental table PSI-47_Experimental table_DAFT.csv columns Session Name, Actual Day, Hardware Description, Sample Material, Sampled Location: D1 = modified P-Trak with alcohol wick (GMT 54); D2 = DustTrak (GMT 63)."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/dust-and-aerosol-measurement-feasibility-test-daft.pdf?emrc=583171",
+        "note": "NASA DAFT one-pager: DAFT-1/DAFT-2 have no external power requirement while DAFT-3/DAFT-4 need ISS gaseous nitrogen, so the test points differ in their nitrogen source."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Aerosol standard: Arizona Road Dust (fine) dispersed in gaseous nitrogen",
+      "DAFT Impactor placed upstream of the instruments to remove the smallest particles"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47 experimental table 'Sample Material' column is the same for both rows: Arizona Road Dust (ARD Fine) combined with ISS GN2 to create an aerosol for measurement."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+        "note": "NASA article: 15-liter bags were loaded with a characterized Arizona road dust source and gaseous nitrogen; the same DAFT Impactor removed the smallest particles before they reached the instruments."
+      }
+    ]
+  },
+  "sensors": {
+    "value": [
+      "Modified TSI P-Trak condensation nuclei counter (isopropanol-condensation counter; counts laser-scattered droplets to give particle number concentration for particles down to about 20 nm)",
+      "TSI DustTrak (light-scattering particle mass concentration; used as the gravity-insensitive control)",
+      "DAFT Impactor (removes the smallest particles upstream of the instruments)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47: P-Trak condenses isopropanol around aerosol particles that are then laser counted; data were compared to the DustTrak control."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/api/citations/20050215648/downloads/20050215648.pdf",
+        "note": "NASA article: P-Trak counts particles as small as 20 nm; the DustTrak measures particle concentrations; a DAFT Impactor removes the smallest particles from the flow."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "DAFT is not itself a flame experiment: it is the fire-safety risk-mitigation test behind the SAME smoke-detection study, validating a handheld condensation nuclei counter (P-Trak) as a spacecraft smoke/dust detector. It found particulate levels in the ISS cabin were low relative to the Shuttle, and that average particle sizes were larger on orbit than on Earth, which matters for designing smoke detectors able to distinguish normal dust from dangerous smoke.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Other investigations in PSI': one of the instruments used for smoke detection in SAME and SAME-R was instead used to detect dust in DAFT and DAFT-2."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/dust-and-aerosol-measurement-feasibility-test-daft.pdf?emrc=583171",
+        "note": "NASA DAFT one-pager science results: low particulate in ISS relative to Shuttle; average particle sizes larger on orbit than on Earth; knowing median particulate helps design detectors that tell dust from smoke."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Smoke detectors for extreme or confined terrestrial environments such as submarines and underwater laboratories",
+      "Handheld real-time particulate monitoring (P-Trak) and light-scattering mass monitoring (DustTrak) for air-quality measurements",
+      "Cabin particulate-loading data feeding environmental control and life support (ECLSS) assessments"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+        "note": "PSI-47 researchImpacts: successful adaptation of the TSI P-Trak for microgravity can inform instrument design for other challenging Earth environments such as submarines or underwater laboratories, where accurate smoke detection saves lives."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/dust-and-aerosol-measurement-feasibility-test-daft.pdf?emrc=583171",
+        "note": "NASA DAFT one-pager Earth applications: smoke detectors from SAME results can be useful in submarines or underwater laboratories; the particulate data are of interest to ECLSS personnel."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "A Research Plan for Fire Prevention, Detection and Suppression in Crewed Exploration Systems (AIAA 2005-341)",
+      "url": "https://doi.org/10.2514/6.2005-341"
+    },
+    {
+      "title": "Detection of Smoke from Microgravity Fires (SAE 2005-01-2930)",
+      "url": "https://doi.org/10.4271/2005-01-2930"
+    },
+    {
+      "title": "Fundamental Research Applied to Enable Hardware Performance in Microgravity (NASA, W. Sheredy, 2005)",
+      "url": "https://ntrs.nasa.gov/citations/20050215648"
+    }
+  ],
+  "psi_accession": "PSI-47",
+  "project_type": "Microgravity",
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Sources read locally: data/source/psi/PSI-47.json and PSI-47.search.json (Project Type 'Microgravity Investigation', Research Area 'Combustion Science', SubResearch Area 'Spacecraft Fire Safety', related investigation PSI-102 SAME). The psi.nasa.gov page itself is JavaScript and was not loaded.",
+      "PSI experimental table data/source/psi/tables/PSI-47.csv has only 2 rows and no O2, pressure or flow columns (headers: Session Name, Actual Day, Hardware Description, Sample Material, Sampled Location), so conditions.o2_percent, pressure_psi and airflow remain unknown; data/source/psi/tables/conditions.json lists null o2/pressure/flow for PSI-47, consistent with this.",
+      "PSI-47.json lists 32 added files totalling about 41.8 MB: a metadata zip, DAFT final/1-year/30-day reports (.doc/.pdf), two presentations (.ppt), analyzed per-session .xls tables and raw .txt P-Trak/DustTrak data, engineering documents/procedures (.pdf), and one representative JPG image. Names, counts and sizes only are recorded here; nothing was downloaded. The record's 'removed' list (185 entries, filenames such as stability_*.bmp, Run*_bmps.zip, CVB2_*.zip) does not match DAFT content and its provenance is unclear, so it was not treated as a DAFT source.",
+      "DAFT burns no fuel, so fuel_phase, fuel_materials, fuel_geometry and conditions.diluents are left null/unknown with explanatory notes; the aerosol standard is Arizona Road Dust, not a combustion fuel.",
+      "psi_accession, in_psi, psi_url and project_type are left as the seed/PSI values; per AGENTS.md rule 11 these are set by scripts/psi_fill.py."
+    ]
+  }
+}

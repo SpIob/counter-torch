@@ -1,0 +1,395 @@
+{
+  "id": "acme-flame-design",
+  "name": "Advanced Combustion via Microgravity Experiments / Flame Design",
+  "aliases": [
+    "ACME",
+    "Flame Design",
+    "ACME/Flame Design"
+  ],
+  "family": "acme",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.search.json",
+        "note": "PSI-10 search record: Flight Platform 'International Space Station (ISS)', Project Type 'Microgravity Investigation', SubResearchArea 'Flames of Gaseous Fuels', acronym ACME/Flame Design."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, experimentHardware: Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), reconfiguration of the CIR."
+      }
+    ],
+    "note": "PSI search record gives the flight platform as the ISS; the PSI record also lists drop-tower tests on the ground."
+  },
+  "objective": {
+    "value": "Obtain soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames (ethylene, methane; also coflow flames) as functions of flow rate, stoichiometric mixture fraction (Zst), inert amount (N2 or CO2) and pressure; identify hot-region temperatures and whether extinction is radiative or kinetic, and test for pseudo-flammability limits.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Other investigations in PSI': other PSI combustion investigations are still relevant to fire safety, just not as strongly or directly."
+      }
+    ],
+    "note": "Deduction, not stated by a source: PSI-10 is a fundamental gaseous-flame study (soot inception, radiative/kinetic extinction, steady spherical flames) and no source assigns it a prevention, detection or suppression role. The brief places ACME gas-flame work among PSI combustion investigations that are relevant to fire safety but 'not as strongly or directly'."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.search.json",
+        "note": "PSI-10 search record: Flight Platform 'International Space Station (ISS)', Project Type 'Microgravity Investigation', SubResearchArea 'Flames of Gaseous Fuels', acronym ACME/Flame Design."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/tables/PSI-10.csv",
+        "note": "PSI-10 experimental table (Normal Flame): per-test columns Flame Type, Day, Fuel, Xfuel, mfuel/mN2/mtot (mg/s), XO2, pinit/pfinal, mean Zst, Tad (K); fuels C2H4 and C3H8."
+      }
+    ],
+    "note": "PSI SubResearchArea is 'Flames of Gaseous Fuels'; the experimental tables list gaseous fuels ethylene (C2H4) and propane (C3H8)."
+  },
+  "fuel_materials": {
+    "value": [
+      "ethylene (C2H4)",
+      "methane (CH4)",
+      "propane (C3H8)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/tables/PSI-10.csv",
+        "note": "PSI-10 experimental table (Normal Flame): per-test columns Flame Type, Day, Fuel, Xfuel, mfuel/mN2/mtot (mg/s), XO2, pinit/pfinal, mean Zst, Tad (K); fuels C2H4 and C3H8."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/tables/PSI-10_2.csv",
+        "note": "PSI-10 experimental table (Inverse Flame): per-test columns Flame Type, XO2, mO2/mN2, XC2H4, pinit, mean Zst; oxygen-rich inverse tests reach XO2 about 0.85."
+      }
+    ],
+    "note": "The objective names ethylene and methane; the per-test tables list ethylene and propane. Both sources are recorded; the disagreement is noted in review.notes."
+  },
+  "fuel_geometry": {
+    "value": "Spherical diffusion flames, normal and inverse, stabilized on a porous spherical burner; also normal and inverse coflow jet flames. Fuel/inert mixture issues from the burner into the chamber.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME overview PDF: ACME spherical flames are created with a porous spherical burner that issues a fuel/inert gas mixture into the CIR chamber; ACME runs are commanded from the ground (Glenn TSC)."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, 'added' file list: 3,807 files totalling ~2.18 TB (zip 1184, txt 993, csv 636, mdipsug 490, ts video 317, pdf 76); subcategory paths name normal/inverse flames on burner_1003."
+      }
+    ],
+    "note": "Objective/approach describe spherical diffusion flames and normal/inverse coflow flames; the porous spherical burner detail is from the ACME overview PDF; file subcategories name burner_1003."
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR) aboard the ISS",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "data/source/psi/PSI-10.json",
+          "note": "PSI-10 local record, experimentHardware: Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), reconfiguration of the CIR."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': the six ACME experiments featured flames of gaseous fuels and were all conducted with the same modular ACME hardware in the Combustion Integrated Rack (CIR)."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "ACME modular experiment hardware (Advanced Combustion via Microgravity Experiments) for burner-stabilized gaseous diffusion flames; CIR was reconfigured for ACME",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "data/source/psi/PSI-10.json",
+          "note": "PSI-10 local record, experimentHardware: Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), reconfiguration of the CIR."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': the six ACME experiments featured flames of gaseous fuels and were all conducted with the same modular ACME hardware in the Combustion Integrated Rack (CIR)."
+        }
+      ],
+      "note": "PSI experimentHardware lists 'Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), Reconfiguration of CIR'."
+    },
+    "shared_with": [
+      "acme-bre",
+      "acme-cld-flame",
+      "acme-e-field",
+      "acme-s-flames",
+      "acme-cfi-g"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 19.805,
+        "max": 84.998,
+        "unit": "%"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+          "note": "PSI PSI-10 experimental table PSI-10_Experimental table_Flame Design_Normal Flame.csv, PSI-10_Experimental table_Flame Design_Inverse Flame.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 327 test rows of PSI-10_Experimental table_Flame Design_Normal Flame.csv, PSI-10_Experimental table_Flame Design_Inverse Flame.csv, columns: XO2 (init); XO2. Computed by scripts/psi_table_summary.py (initial conditions only). Check: XO2: converted from fraction; 2 value(s) dropped as impossible/ambiguous, e.g. 2, 2"
+    },
+    "pressure_psi": {
+      "value": {
+        "min": 6.24,
+        "max": 44.2,
+        "unit": "psi"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+          "note": "PSI PSI-10 experimental table PSI-10_Experimental table_Flame Design_Normal Flame.csv, PSI-10_Experimental table_Flame Design_Inverse Flame.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 327 test rows of PSI-10_Experimental table_Flame Design_Normal Flame.csv, PSI-10_Experimental table_Flame Design_Inverse Flame.csv, columns: pinit (atm); pinit (atm). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No airflow velocity is reported anywhere I read. The PSI experimental tables give reactant mass flow rates (mfuel/mN2/mtot in mg/s), not a chamber airflow, and these are burner-fed spherical flames in a quiescent CIR chamber; so the field is left unknown rather than recording a mass flow as airflow (units would not match the habitat scenarios)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "data/source/psi/PSI-10.search.json",
+          "note": "PSI-10 search record: Flight Platform 'International Space Station (ISS)', Project Type 'Microgravity Investigation', SubResearchArea 'Flames of Gaseous Fuels', acronym ACME/Flame Design."
+        },
+        {
+          "kind": "psi",
+          "url": "data/source/psi/PSI-10.json",
+          "note": "PSI-10 local record, approach: spherical diffusion flame tests in drop towers and aboard the ISS; a broad range of reactant dilutions, flow rates and pressures for normal and inverse convection directions."
+        }
+      ],
+      "note": "PSI Project Type is 'Microgravity Investigation'; the approach also mentions drop-tower tests (also ~0 g). No partial gravity."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)",
+        "carbon dioxide (CO2)"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "data/source/psi/PSI-10.json",
+          "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+        },
+        {
+          "kind": "psi",
+          "url": "data/source/psi/tables/PSI-10.csv",
+          "note": "PSI-10 experimental table (Normal Flame): per-test columns Flame Type, Day, Fuel, Xfuel, mfuel/mN2/mtot (mg/s), XO2, pinit/pfinal, mean Zst, Tad (K); fuels C2H4 and C3H8."
+        }
+      ],
+      "note": "The objective varies the amount of inert (N2 or CO2); the table's N2 mass-flow column confirms N2 dilution tests."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Flow rate (fuel and inert mass flow, mg/s)",
+      "Stoichiometric mixture fraction Zst",
+      "Amount of inert diluent (N2 or CO2)",
+      "Pressure",
+      "Flame/convection direction (normal vs inverse)",
+      "Fuel (ethylene and propane per the test tables; ethylene and methane per the objective)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, approach: spherical diffusion flame tests in drop towers and aboard the ISS; a broad range of reactant dilutions, flow rates and pressures for normal and inverse convection directions."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/tables/PSI-10.csv",
+        "note": "PSI-10 experimental table (Normal Flame): per-test columns Flame Type, Day, Fuel, Xfuel, mfuel/mN2/mtot (mg/s), XO2, pinit/pfinal, mean Zst, Tad (K); fuels C2H4 and C3H8."
+      }
+    ],
+    "note": "Objective A/B list flow rate, Zst, inert amount and pressure as the swept variables; the tables also differ by flame type and fuel."
+  },
+  "held_constant": {
+    "value": [
+      "Same ACME spherical-burner apparatus (burner 1003) and CIR chamber across the normal and inverse test series"
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, 'added' file list: 3,807 files totalling ~2.18 TB (zip 1184, txt 993, csv 636, mdipsug 490, ts video 317, pdf 76); subcategory paths name normal/inverse flames on burner_1003."
+      },
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, experimentHardware: Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), reconfiguration of the CIR."
+      }
+    ],
+    "note": "Deduction, not explicitly stated: the record's file subcategory paths repeatedly name burner_1003 for both the normal and inverse series and all tests ran in the same ACME/CIR hardware, so the apparatus was held constant while flow, Zst, inert and pressure varied."
+  },
+  "sensors": {
+    "value": [
+      "Cameras (video and still; ACME 12-bit camera with CH* and 430/450 nm bandpass filters)",
+      "Radiometers",
+      "Photomultiplier tubes",
+      "Thermocouples"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, approach: spherical diffusion flame tests in drop towers and aboard the ISS; a broad range of reactant dilutions, flow rates and pressures for normal and inverse convection directions."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME overview PDF: ACME spherical flames are created with a porous spherical burner that issues a fuel/inert gas mixture into the CIR chamber; ACME runs are commanded from the ground (Glenn TSC)."
+      }
+    ],
+    "note": "PSI approach names a broad suite of cameras, radiometers, photomultiplier tubes and thermocouples; the ACME overview PDF gives the camera/filter detail. PSI keywords also mention thin-filament pyrometry."
+  },
+  "relevance_notes": {
+    "value": "Not a fire-safety test itself, but foundational for it: microgravity soot inception, radiative vs kinetic extinction and 'pseudo-flammability limits' of gaseous diffusion flames. The brief groups ACME gas-flame work with PSI combustion investigations relevant to fire safety, though 'not as strongly or directly'.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, objective: soot-inception limits, detailed measurements and extinction limits of quasi-steady normal and inverse spherical diffusion flames for ethylene and methane, as functions of flow rate, Zst, inert (N2 or CO2) amount and pressure."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Other investigations in PSI': other PSI combustion investigations are still relevant to fire safety, just not as strongly or directly."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Improved efficiency and reduced pollutant emissions in terrestrial combustors",
+      "Novel designs of future coal power plants"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "data/source/psi/PSI-10.json",
+        "note": "PSI-10 local record, researchImpacts: potential to improve efficiency and reduce pollutant emissions in terrestrial combustors, including novel designs of future coal power plants."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "The kinetics and warm flame chemistry associated with radiative extinction of spherical diffusion flames",
+      "url": "https://doi.org/10.1080/13647830.2024.2326830"
+    },
+    {
+      "title": "The effects of elevated pressure on the kinetics and extinction of hot, warm, and cool gaseous ethylene spherical diffusion flames",
+      "url": "https://doi.org/10.1016/j.proci.2024.105400"
+    },
+    {
+      "title": "On the existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss",
+      "url": "https://doi.org/10.1016/j.proci.2022.07.049"
+    },
+    {
+      "title": "Critical temperature and reactant mass flux for radiative extinction of ethylene microgravity spherical diffusion flames at 1 bar",
+      "url": "https://doi.org/10.1016/j.proci.2022.07.043"
+    },
+    {
+      "title": "Observations of long duration microgravity spherical diffusion flames aboard the International Space Station",
+      "url": "https://doi.org/10.1016/j.combustflame.2021.02.019"
+    },
+    {
+      "title": "Structure and extinction of spherical burner-stabilized diffusion flames that are attached to the burner surface",
+      "url": "https://doi.org/10.1016/j.combustflame.2017.08.024"
+    },
+    {
+      "title": "Radiative extinction of gaseous spherical diffusion flames in microgravity",
+      "url": "https://doi.org/10.1016/j.combustflame.2007.08.009"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "o2_percent and pressure_psi are left as seed (unknown) on purpose: scripts/psi_apply_conditions.py overwrites them from data/source/psi/tables/conditions.json, which has a PSI-10 entry. Not hand-edited (AGENTS.md rule 11).",
+      "Fuel conflict: the PSI objective names ethylene (C2H4) and methane (CH4); the per-test experimental tables list ethylene (C2H4) and propane (C3H8). Both are recorded at confidence medium rather than picking one silently.",
+      "airflow is unknown: the PSI tables report reactant mass flow rates in mg/s, not a chamber airflow velocity, so no airflow value was recorded.",
+      "gravity_g = 0 g is taken from PSI Project Type 'Microgravity Investigation' plus the drop-tower/ISS approach; no partial-gravity claim is made.",
+      "All PSI facts come from the local files (data/source/psi/PSI-10.json, PSI-10.search.json, tables/PSI-10.csv and PSI-10_2.csv). No psi.nasa.gov page was loaded. The one web fetch was the NASA ACME project overview PDF, which describes ACME generally, not Flame Design tests specifically.",
+      "Data files not downloaded: the record lists 3,807 files totalling about 2.18 TB; only names, counts, formats and sizes were recorded.",
+      "share of sourced fields: 15/18 (o2_percent, pressure_psi and airflow are unknown)."
+    ]
+  },
+  "psi_accession": "PSI-10",
+  "project_type": "Microgravity"
+}

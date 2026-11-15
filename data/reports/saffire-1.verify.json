@@ -1,0 +1,181 @@
+{
+  "id": "saffire-1",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps saffire-1 to PSI-98; extracted id matches seed id.",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 title is 'Spacecraft Fire Experiment (Saffire)'; extracted name is a reasonable descriptive variant.",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "Common aliases for Saffire-I; no authoritative list but all are plausible and used in literature.",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "Schema enum includes 'saffire'; investigation is part of the Saffire series.",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "Saffire-I flew on OA-6 in 2016; 'flown' is correct.",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 exists in local PSI data; psi-map.json confirms mapping.",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI investigation URL pattern for PSI-98.",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 approach: 'performed on the Orbital Science's Cygnus resupply vehicle after it deberthed from the ISS'; flightProgram ISS. NASA page confirms OA-6/CRS-6 carrier.",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 objective matches extracted text almost verbatim: determine large-scale fire growth in low-g and low-g flammability limits vs normal-g screening test.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 researchImpacts: 'help to validate NASA's material selection criteria' (prevention). Brief groups Saffire under prevention/material selection. Medium confidence appropriate given proposal title mentioned detection but flown experiment is flammability.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 approach: 'composite fabric called Sibal'; CSV: 'SIBAL Fabric'; Brief: Saffire studies solid materials (fabrics, plastics).",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 approach: 'Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight)'; CSV: 'SIBAL Fabric'.",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "partly",
+      "evidence_note": "PSI-98 approach: 'approximately 0.94 meters long and 0.4 meters wide' (94 cm x 40 cm). CSV: length 40.6 cm, width 94 cm (axes transposed). Extracted record follows approach text. Thickness 0.37 cm matches CSV. Minor discrepancy in length/width orientation noted in review.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 experimentHardware: 'Saffire 1 enclosure in Cygnus'; approach describes Cygnus vehicle after ISS departure.",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 approach: sample card in large flow duct, fans at top, flow straighteners at bottom, two cameras.",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "contradicted",
+      "evidence_note": "Extracted record lists ['saffire-2', 'saffire-3', 'bass']. SAFFIRE-II and III also used Cygnus vehicles (different missions), so they share apparatus concept. BASS used Microgravity Science Glovebox (MSG) with SPICE flow duct on ISS — completely different hardware. No source supports BASS sharing hardware with Saffire.",
+      "correction": ["saffire-2", "saffire-3"]
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-98.csv: Sample 1 O2 '21.5 - 21.7', Sample 2 '~ 21.5'. Extracted min 21.5, max 21.7 correctly captures range across tests.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-98.csv has no pressure column. PSI-98 approach mentions pressure sensor but gives no value. No other source provides pressure. Correctly left null with unknown confidence.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-98.csv: both samples show Air Flow 20 cm/s. Extracted min=max=20 cm/s correct.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 projectType: 'Microgravity Investigation'; experiment runs on uncrewed Cygnus after ISS departure. Microgravity (~0 g) correct.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "partly",
+      "evidence_note": "Extracted value ['nitrogen'] with confidence 'inferred'. PSI-98.csv shows ~21.5% O2 (air-like). No source explicitly names nitrogen as diluent; inference from air composition is reasonable but not directly stated. Confidence 'inferred' is appropriate.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-98.csv: Sample 1 Flow Direction 'Concurrent', Sample 2 'Opposed'. PSI-98 approach mentions two cameras per test (S1C1/S1C2, S2C1/S2C2) i.e. two runs differing in flow direction.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "PSI-98.csv: S1 and S2 share material (SIBAL Fabric), thickness (0.37 cm), dimensions (40.6 x 94 cm), air flow (20 cm/s), O2 (~21.5%), ignition power (182 W) and time (8 s). Only flow direction differs.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 approach lists: two cameras; thermocouples for flow, flame, plume temperature; two radiometers for flame radiation; solid-state sensors for pressure, CO2, O2 mole fraction; two anemometers for flow velocity. ResearchImpacts confirms oxygen, CO2, heat, pressure, flame growth measurements and two video cameras.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Consistent with PSI-98 objective/approach and challenge brief description of Saffire as solid-material flammability study for prevention.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 researchImpacts: 'studying fire in small sealed environments such as the Cygnus cargo vehicle benefits fire safety and prevention on Earth, including inside mines, airplanes or submarines' and 'help to validate NASA's material selection criteria'.",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "Extracted 6 publications match PSI-98 publications list exactly (same titles, DOIs where present).",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps saffire-1 to PSI-98; PSI-98.json accession is PSI-98.",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-98 projectType: 'Microgravity Investigation'; simplified to 'Microgravity' per schema enum.",
+      "correction": null
+    }
+  ],
+  "summary": "Record is well-sourced from PSI-98.json and PSI-98.csv. One contradiction: hardware.shared_with incorrectly includes 'bass' (BASS used MSG/SPICE on ISS, not Cygnus). Correction applied: shared_with should be ['saffire-2', 'saffire-3'] only. Fuel geometry has minor axis discrepancy between approach text and CSV (noted in review). Diluent inference is reasonable but not directly stated. All other fields supported."
+}

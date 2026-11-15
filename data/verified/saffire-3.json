@@ -1,0 +1,331 @@
+{
+  "id": "saffire-3",
+  "name": "Spacecraft Fire Safety Demonstration (Saffire-III)",
+  "aliases": [
+    "Saffire-III",
+    "SAFFIRE III",
+    "SAFFIRE-III",
+    "Spacecraft Fire Experiment-III"
+  ],
+  "family": "saffire",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+  "platform": {
+    "value": "Cygnus cargo vehicle (Orbital ATK CRS OA-7), free-flying after departing the ISS",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 approach: the Saffire-III experiments were performed on the Orbital ATK Cygnus resupply vehicle after it deberthed from the ISS."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+        "note": "NASA Saffire overview: Saffire-III launched 18 April 2017 on Orbital ATK's seventh commercial resupply mission and was ignited after the Cygnus module departed the station, before destructive reentry."
+      }
+    ],
+    "note": "Crew are absent; the fire burns in the uncrewed, free-flying Cygnus after it leaves the ISS. PSI lists the flight platform as ISS (the cargo vehicle's origin), not the burn location."
+  },
+  "objective": {
+    "value": "Determine how rapidly a large-scale fire grows in low gravity and investigate low-gravity flammability limits compared with NASA's normal-gravity material flammability screening test",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 Objectives field states the two objectives: how fast a large-scale fire grows in low gravity, and the low-g flammability limits versus normal-gravity screening."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: flammability studies of solid materials (BASS/BASS-II/Saffire) inform prevention through material selection and flammability limits."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100: results determine microgravity flammability limits for spacecraft materials and help validate NASA's material selection criteria (prevention)."
+      }
+    ],
+    "note": "Brief groups Saffire under prevention/material selection; PSI confirms the flammability-limits and material-selection framing."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 approach: Saffire-III used SIBAL as the sample material (a solid fabric)."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+        "note": "NASA Saffire overview: Saffire-III tested the same cotton-fiberglass blend (a solid cloth) burned in Saffire-I, at a higher flow velocity."
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "SIBAL cloth (composite of about 75% cotton and 25% fiberglass)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 approach and experimental table name the sample material as 'SIBAL fabric'."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+        "note": "NASA Saffire overview describes SIBAL cloth as a composite of 75% cotton and 25% fiberglass."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20150000894/downloads/20150000894.pdf",
+        "note": "NASA Saffire plan (NTRS 20150000894): the Saffire I and III samples are 40.6 cm by 94.0 cm of cotton/fiberglass blend (Sibal cloth), 75% cotton by weight."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Thin flat sheet, 94 cm long x 40.6 cm wide x 0.33 cm thick",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 experimental table (PSI-100_Experimental table_SAFFIRE-3.csv): samples S1 and S2 are SIBAL fabric, thickness .33 cm, length 94 cm, width 40.6 cm."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/api/citations/20150000894/downloads/20150000894.pdf",
+        "note": "NASA Saffire plan gives the Saffire I/III sample as 40.6 cm by 94.0 cm, consistent with the PSI table dimensions."
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Cygnus cargo vehicle (uncrewed, after ISS departure)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+          "note": "PSI-100 approach: experiments performed on the Cygnus resupply vehicle after it deberthed from the ISS."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+          "note": "NASA Saffire overview: experiments ignited in a Cygnus cargo vehicle after it completed its ISS supply mission and before destructive reentry."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Saffire III experiment enclosure in the Cygnus vehicle (flow duct and avionics bay)",
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+          "note": "PSI-100 experimentHardware names the hardware 'Saffire III enclosure in Cygnus'."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+          "note": "NASA Saffire overview describes the Saffire-I enclosure as about 0.5 m wide by 1 m deep by 1.3 m long, consisting of a flow duct and avionics bay."
+        }
+      ],
+      "note": "PSI names the Saffire-III enclosure; the flow-duct plus avionics-bay description is given for the Saffire family (stated for Saffire-I), so it is not confirmed as identical for Saffire-III."
+    },
+    "shared_with": [
+      "saffire-1",
+      "saffire-2"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 21,
+        "max": 21,
+        "unit": "%"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf",
+          "note": "ICES-2021-266 Table 2 lists Saffire-III sample III-1 at 21% oxygen concentration."
+        }
+      ],
+      "note": "Only one Saffire-III condition is reported (flight sample III-1); the PSI experimental table has no oxygen column."
+    },
+    "pressure_psi": {
+      "value": {
+        "min": 14.5,
+        "max": 14.5,
+        "unit": "psi"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf",
+          "note": "ICES-2021-266 Table 2 lists Saffire-III sample III-1 at an ambient pressure of 100 kPa. Converted to psi for this field (100 kPa = 14.5 psi)."
+        }
+      ],
+      "note": "Converted from 100 kPa to 14.5 psi; the source reports pressure in kPa, not psi."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "reset by verifier: PSI-100 approach and experimental table state 30 cm/s, but ICES-2021-266 Table 2 (peer-reviewed flight results) lists Saffire-III sample III-1 at 25 cm/s. Two credible primary sources conflict; no basis to prefer one."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+          "note": "PSI-100 Project Type is 'Microgravity Investigation'; the experiment burned in the free-flying Cygnus in orbit."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+          "note": "NASA Saffire overview frames Saffire as studying fire behavior in microgravity aboard the orbiting Cygnus vehicle."
+        }
+      ],
+      "note": "Microgravity approximated as 0 g (free fall in orbit)."
+    },
+    "diluents": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "reset by verifier: recorded as nitrogen with confidence inferred from 21% O2 air-like atmosphere, but no source (PSI, NASA PDF, ICES paper, NTRS plan) explicitly states the diluent for Saffire-III."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Flow direction relative to the sample (concurrent vs opposed)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 experimental table: sample S1 tested in concurrent flow and S2 in opposed flow; approach states the flow was either concurrent or opposed."
+      }
+    ],
+    "note": "Within Saffire-III the two tests differ in flow direction; the PSI approach also contrasts Saffire-III with Saffire-I (30 vs 20 cm/s)."
+  },
+  "held_constant": {
+    "value": [
+      "Sample material (SIBAL cloth)",
+      "Sample dimensions (94 cm x 40.6 cm x 0.33 cm)",
+      "Flow velocity (30 cm/s)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 experimental table: both samples use SIBAL fabric with identical thickness, length, width and air flow (30 cm/s); only direction differs."
+      }
+    ]
+  },
+  "sensors": {
+    "value": [
+      "Thermocouples (flow, flame and plume temperatures)",
+      "Two radiometers (flame radiation)",
+      "Solid-state sensors (pressure, CO2 and O2 mole fraction)",
+      "Two anemometers (flow velocity)",
+      "Two video cameras (flame imaging)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 approach lists thermocouples, two radiometers, solid-state pressure/CO2/O2 sensors, two anemometers, and two cameras capturing flame images."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Named in the brief as a solid-material flammability study for fire prevention/material selection. PSI states Saffire-III measures large-scale microgravity fire growth and low-g flammability limits to validate NASA's material selection criteria, making it directly relevant to habitable-crew-environment fire safety.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I, -II, -III)."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 objective and research impacts: large-scale fire growth and low-g flammability limits to validate material selection criteria for spacecraft fire safety."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Fire safety and prevention in confined spaces on Earth such as mines, airplanes and submarines"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+        "note": "PSI-100 Research Impacts/Earth Benefits: studying fire in small sealed environments like the Cygnus benefits fire safety and prevention on Earth, including inside mines, airplanes or submarines."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Fire Safety Implications of Preliminary Results from Saffire IV and V Experiments on Large Scale Spacecraft Fires (ICES-2021-266)",
+      "url": "https://ntrs.nasa.gov/api/citations/20210011521/downloads/ICES%202021-266%200503-2021%20final.pdf"
+    },
+    {
+      "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire), 46th International Conference on Environmental Systems (2016)",
+      "url": "https://ntrs.nasa.gov/citations/20170000230"
+    },
+    {
+      "title": "Spacecraft Fire Safety Demonstration: Saffire I-III flight plan poster (NTRS 20150000894)",
+      "url": "https://ntrs.nasa.gov/api/citations/20150000894/downloads/20150000894.pdf"
+    },
+    {
+      "title": "Spacecraft Fire Experiment-III (Saffire-III) PSI dataset",
+      "url": "https://doi.org/10.60555/040q-4h36"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T15:06:40Z",
+    "notes": [
+      "Airflow field reset: PSI-100 says 30 cm/s but ICES-2021-266 Table 2 reports 25 cm/s for flight sample III-1. Two credible primary sources conflict; no basis to prefer one.",
+      "Diluents field reset: recorded as nitrogen (inferred from 21% O2 air-like atmosphere) but no source explicitly states the diluent for Saffire-III.",
+      "Apparatus description partly borrowed from Saffire-I NASA PDF (flow duct and avionics bay); PSI only names 'Saffire III enclosure in Cygnus'.",
+      "O2 (21%) and pressure (100 kPa -> 14.5 psi) for Saffire-III come from ICES-2021-266 Table 2 (sample III-1); PSI experimental table has no oxygen or pressure columns. Pressure converted from kPa to psi.",
+      "Gravity approximated as 0 g from PSI project type (Microgravity Investigation) and orbiting Cygnus platform.",
+      "Status set to verified by human ruling (2026-11-15): the verifier corrected or reset its contradicted field, so no contradiction remains in this record."
+    ]
+  },
+  "psi_accession": "PSI-100",
+  "project_type": "Microgravity"
+}

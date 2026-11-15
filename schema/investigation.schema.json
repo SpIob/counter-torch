@@ -1,0 +1,582 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flame-atlas.local/schema/investigation.schema.json",
+  "title": "Flame Atlas investigation record",
+  "description": "One combustion investigation. Every extracted field is wrapped as {value, confidence, sources}. If a field cannot be supported by a source, value is null and confidence is 'unknown' - never guess. Schema version 0.1.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "aliases",
+    "family",
+    "status",
+    "in_psi",
+    "psi_url",
+    "platform",
+    "objective",
+    "safety_functions",
+    "fuel_phase",
+    "fuel_materials",
+    "fuel_geometry",
+    "hardware",
+    "conditions",
+    "variables_swept",
+    "held_constant",
+    "sensors",
+    "relevance_notes",
+    "earth_applications",
+    "publications",
+    "review"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "family": {
+      "enum": [
+        "acme",
+        "mdca",
+        "msg",
+        "saffire",
+        "same",
+        "daft",
+        "other"
+      ]
+    },
+    "status": {
+      "enum": [
+        "flown",
+        "active",
+        "planned"
+      ],
+      "description": "active = listed by NASA as flight/active; data may not be in PSI yet"
+    },
+    "in_psi": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "null = presence in PSI not yet confirmed"
+    },
+    "psi_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "platform": {
+      "$ref": "#/$defs/sourced_string"
+    },
+    "objective": {
+      "$ref": "#/$defs/sourced_string"
+    },
+    "safety_functions": {
+      "$ref": "#/$defs/sourced_safety_functions"
+    },
+    "fuel_phase": {
+      "$ref": "#/$defs/sourced_fuel_phase"
+    },
+    "fuel_materials": {
+      "$ref": "#/$defs/sourced_string_list"
+    },
+    "fuel_geometry": {
+      "$ref": "#/$defs/sourced_string"
+    },
+    "hardware": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "facility",
+        "apparatus",
+        "shared_with"
+      ],
+      "properties": {
+        "facility": {
+          "$ref": "#/$defs/sourced_string"
+        },
+        "apparatus": {
+          "$ref": "#/$defs/sourced_string"
+        },
+        "shared_with": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          }
+        }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "o2_percent",
+        "pressure_psi",
+        "airflow",
+        "gravity_g",
+        "diluents"
+      ],
+      "properties": {
+        "o2_percent": {
+          "$ref": "#/$defs/sourced_range"
+        },
+        "pressure_psi": {
+          "$ref": "#/$defs/sourced_range"
+        },
+        "airflow": {
+          "$ref": "#/$defs/sourced_range"
+        },
+        "gravity_g": {
+          "$ref": "#/$defs/sourced_range"
+        },
+        "diluents": {
+          "$ref": "#/$defs/sourced_string_list"
+        }
+      }
+    },
+    "variables_swept": {
+      "$ref": "#/$defs/sourced_string_list"
+    },
+    "held_constant": {
+      "$ref": "#/$defs/sourced_string_list"
+    },
+    "sensors": {
+      "$ref": "#/$defs/sourced_string_list"
+    },
+    "relevance_notes": {
+      "$ref": "#/$defs/sourced_string"
+    },
+    "earth_applications": {
+      "$ref": "#/$defs/sourced_string_list"
+    },
+    "publications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "extracted_by",
+        "verified_by",
+        "verified_at",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "seed",
+            "extracted",
+            "verified",
+            "disputed"
+          ]
+        },
+        "extracted_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "psi_accession": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^PSI-[0-9]+$",
+      "description": "PSI accession id such as PSI-69; null if no PSI record is known"
+    },
+    "project_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Microgravity",
+        "Ground",
+        "Reduced Gravity",
+        null
+      ],
+      "description": "PSI Project Type, simplified from 'Microgravity Investigation' / 'Ground Investigation'; null if unknown"
+    }
+  },
+  "$defs": {
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "inferred",
+        "unknown"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "url",
+        "note"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "brief",
+            "psi",
+            "publication",
+            "nasa_page",
+            "other"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 400,
+          "description": "Short PARAPHRASE of what the source says. Do not paste long quotes."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "not": {
+                  "const": "brief"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "url": {
+                "type": "string",
+                "minLength": 8
+              }
+            }
+          }
+        }
+      ]
+    },
+    "provenance_rules": {
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "then": {
+            "properties": {
+              "confidence": {
+                "const": "unknown"
+              },
+              "sources": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            },
+            "required": [
+              "value"
+            ]
+          },
+          "then": {
+            "properties": {
+              "confidence": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low",
+                  "inferred"
+                ]
+              },
+              "sources": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max",
+        "unit"
+      ],
+      "properties": {
+        "min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        }
+      }
+    },
+    "sourced_string": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "confidence",
+        "sources"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/provenance_rules"
+        }
+      ]
+    },
+    "sourced_string_list": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "confidence",
+        "sources"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/provenance_rules"
+        }
+      ]
+    },
+    "sourced_safety_functions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "confidence",
+        "sources"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "enum": [
+              "prevention",
+              "detection",
+              "suppression",
+              "fundamental"
+            ]
+          }
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/provenance_rules"
+        }
+      ]
+    },
+    "sourced_fuel_phase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "confidence",
+        "sources"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "solid",
+            "gas",
+            "liquid_droplet",
+            "mixed",
+            null
+          ]
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/provenance_rules"
+        }
+      ]
+    },
+    "sourced_range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "confidence",
+        "sources"
+      ],
+      "properties": {
+        "value": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/range"
+            }
+          ]
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/provenance_rules"
+        }
+      ]
+    }
+  }
+}

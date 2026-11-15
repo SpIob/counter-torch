@@ -1,0 +1,370 @@
+{
+  "id": "acme-bre",
+  "name": "ACME Burning Rate Emulator (BRE)",
+  "aliases": [
+    "BRE",
+    "Burning Rate Emulator",
+    "ACME BRE"
+  ],
+  "family": "acme",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+  "psi_accession": "PSI-20",
+  "project_type": "Microgravity",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 detail record (local JSON): flightProgram 'International Space Station (ISS)'."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Establish the burning conditions of condensed-phase fuels in a quiescent microgravity ambient as a function of material properties. Gaseous fuels (CH4/N2 and C2H4/N2) burn on porous circular burners of 25 and 50 mm diameter; O2/N2 ambients are examined across a range of pressures and oxygen concentrations, including the NASA-considered habitat atmospheres 14.7 psia at 21% O2, 10.2 psia at 26.5% O2 and 8.2 psia at 34% O2, with O2/CO2 ambients also desired, and extinction limits are determined.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 objective: wants to establish burning conditions in a quiescent microgravity ambient in terms of material properties, lists CH4/N2 and C2H4/N2 on 25 and 50 mm porous circular burners, the three NASA atmospheres, O2/CO2 (desired) and extinction limits."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME one-pager: unlike the other ACME experiments, BRE is focused on fire prevention, especially in spacecraft, to understand materials flammability and flammability test methods."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Other investigations in PSI': BRE was a study of materials flammability."
+      }
+    ],
+    "note": "Fire prevention via material selection / flammability screening."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 sub-research area 'Flames of Gaseous Fuels'; objective names gaseous CH4/N2 and C2H4/N2 fuels."
+      }
+    ],
+    "note": "The actual fuel is gaseous. BRE emulates the burning of solid and liquid (condensed-phase) fuels with a gaseous fuel on a porous burner."
+  },
+  "fuel_materials": {
+    "value": [
+      "methane (CH4)",
+      "ethylene (C2H4)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 objective names CH4/N2 and C2H4/N2 mixtures; the experimental table lists 100% C2H4, 50% C2H4 and 100% CH4 fuel bottles."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "ACME one-pager: a small number of gaseous fuels simulate burning of fuels such as paper, plastic and alcohol by matching surface temperature and smoke production."
+      }
+    ],
+    "note": "Fuels are the gases methane and ethylene (sometimes diluted with nitrogen). These emulate condensed fuels; paper/plastic/alcohol are the emulated analogues, not the actual fuel."
+  },
+  "fuel_geometry": {
+    "value": "Flat porous circular burner, 25 mm and 50 mm diameters, fed with gaseous fuel to emulate condensed-phase burning.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 objective: porous circular burners of 25 and 50 mm diameter; the experimental table lists Burner Size (mm) 25 and 50."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "ACME one-pager: BRE simulates solid and liquid fuel burning with a flat porous burner fed with gaseous fuel."
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 experimentHardware: 'Combustion Integrated Rack (CIR), ACME'."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': the six ACME experiments were conducted with the same modular hardware in the CIR."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "ACME modular hardware set: chamber insert with a flat porous burner (two heat-flux transducers and a surface thermocouple), a retracting resistively heated igniter, three mass flow controllers for fuel/oxidizer/inert/nitrogen, and an ACME avionics package.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 experimentHardware: ACME inert replaced the modular ACME hardware in the CIR."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+          "note": "ACME one-pager 'Burners and Igniter' / 'Gas Delivery': each BRE burner has two heat-flux transducers, most burners a surface thermocouple, internal porous-burner pressure is measured, and there are three mass flow controllers."
+        }
+      ]
+    },
+    "shared_with": [
+      "acme-cld-flame",
+      "acme-e-field",
+      "acme-s-flames",
+      "acme-cfi-g",
+      "acme-flame-design"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 21.0,
+        "max": 40.0,
+        "unit": "%"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI PSI-20 experimental table PSI-20_Experimental table_ACME BRE.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 18 test rows of PSI-20_Experimental table_ACME BRE.csv, columns: Oxygen Conc (percent). Computed by scripts/psi_table_summary.py (initial conditions only). Check: Oxygen Conc (percent): as given; 2 value(s) dropped as impossible/ambiguous, e.g. 3400, 2100"
+    },
+    "pressure_psi": {
+      "value": {
+        "min": 8.2,
+        "max": 14.7,
+        "unit": "psi"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 objective: NASA-considered habitat atmospheres to be examined are 14.7 psia/21% O2, 10.2 psia/26.5% O2 and 8.2 psia/34% O2."
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 experimental table note: chamber pressures were also varied but are not identified in the summary table."
+        }
+      ],
+      "note": "Range spans the three stated NASA atmospheres (8.2 to 14.7 psia). Medium confidence: the objective states these as the atmospheres to be examined and the summary table does not list per-test pressures."
+    },
+    "airflow": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "cm/s"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 approach/objective describe burning in a quiescent microgravity ambient (no imposed flow)."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: BRE was a study of materials flammability in still atmospheres."
+        }
+      ],
+      "note": "Recorded as 0 cm/s (no imposed flow). The PSI-20 experimental table has no flow column, so this field is not script-overwritten. Quiescent ambient means no forced ventilation, not a measured zero velocity field."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 projectType is 'Microgravity Investigation'; the tests ran aboard the ISS."
+        }
+      ],
+      "note": "Microgravity (~0 g) aboard the ISS."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)",
+        "carbon dioxide (CO2)"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+          "note": "PSI-20 objective: O2/N2 ambients with various pressures and O2 concentrations are examined, and the conditions are also to be considered for O2/CO2 ambients (desired)."
+        }
+      ],
+      "note": "Nitrogen diluent is used in the tested O2/N2 ambients (the table's oxygen concentrations are quoted as diluted with nitrogen); the O2/CO2 case is stated only as desired/planned."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Oxygen concentration (about 21% to 40%)",
+      "Chamber pressure",
+      "Diluent (nitrogen vs carbon dioxide)",
+      "Fuel type (methane vs ethylene)",
+      "Fuel dilution with nitrogen (100% vs 50% ethylene)",
+      "Burner diameter (25 vs 50 mm)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 experimental table: tests vary burner size (25/50 mm), fuel bottle (100% C2H4, 50% C2H4, 100% CH4) and oxygen concentration (listed 21, 25, 26.5, 34, 40%), and the table note says pressures were varied too."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 objective: various pressures and ambient O2 concentrations, with diluent choice (N2 vs CO2) and fuel mixtures varied."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Quiescent ambient (no imposed airflow / no forced ventilation)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 approach: for each test the chamber contents are set (diluent, O2 concentration, pressure) and the flame is observed without changing the fuel flow rate; the ambient is quiescent."
+      }
+    ],
+    "note": "The ambient is held quiescent across tests. Fuel flow is not strictly constant: it is controlled from the measured burner heat flux and surface temperature to emulate condensed-phase vaporization, and is stepped down to find extinction."
+  },
+  "sensors": {
+    "value": [
+      "Heat-flux transducers at the burner (two per BRE burner)",
+      "Burner surface thermocouple",
+      "Porous-burner internal pressure measurement",
+      "Chamber pressure",
+      "Radiometers (thermopile detector array)",
+      "Color video cameras (high-definition digital and analog)",
+      "Gas chromatograph for chamber-atmosphere analysis (O2, N2, CO2, CO, fuel gases)",
+      "SAMS-II acceleration measurement"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "ACME one-pager: each BRE burner has two heat-flux transducers, burners carry a surface thermocouple and internal pressure measurement; ACME uses radiometers, color/CH*/OH* cameras, a gas chromatograph and SAMS-II acceleration measurement."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 approach: burner surface temperature and heat flux are measured, with a heat-flux sensor having a temperature limit."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Named in the challenge brief as a materials-flammability investigation even though it burned gaseous fuel. BRE is the one ACME experiment focused on spacecraft fire prevention: it observed quasi-steady burning of condensed-fuel analogues (e.g. PMMA, Nylon) in microgravity even with no air flow, notably in elevated-oxygen atmospheres, and assesses whether existing material flammability test methods are valid for low and partial gravity.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Other investigations in PSI': BRE studied materials flammability in still atmospheres as a function of material properties."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 researchImpacts: quasi-steady burning of condensed-phase materials (PMMA, Nylon) in microgravity without air flow, ongoing combustion in elevated-oxygen atmospheres while the 21% O2 case self-extinguished."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Improved material flammability screening: BRE results suggest increased use of a cone calorimeter (NASA Test 2) to measure material properties matching the microgravity flames."
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+        "note": "PSI-20 researchImpacts: BRE results suggest NASA may want to increase use of its alternative flammability Test 2 with the cone calorimeter."
+      }
+    ],
+    "note": "Inferred: the cone calorimeter cited in the impacts is an Earth fire-test instrument, so the recommendation implies a terrestrial material-testing benefit; the impacts text itself frames the benefit for spacecraft."
+  },
+  "publications": [
+    {
+      "title": "Burning in microgravity: Experimental results and analysis",
+      "url": "https://doi.org/10.1016/j.combustflame.2021.01.035"
+    },
+    {
+      "title": "A Burning Rate Emulator (BRE) for study of condensed fuel burning in microgravity",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.01.044"
+    },
+    {
+      "title": "Emulation of condensed fuel flames with gases in microgravity",
+      "url": "https://doi.org/10.1016/j.combustflame.2015.05.005"
+    },
+    {
+      "title": "Flammability maps for microgravity burning of a small flat material in a quiescent ambient",
+      "url": "https://doi.org/10.1016/j.combustflame.2023.112809"
+    },
+    {
+      "title": "Demonstrating steady burning for small flat materials in microgravity in a quiescent ambient",
+      "url": "https://doi.org/10.1016/j.proci.2022.08.107"
+    },
+    {
+      "title": "Emulation of condensed fuel flames with gaseous fuels supplied through a porous copper calorimeter",
+      "url": "https://doi.org/10.1002/fam.2896"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Local PSI sources used: data/source/psi/PSI-20.json, PSI-20.search.json and the conditions table data/source/psi/tables/PSI-20.csv. No psi.nasa.gov page was fetched (JavaScript), so none is claimed.",
+      "conditions.o2_percent is left at the seed value (null) on purpose: the PSI-20 table has an 'Oxygen Conc (percent)' column, so scripts/psi_apply_conditions.py overwrites it (table min 21%, max 40%). The raw table also contains two impossible values, 3400% and 2100%, which are data-entry errors.",
+      "conditions.pressure_psi is recorded from the PSI-20 objective (three NASA atmospheres, 8.2-14.7 psia); medium confidence because the summary table states pressures were varied but does not list them per test.",
+      "conditions.airflow is recorded as 0 cm/s (quiescent ambient). The PSI-20 table has no flow column, so it is not script-overwritten; treat 0 as 'no imposed flow', not a measured field.",
+      "Data files: PSI-20 lists one file, 'PSI-20_Experimental table_ACME BRE.csv' (1,113 bytes); a metadata asset 'PSI-20_metadata_PSI-96_ACME BRE.zip' is also listed. PSI reports totalFileSize about 2,035,568,427,496 bytes (~2 TB) for the investigation; nothing was downloaded.",
+      "The ACME NASA one-pager calls ACME 'five' then 'six' independent experiments; the brief says six. shared_with lists all five other ACME experiments including acme-flame-design (PSI-10).",
+      "Partial gravity: the ACME one-pager says BRE assesses flammability test methods for low AND partial-gravity environments, but PSI-20 is a Microgravity (0 g) investigation and PSI holds no partial-gravity combustion data; gravity_g is 0 g and no partial-gravity value is implied.",
+      "publications: the first six of the 16 entries in the PSI-20 record were recorded with their DOI links; the rest were omitted only for brevity, not for lack of source."
+    ]
+  }
+}

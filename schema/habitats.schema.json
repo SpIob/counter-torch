@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flame-atlas.local/schema/habitats.schema.json",
+  "title": "Flame Atlas habitat profiles",
+  "description": "Target environments the Coverage Map and Scenario Ranker compare investigations against. A null range means 'not specified in the challenge brief' and must be filled or left null - never guessed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "habitats"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "habitats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "o2_percent", "pressure_psi", "gravity_g", "basis"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$" },
+          "name": { "type": "string" },
+          "o2_percent": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/range" }] },
+          "pressure_psi": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/range" }] },
+          "gravity_g": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/range" }] },
+          "basis": { "type": "string", "description": "Where each number comes from (brief vs general reference value)." }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max", "unit"],
+      "properties": {
+        "min": { "type": ["number", "null"] },
+        "max": { "type": ["number", "null"] },
+        "unit": { "type": "string" }
+      }
+    }
+  }
+}

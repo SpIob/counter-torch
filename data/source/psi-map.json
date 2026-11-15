@@ -1,0 +1,43 @@
+{
+ "_note": "Seed id -> PSI accession. Confirmed means the search record's Acronym or title matches. Source: psi-search.json, Nov 14. Ground = Earth-gravity (AGENTS.md rule 9).",
+ "map": {
+  "acme-bre": "PSI-20",
+  "acme-cld-flame": "PSI-21",
+  "acme-e-field": "PSI-22",
+  "acme-s-flames": "PSI-23",
+  "acme-cfi-g": "PSI-159",
+  "acme-flame-design": "PSI-10",
+  "flex": "PSI-69",
+  "flex-2": "PSI-68",
+  "cfi": "PSI-39",
+  "bass": "PSI-26",
+  "bass-2": "PSI-25",
+  "spice": "PSI-107",
+  "slice": "PSI-106",
+  "saffire-1": "PSI-98",
+  "saffire-2": "PSI-99",
+  "saffire-3": "PSI-100",
+  "same": "PSI-102",
+  "same-r": "PSI-101",
+  "daft": "PSI-47"
+ },
+ "new_ids_to_create": {
+  "acme-flame-design": "PSI-10 (the sixth ACME experiment; no seed record yet)",
+  "psi-60": "PSI-60 SPICE data analysis, Ground",
+  "psi-62": "PSI-62 flame spread modeling, Ground",
+  "psi-115": "PSI-115 use of SAME data, Ground",
+  "psi-117": "PSI-117 cool flame perturbation, Ground",
+  "psi-142": "PSI-142 cool flame transitions, Ground"
+ },
+ "no_psi_match_yet": [
+  "bass-m",
+  "sofie",
+  "flare",
+  "luci",
+  "fm2"
+ ],
+ "out_of_scope": {
+  "PSI-108": "Fluid Physics (STDCE-1)",
+  "PSI-181": "Materials Science (solders)"
+ }
+}

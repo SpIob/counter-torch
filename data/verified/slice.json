@@ -1,0 +1,345 @@
+{
+  "id": "slice",
+  "name": "Structure & Liftoff In Combustion Experiment (SLICE)",
+  "aliases": [
+    "SLICE"
+  ],
+  "family": "msg",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 local record (PSI-106.json): flightProgram 'International Space Station (ISS)'; search record 'Flight Platform: International Space Station (ISS)'."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA SLICE one-pager: SPICE hardware (used by SLICE) is onboard the ISS."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Understand the structure and stability of laminar diffusion (non-premixed) flames in microgravity: characterize the flame base as it goes from attached to lifted, determine liftoff velocity limits for different fuels and burner diameters, evaluate nitrogen fuel dilution effects on soot and stability, and validate numerical models of flame dynamics, soot and radiation.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 objective field lists five specific aims: flame-base structure, liftoff velocity limits, nitrogen-dilution effects on soot/stability, microgravity vs normal-gravity flame length and heat loss, and model validation."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA page states two objectives: characterize flame structure (especially the stabilizing base) from attached to lifted, and identify liftoff velocity limits vs fuel and burner diameter."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI researchImpacts: 'Insights into flame stability and behavior to enhance fire safety.'"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA page: flame attachment/detachment 'is of essential importance in both combustion systems and fire safety'."
+      }
+    ],
+    "note": "Classed as fundamental: SLICE is a flame-structure/liftoff study and precursor to ACME CLD Flame. No source labels it prevention, detection or suppression; the fire-safety link (flame stability) is indirect."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 approach: 'several fuels such as methane, ethylene, and nitrogen-diluted mixtures'; hypothesis mentions fuel composition."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 experimental table (PSI-106_Experimental table_Slice.csv) fuel column lists only gaseous fuels."
+      }
+    ],
+    "note": "Gaseous fuels only."
+  },
+  "fuel_materials": {
+    "value": [
+      "methane (CH4)",
+      "ethylene (C2H4)",
+      "ethane (C2H6)",
+      "nitrogen-diluted methane (40% and 70% CH4, balance N2)",
+      "nitrogen-diluted ethylene (20% C2H4, balance N2)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 experimental table (PSI-106_Experimental table_Slice.csv, 734 bytes): 12 test days with 100% CH4, 40%/70% CH4 (balance N2), 100% C2H4, 20% C2H4 (balance N2) and 100% C2H6."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 approach: methane, ethylene and nitrogen-diluted mixtures."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Laminar coflow diffusion flames from exchangeable burner tubes/nozzles of different diameters, burning in a coflow of air.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 approach names a fan-driven flow duct, exchangeable burner tubes and flames observed under controlled coflow air."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA page: results as a function of fuel, burner diameter and flow; three existing SPICE nozzles; possible coflow screens."
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+          "note": "NASA SLICE one-pager states the SPICE hardware (used by SLICE) is within the ISS MSG."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief 'Hardware': BASS, BASS-II, SPICE and SLICE were each conducted within the Microgravity Science Glovebox (MSG)."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "SPICE hardware: modular fan-driven flow duct with exchangeable burner tubes and integrated flow-rate and temperature sensors; derived from the earlier ELF hardware and used without modification.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+          "note": "PSI-106 approach: fan-driven flow duct, exchangeable burner tubes, integrated sensors for flow rates and temperature, high-resolution camera."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "note": "NASA page: SLICE uses the SPICE hardware (which was based on ELF hardware) in the ISS MSG; only extra fuel, media and minor parts (new nozzles) needed."
+        }
+      ]
+    },
+    "shared_with": [
+      "bass",
+      "bass-2",
+      "spice"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Not stated. PSI-106 detail, its experimental table (only date and fuel columns) and the NASA SLICE page give no oxygen concentration. Left unknown rather than inferred."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Not stated in PSI-106 (detail, experimental table) or the NASA SLICE page. Left unknown."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "SLICE varied the coflow air velocity (increased until the flame lifted off) but no numeric range is given in PSI-106 or the NASA page. Left unknown; SPICE's tabulated air rates belong to SPICE, not SLICE."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+          "note": "PSI-106 projectType 'Microgravity Investigation', flown aboard the ISS; objective compares microgravity with normal-gravity conditions."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+          "note": "NASA page: 'Microgravity testing allows for greater temporal and spatial scales' aboard the ISS."
+        }
+      ],
+      "note": "Treated as microgravity (0 g). Flight data is microgravity; normal-gravity ground tests are referenced only for model comparison."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+          "note": "PSI-106 objective/approach: evaluate fuel dilution with nitrogen; fuels include nitrogen-diluted mixtures."
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+          "note": "PSI-106 experimental table: 40%/70% CH4 (balance N2) and 20% C2H4 (balance N2)."
+        }
+      ],
+      "note": "Nitrogen is used to dilute the fuel stream (not a chamber suppressant like FLEX's CO2/He)."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Fuel type (methane, ethylene, ethane)",
+      "Nitrogen fuel dilution",
+      "Burner/nozzle diameter",
+      "Coflow air velocity (increased until flame liftoff)",
+      "Gravity (microgravity vs normal gravity, for model comparison)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 hypothesis/objective: structure and stability depend on burner diameter, coflow velocity and fuel composition; nitrogen dilution swept."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA page: SLICE fixes fuel flow and increases air velocity until the flame detaches and lifts off; tests vary fuel, burner diameter and flow."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Oxidizer coflow is air"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 approach: flames observed under controlled coflow air conditions."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA page: flames of methane, ethylene and their nitrogen dilutions burning in a coflow of air."
+      }
+    ],
+    "note": "Only the air coflow is clearly common to all tests; other held-constant factors are not explicitly listed."
+  },
+  "sensors": {
+    "value": [
+      "High-resolution still camera (flame imaging)",
+      "Flow-rate sensors",
+      "Temperature sensors",
+      "Soot / pyrometry measurements"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 approach: integrated sensors measure flow rates and temperature; a high-resolution camera captured still images; calibration covered airflow velocity, soot measurement and the fans."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 experimental table notes pyrometry and fan calibration tests on several test days."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "SLICE measured laminar diffusion-flame structure and liftoff for gaseous fuels in microgravity. Flame attachment/detachment controls the stability of the trailing diffusion flame and is directly relevant to fire safety; SLICE is also the precursor to ACME's Coflow Laminar Diffusion Flame (CLD Flame) experiment.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/structure-liftoff-in-combustion-experiment-slice.pdf?emrc=da32af",
+        "note": "NASA page: 'flame attachment to (or detachment from) a burner or condensed-fuel surface is of essential importance in both combustion systems and fire safety'; SLICE is a precursor to the CLD Flame experiment."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI researchImpacts include insights into flame stability and behavior to enhance fire safety."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Improved numerical models for flame behavior for more efficient combustion technologies",
+      "Understanding soot formation to help design combustion systems with minimal emissions",
+      "Insights into flame stability and behavior that enhance fire safety",
+      "Informing cleaner, more efficient engines and industrial burners"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+        "note": "PSI-106 researchImpacts lists four Earth benefits: efficient combustion tech, low-emission design, fire-safety insights, and cleaner engines/burners."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "A computational and experimental study of coflow laminar methane/air diffusion flames: Effects of fuel dilution, inlet velocity, and gravity",
+      "url": "https://doi.org/10.1016/j.proci.2014.05.138"
+    },
+    {
+      "title": "A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions",
+      "url": "https://doi.org/10.1080/00102202.2022.2041621"
+    },
+    {
+      "title": "An experimental and computational study of soot formation in a coflow jet flame under microgravity and normal gravity",
+      "url": "https://doi.org/10.1016/j.proci.2014.05.064"
+    },
+    {
+      "title": "Analysis of CH* concentration and flame heat release rate in laminar coflow diffusion flames under microgravity and normal gravity",
+      "url": "https://doi.org/10.1016/j.combustflame.2016.02.012"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T14:55:16Z",
+    "notes": [
+      "PSI-106 lists ONE file in 'added' - the experimental table PSI-106_Experimental table_Slice.csv (734 bytes); a second entry under 'modified' is the metadata zip PSI-106_metadata_PSI-174_SLICE.zip (8743 bytes). No per-sample data files are listed, so no data-file availability is claimed (consistent with AGENTS.md that SLICE lists 0 or 1 files).",
+      "Record totalFileSize is ~72.9 GB; nothing was downloaded.",
+      "PSI-106 projectType 'Microgravity Investigation' (map to Microgravity) - script-managed fields left untouched.",
+      "Oxygen, pressure and airflow are unknown: the PSI experimental table has only Test Date and Fuel Type, the NASA SLICE page gives no test conditions, and no PSI table entry supplies them. Not inferred.",
+      "One PSI publication ('Effects of Fuel Dilution and Gravity on Laminar Coflow Methane-Air Diffusion Flames...', Cao et al.) has no DOI/URL, so it is omitted from 'publications'.",
+      "Gravity set to 0 g from the ISS/microgravity projectType; normal-gravity ground tests are referenced in the sources only for model comparison, not as microgravity data.",
+      "Corrected hardware.shared_with: removed 'bass-m' which has no PSI match and is not listed in the challenge brief as sharing SPICE hardware. Challenge brief names only BASS, BASS-II, SPICE, and SLICE as using the SPICE hardware in MSG."
+    ]
+  },
+  "psi_accession": "PSI-106",
+  "project_type": "Microgravity"
+}

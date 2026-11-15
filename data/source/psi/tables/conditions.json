@@ -1,0 +1,1249 @@
+{
+ "PSI-10": {
+  "tables": [
+   "data/source/psi/tables/PSI-10.csv",
+   "data/source/psi/tables/PSI-10_2.csv"
+  ],
+  "n_rows": 327,
+  "o2": {
+   "min": 19.805,
+   "max": 84.998,
+   "unit": "%",
+   "columns": [
+    "XO2 (init)",
+    "XO2"
+   ],
+   "unit_known": true,
+   "flagged": true
+  },
+  "pressure": {
+   "min": 6.24,
+   "max": 44.2,
+   "unit": "psi",
+   "columns": [
+    "pinit (atm)",
+    "pinit (atm)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-10.csv",
+    "data/source/psi/tables/PSI-10_2.csv"
+   ],
+   "n_rows": 327,
+   "o2": [
+    {
+     "column": "XO2 (init)",
+     "min": 19.804819300000002,
+     "max": 40.0,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "condition"
+    },
+    {
+     "column": "XO2 (final)",
+     "min": 19.7475265,
+     "max": 39.7248069,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "outcome"
+    },
+    {
+     "column": "XO2",
+     "min": 21.2017175,
+     "max": 84.9977932,
+     "unit": "%",
+     "note": "converted from fraction; 2 value(s) dropped as impossible/ambiguous, e.g. 2, 2",
+     "flag": true,
+     "role": "condition"
+    }
+   ],
+   "pressure": [
+    {
+     "column": "pinit (atm)",
+     "min": 13.6961789098651,
+     "max": 19.059946849284,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "condition"
+    },
+    {
+     "column": "pfinal (atm)",
+     "min": 14.589959314326,
+     "max": 19.459945733844002,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "outcome"
+    },
+    {
+     "column": "pmean (atm)",
+     "min": 14.579959342212,
+     "max": 19.259946291564,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "outcome"
+    },
+    {
+     "column": "pinit (atm)",
+     "min": 6.239982599136,
+     "max": 44.19987674388,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "condition"
+    },
+    {
+     "column": "pfinal (atm)",
+     "min": 6.279982487592,
+     "max": 44.509875879414,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "outcome"
+    },
+    {
+     "column": "pmean (atm)",
+     "min": 6.259982543364,
+     "max": 44.354876311647,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "outcome"
+    }
+   ],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-10.csv",
+     "header": [
+      "Flame Type",
+      "Day",
+      "Fuel",
+      "Test",
+      "Xfuel",
+      "mfuel (mg/s)",
+      "mN2 (mg/s)",
+      "mtot (mg/s)",
+      "XO2 (init)",
+      "XO2 (final)",
+      "pinit (atm)",
+      "pfinal (atm)",
+      "pmean (atm)",
+      "mean Zst",
+      "Tad (K)"
+     ]
+    },
+    {
+     "file": "data/source/psi/tables/PSI-10_2.csv",
+     "header": [
+      "Flame Type",
+      "Day",
+      "Test",
+      "XO2",
+      "mO2 (mg/s)",
+      "mN2 (mg/s)",
+      "mtot (mg/s)",
+      "XC2H4 initial",
+      "XC2H4 final",
+      "pinit (atm)",
+      "pfinal (atm)",
+      "pmean (atm)",
+      "mean Zst",
+      "Tad (K)"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-20": {
+  "tables": [
+   "data/source/psi/tables/PSI-20.csv"
+  ],
+  "n_rows": 18,
+  "o2": {
+   "min": 21.0,
+   "max": 40.0,
+   "unit": "%",
+   "columns": [
+    "Oxygen Conc (percent)"
+   ],
+   "unit_known": true,
+   "flagged": true
+  },
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-20.csv"
+   ],
+   "n_rows": 18,
+   "o2": [
+    {
+     "column": "Oxygen Conc (percent)",
+     "min": 21.0,
+     "max": 40.0,
+     "unit": "%",
+     "note": "as given; 2 value(s) dropped as impossible/ambiguous, e.g. 3400, 2100",
+     "flag": true,
+     "role": "condition"
+    }
+   ],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-20.csv",
+     "header": [
+      "Year",
+      "Month",
+      "Date",
+      "Burner Size (mm)",
+      "Fuel Bottle",
+      "Oxygen Conc (percent)",
+      "Flames Ignited",
+      "Notes"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-21": {
+  "tables": [
+   "data/source/psi/tables/PSI-21.csv"
+  ],
+  "n_rows": 32,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-21.csv"
+   ],
+   "n_rows": 32,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-21.csv",
+     "header": [
+      "Test Type",
+      "Test Day",
+      "Fuel MFC",
+      "N2 MFC",
+      "Fuel Bottle",
+      "Fuel conc. Range",
+      "Flames ignited",
+      "Notes"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-22": {
+  "tables": [
+   "data/source/psi/tables/PSI-22.csv"
+  ],
+  "n_rows": 32,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-22.csv"
+   ],
+   "n_rows": 32,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-22.csv",
+     "header": [
+      "Test Type",
+      "Test Day",
+      "Year",
+      "Month",
+      "Date",
+      "Mesh Polarity",
+      "Fuel Bottle",
+      "Fuel Conc",
+      "Flames Ignited",
+      "Notes"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-23": {
+  "tables": [
+   "data/source/psi/tables/PSI-23.csv"
+  ],
+  "n_rows": 18,
+  "o2": {
+   "min": 21.0,
+   "max": 30.0,
+   "unit": "%",
+   "columns": [
+    "Atmosphere*"
+   ],
+   "unit_known": true,
+   "flagged": true
+  },
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-23.csv"
+   ],
+   "n_rows": 18,
+   "o2": [
+    {
+     "column": "Atmosphere*",
+     "min": 21.0,
+     "max": 30.0,
+     "unit": "%",
+     "note": "approximate: parsed from text such as '~30% O2 with He'",
+     "flag": true,
+     "role": "condition"
+    }
+   ],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-23.csv",
+     "header": [
+      "Test Type",
+      "Test Day*",
+      "Year",
+      "Month",
+      "Date",
+      "Atmosphere*",
+      "Fuel Bottle",
+      "Flames Ignited*",
+      "Notes"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-25": {
+  "tables": [
+   "data/source/psi/tables/PSI-25.csv"
+  ],
+  "n_rows": 129,
+  "o2": {
+   "min": 13.6,
+   "max": 22.2,
+   "unit": "%",
+   "columns": [
+    "Calibrated  initial O2 % by vol"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-25.csv"
+   ],
+   "n_rows": 129,
+   "o2": [
+    {
+     "column": "Calibrated  initial O2 % by vol",
+     "min": 13.6,
+     "max": 22.2,
+     "unit": "%",
+     "note": "as given",
+     "flag": false,
+     "role": "condition"
+    },
+    {
+     "column": "Calibrated final O2 % by vol",
+     "min": 0.6,
+     "max": 40.4,
+     "unit": "%",
+     "note": "as given",
+     "flag": false,
+     "role": "outcome"
+    }
+   ],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-25.csv",
+     "header": [
+      "PI",
+      "Test #",
+      "Date",
+      "GMT",
+      "Sample #",
+      "Fuel Sample Material",
+      "Flow restrictor",
+      "Fan display",
+      "Air display",
+      "Radiometer gain   (1000   250   50   10)",
+      "Total Frames Shot",
+      "Calibrated  initial O2 % by vol",
+      "Calibrated final O2 % by vol",
+      "Initial CO2 % by vol",
+      "Final CO2 % by vol",
+      "Initial CO (ppm)",
+      "Final CO (ppm)"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-26": {
+  "tables": [
+   "data/source/psi/tables/PSI-26.csv"
+  ],
+  "n_rows": 122,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-26.csv"
+   ],
+   "n_rows": 122,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-26.csv",
+     "header": [
+      "Date",
+      "GMT",
+      "As Run Test #",
+      "Test #",
+      "Sample #",
+      "Fuel Sample Material"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-39": {
+  "tables": [
+   "data/source/psi/tables/PSI-39.csv"
+  ],
+  "n_rows": 87,
+  "o2": {
+   "min": 17.0,
+   "max": 21.0,
+   "unit": "%",
+   "columns": [
+    "Oxygen"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": {
+   "min": 0.5,
+   "max": 5.0,
+   "unit": "unknown",
+   "columns": [
+    "Pressure"
+   ],
+   "unit_known": false,
+   "flagged": true
+  },
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-39.csv"
+   ],
+   "n_rows": 87,
+   "o2": [
+    {
+     "column": "Oxygen",
+     "min": 17.0,
+     "max": 21.0,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "pressure": [
+    {
+     "column": "Pressure",
+     "min": 0.5,
+     "max": 5.0,
+     "unit": "unknown",
+     "note": "no unit in header; not converted",
+     "flag": true,
+     "role": "condition"
+    }
+   ],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-39.csv",
+     "header": [
+      "Flex Number",
+      "Test Date",
+      "Local Time",
+      "CIR",
+      "Pressure",
+      "Oxygen",
+      "Nitrogen",
+      "Helium",
+      "Fiber",
+      "Fuel"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-47": {
+  "tables": [
+   "data/source/psi/tables/PSI-47.csv"
+  ],
+  "n_rows": 2,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-47.csv"
+   ],
+   "n_rows": 2,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-47.csv",
+     "header": [
+      "Session Name",
+      "Actual Day",
+      "Hardware Description",
+      "Sample Material",
+      "Sampled Location"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-68": {
+  "tables": [
+   "data/source/psi/tables/PSI-68.csv"
+  ],
+  "n_rows": 8,
+  "o2": {
+   "min": 17.0,
+   "max": 30.0,
+   "unit": "%",
+   "columns": [
+    "Oxygen Mole Fraction"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": {
+   "min": 7.348,
+   "max": 44.088,
+   "unit": "psi",
+   "columns": [
+    "Ambient Pressure (atm)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "flow": {
+   "min": 0.1,
+   "max": 5.0,
+   "unit": "cm/s",
+   "columns": [
+    "Flow Velocity (cm/s)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-68.csv"
+   ],
+   "n_rows": 8,
+   "o2": [
+    {
+     "column": "Oxygen Mole Fraction",
+     "min": 17.0,
+     "max": 30.0,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "pressure": [
+    {
+     "column": "Ambient Pressure (atm)",
+     "min": 7.34795,
+     "max": 44.0877,
+     "unit": "psi",
+     "note": "converted from atm",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "flow": [
+    {
+     "column": "Flow Velocity (cm/s)",
+     "min": 0.1,
+     "max": 5.0,
+     "unit": "cm/s",
+     "note": "",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-68.csv",
+     "header": [
+      "Sample (Fuel Type)",
+      "Initial Droplet Diameter (mm)",
+      "Ambient Gas Mixture",
+      "Oxygen Mole Fraction",
+      "Ambient Pressure (atm)",
+      "Ambient Temperature (C)",
+      "Flow Velocity (cm/s)"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-69": {
+  "tables": [
+   "data/source/psi/tables/PSI-69.csv"
+  ],
+  "n_rows": 274,
+  "o2": {
+   "min": 12.0,
+   "max": 34.0,
+   "unit": "%",
+   "columns": [
+    "O initial ambient composition; mole fraction"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": {
+   "min": 10.177,
+   "max": 44.859,
+   "unit": "psi",
+   "columns": [
+    "Ambient pressure; mmHg"
+   ],
+   "unit_known": true,
+   "flagged": true
+  },
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-69.csv"
+   ],
+   "n_rows": 274,
+   "o2": [
+    {
+     "column": "O initial ambient composition; mole fraction",
+     "min": 12.0,
+     "max": 34.0,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "pressure": [
+    {
+     "column": "Ambient pressure; mmHg",
+     "min": 10.17695784,
+     "max": 44.85944232000001,
+     "unit": "psi",
+     "note": "converted from mmhg; 1 zero/negative value(s) dropped",
+     "flag": true,
+     "role": "condition"
+    }
+   ],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-69.csv",
+     "header": [
+      "FLEX Test #",
+      "FLEX Identifier",
+      "Test Date",
+      "Test GMT",
+      "Fuel",
+      "Ambient pressure; mmHg",
+      "O initial ambient composition; mole fraction",
+      "N initial ambient composition; mole fraction",
+      "CO initial ambient composition; mole fraction",
+      "He initial ambient composition; mole fraction",
+      "Droplet initial diameter; mm",
+      "Visible flame extinction diameter; mm",
+      "Burning rate; mm",
+      "Burn time; s",
+      "Test end"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-98": {
+  "tables": [
+   "data/source/psi/tables/PSI-98.csv"
+  ],
+  "n_rows": 4,
+  "o2": {
+   "min": 21.5,
+   "max": 21.7,
+   "unit": "%",
+   "columns": [
+    "Percent O2"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": null,
+  "flow": {
+   "min": 20.0,
+   "max": 20.0,
+   "unit": "cm/s",
+   "columns": [
+    "Air Flow (cm/s)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-98.csv"
+   ],
+   "n_rows": 4,
+   "o2": [
+    {
+     "column": "Percent O2",
+     "min": 21.5,
+     "max": 21.7,
+     "unit": "%",
+     "note": "as given",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "pressure": [],
+   "flow": [
+    {
+     "column": "Air Flow (cm/s)",
+     "min": 20.0,
+     "max": 20.0,
+     "unit": "cm/s",
+     "note": "",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-98.csv",
+     "header": [
+      "Sample Number",
+      "Material",
+      "Sample Thickness (cm)",
+      "Sample Length (cm)",
+      "Sample Width (cm)",
+      "Air Flow (cm/s)",
+      "Percent O2",
+      "Ignition Power (W)",
+      "Ignition Time (s)",
+      "Burn Time (s)",
+      "Flow Direction",
+      "Camera 1",
+      "Camera 2"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-99": {
+  "tables": [
+   "data/source/psi/tables/PSI-99.csv"
+  ],
+  "n_rows": 15,
+  "o2": {
+   "min": 21.5,
+   "max": 22.1,
+   "unit": "%",
+   "columns": [
+    "Percent O2 (Note 1)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": null,
+  "flow": {
+   "min": 20.0,
+   "max": 20.0,
+   "unit": "cm/s",
+   "columns": [
+    "Air Flow (cm/s)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-99.csv"
+   ],
+   "n_rows": 15,
+   "o2": [
+    {
+     "column": "Percent O2 (Note 1)",
+     "min": 21.5,
+     "max": 22.1,
+     "unit": "%",
+     "note": "as given",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "pressure": [],
+   "flow": [
+    {
+     "column": "Air Flow (cm/s)",
+     "min": 20.0,
+     "max": 20.0,
+     "unit": "cm/s",
+     "note": "",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-99.csv",
+     "header": [
+      "Sample Number",
+      "Material",
+      "Samle Thickness",
+      "Sample Length",
+      "Sample Width (cm)",
+      "Air Flow (cm/s)",
+      "Percent O2 (Note 1)",
+      "Ignition Power (W)",
+      "Ignition Time (s)",
+      "Burn Time (s)",
+      "Flow Direction",
+      "?-g Burn Length",
+      "?-g Spread Length",
+      "1-g Burn Length",
+      "1-g Spread Rate",
+      "Camera 1",
+      "Camera 2"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-100": {
+  "tables": [
+   "data/source/psi/tables/PSI-100.csv"
+  ],
+  "n_rows": 2,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-100.csv"
+   ],
+   "n_rows": 2,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-100.csv",
+     "header": [
+      "Sample Number",
+      "Material",
+      "Sample Thickness",
+      "Sample Length",
+      "Sample Width",
+      "Air Flow",
+      "Direction",
+      "Camera 1",
+      "Camera 2"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-101": {
+  "tables": [
+   "data/source/psi/tables/PSI-101.csv"
+  ],
+  "n_rows": 109,
+  "o2": null,
+  "pressure": null,
+  "flow": {
+   "min": 0.0,
+   "max": 8.1,
+   "unit": "cm/s",
+   "columns": [
+    "Inlet velocity (cm/s)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-101.csv"
+   ],
+   "n_rows": 109,
+   "o2": [],
+   "pressure": [],
+   "flow": [
+    {
+     "column": "Inlet velocity (cm/s)",
+     "min": 0.0,
+     "max": 8.1,
+     "unit": "cm/s",
+     "note": "",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-101.csv",
+     "header": [
+      "Sample Type",
+      "SAME Test #",
+      "Description",
+      "Date",
+      "Inlet velocity (cm/s)",
+      "Rt/R0",
+      "Duration (sec)",
+      "Primary aging time (sec)",
+      "Primary mixing time (sec)",
+      "Net aging time (sec)"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-102": {
+  "tables": [
+   "data/source/psi/tables/PSI-102.csv"
+  ],
+  "n_rows": 8,
+  "o2": null,
+  "pressure": null,
+  "flow": {
+   "min": 5.0,
+   "max": 10.0,
+   "unit": "cm/s",
+   "columns": [
+    "Air Flow (cm/s)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-102.csv"
+   ],
+   "n_rows": 8,
+   "o2": [],
+   "pressure": [],
+   "flow": [
+    {
+     "column": "Air Flow (cm/s)",
+     "min": 5.0,
+     "max": 10.0,
+     "unit": "cm/s",
+     "note": "",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-102.csv",
+     "header": [
+      "Sample #",
+      "Sample Material",
+      "Air Flow (cm/s)",
+      "Weight loss rate (mg/min)",
+      "Aging Duration (minutes)"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-106": {
+  "tables": [
+   "data/source/psi/tables/PSI-106.csv"
+  ],
+  "n_rows": 12,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-106.csv"
+   ],
+   "n_rows": 12,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-106.csv",
+     "header": [
+      "Test Date",
+      "Fuel Type"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-107": {
+  "tables": [
+   "data/source/psi/tables/PSI-107.csv"
+  ],
+  "n_rows": 469,
+  "o2": null,
+  "pressure": null,
+  "flow": {
+   "min": 0.28,
+   "max": 85.28,
+   "unit": "cm/s",
+   "columns": [
+    "Air Rate (cm/s)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-107.csv"
+   ],
+   "n_rows": 469,
+   "o2": [],
+   "pressure": [],
+   "flow": [
+    {
+     "column": "Air Rate (cm/s)",
+     "min": 0.28,
+     "max": 85.28,
+     "unit": "cm/s",
+     "note": "",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-107.csv",
+     "header": [
+      "GMT date",
+      "GMT ignition",
+      "GMT  Flame Off",
+      "Fuel",
+      "Nozzle (mm)",
+      "Fuel Rate (sccm)",
+      "Fuel Rate (mg/s)",
+      "HC Fuel Rate (mg/s)",
+      "Air Rate (cm/s)"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-142": {
+  "tables": [
+   "data/source/psi/tables/PSI-142.csv"
+  ],
+  "n_rows": 8,
+  "o2": null,
+  "pressure": null,
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-142.csv"
+   ],
+   "n_rows": 8,
+   "o2": [],
+   "pressure": [],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-142.csv",
+     "header": [
+      "Data ID",
+      "Data Description",
+      "Reference Publication Link",
+      "Figure ID in Reference"
+     ]
+    }
+   ]
+  }
+ },
+ "PSI-159": {
+  "tables": [
+   "data/source/psi/tables/PSI-159.csv",
+   "data/source/psi/tables/PSI-159_2.csv"
+  ],
+  "n_rows": 1194,
+  "o2": {
+   "min": 12.0,
+   "max": 85.0,
+   "unit": "%",
+   "columns": [
+    "XO2 before test",
+    "XO2"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "pressure": {
+   "min": 7.185,
+   "max": 48.006,
+   "unit": "psi",
+   "columns": [
+    "approx p (bar)",
+    "approx p (bar)"
+   ],
+   "unit_known": true,
+   "flagged": false
+  },
+  "flow": null,
+  "detail": {
+   "tables": [
+    "data/source/psi/tables/PSI-159.csv",
+    "data/source/psi/tables/PSI-159_2.csv"
+   ],
+   "n_rows": 1194,
+   "o2": [
+    {
+     "column": "XO2 before test",
+     "min": 17.9685675,
+     "max": 39.97,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "condition"
+    },
+    {
+     "column": "XO2  after test",
+     "min": 17.939183,
+     "max": 39.725896399999996,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "outcome"
+    },
+    {
+     "column": "XO2",
+     "min": 12.0,
+     "max": 85.0,
+     "unit": "%",
+     "note": "converted from fraction",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "pressure": [
+    {
+     "column": "approx p (bar)",
+     "min": 7.348350270000001,
+     "max": 44.09010162,
+     "unit": "psi",
+     "note": "converted from bar",
+     "flag": false,
+     "role": "condition"
+    },
+    {
+     "column": "approx p (bar)",
+     "min": 7.18491710046,
+     "max": 48.00612762,
+     "unit": "psi",
+     "note": "converted from bar",
+     "flag": false,
+     "role": "condition"
+    }
+   ],
+   "flow": [],
+   "headers": [
+    {
+     "file": "data/source/psi/tables/PSI-159.csv",
+     "header": [
+      "Flame Type",
+      "Day",
+      "Fuel",
+      "Test",
+      "Cool flame?",
+      "XO2 before test",
+      "XO2  after test",
+      "approx p (bar)",
+      "Xf",
+      "mHC (mg/s)",
+      "TFP",
+      "Tad (K)",
+      "Zst",
+      "Hot ignition",
+      "burn time (sec)",
+      "Self-ext or flow term",
+      "Peak burner T (C )",
+      "Comments"
+     ]
+    },
+    {
+     "file": "data/source/psi/tables/PSI-159_2.csv",
+     "header": [
+      "Flame Type",
+      "Day",
+      "Fuel",
+      "Test",
+      "Xf  before test",
+      "Xf  after test",
+      "approx p (bar)",
+      "XO2",
+      "HC burnrate (mg/s)",
+      "O2 flow rate (mg/s)",
+      "TFP",
+      "Tad (K)",
+      "Zst",
+      "Hot ignition",
+      "burn time (sec)",
+      "Self -ext or flow term",
+      "Peak burner Temp (C)",
+      "Peak burner temp (K)",
+      "Color",
+      "Comments"
+     ]
+    }
+   ]
+  }
+ }
+}

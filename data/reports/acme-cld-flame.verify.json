@@ -1,0 +1,89 @@
+{
+  "id": "acme-cld-flame",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "partly",
+      "evidence_note": "PSI-21 experimental table has no O2 column (conditions.json confirms o2: null). ACME overview states oxidizer is 'air coflow' implying ~21% O2, but no source explicitly states 21% as a tested condition. Value is inferred from 'air coflow', not directly measured.",
+      "correction": {
+        "value": {"min": 21.0, "max": 21.0, "unit": "%"},
+        "confidence": "inferred",
+        "sources": [
+          {"kind": "nasa_page", "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf", "note": "ACME overview: measurements of diluted methane and ethylene flames in an air coflow; air is ~21% O2 by volume"},
+          {"kind": "publication", "url": "https://ntrs.nasa.gov/citations/20220005205", "note": "Stocker, ACME CSSCI 2022: exploration of flames used a coaxial coflow burner with air coflow"}
+        ],
+        "note": "Inferred: oxidizer is air coflow (~21% O2); not a swept variable; PSI experimental table has no atmospheric-oxygen column."
+      }
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "partly",
+      "evidence_note": "PSI-21 experimental table has no airflow column (conditions.json confirms flow: null); it reports Fuel MFC and N2 MFC in slpm. ACME ISRD specifies coflow burner requirements up to 50 cm/s with matched velocities at 10, 20, 30, 40, 50 cm/s. ACME summary slides (CSSCI 2022) report CH* profiles at matched velocities of 10, 20, 30, 40 cm/s. The 50 cm/s upper bound is from hardware requirements, not confirmed test data.",
+      "correction": {
+        "value": {"min": 10.0, "max": 40.0, "unit": "cm/s"},
+        "confidence": "inferred",
+        "sources": [
+          {"kind": "other", "url": "https://www1.grc.nasa.gov/wp-content/uploads/ACME_ISRD_revB_20130930_signed.pdf", "note": "ACME ISRD: coflow burner requirements verified for velocities up to 50 cm/s; matched inner/annulus velocities in 10 cm/s increments from 20 to 50 cm/s and explicit 10 cm/s matched case"},
+          {"kind": "publication", "url": "https://ntrs.nasa.gov/citations/20220007191", "note": "ACME summary slides (CSSCI 2022): CH* profiles reported at matched fuel and coflow velocities of 10, 20, 30, 40 cm/s"}
+        ],
+        "note": "Inferred from hardware requirements (ISRD) and summary slides showing 10-40 cm/s matched velocities actually used; PSI experimental table reports only burner gas flows in slpm, not coflow velocity."
+      }
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null. PSI-21 experimental table has no pressure column (conditions.json confirms pressure: null). ACME ISRD initial chamber pressure (0.1-3 bar) is a hardware design requirement, not measured test data. Note explains this correctly.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-21 projectType is 'Microgravity Investigation', flightProgram is ISS. ACME overview confirms microgravity environment. Value 0 g is correct per project convention.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-21 experimental table has N2 MFC column and Fuel Bottle entries show nitrogen dilution (40% CH4, 100% CH4, 50% C2H4, 30% C2H4). ACME overview states 'fuel is diluted with an inert gas, nitrogen in our case'.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-21 researchImpacts states 'understanding the factors that affect flame extinction in diffusion flames is critical in the suppression of fires' and describes fundamental research. Challenge brief notes ACME's secondary objective is fire prevention. Medium confidence with explanatory note is appropriate.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief 'Hardware' section: six ACME experiments featured flames of gaseous fuels. PSI-21 subResearchArea: 'Flames of gaseous fuel'.",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-21 objective and approach specify methane and ethylene. Experimental table Fuel Bottle column shows 40% CH4, 100% CH4, 100% C2H4, 50% C2H4, 30% C2H4. Stocker 2021 publication confirms.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief: ACME experiments conducted in Combustion Integrated Rack (CIR). PSI-21 experimentHardware: 'Combustion Integrated Rack (CIR), ACME'. FlightProgram: ISS.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-21 objective: behavior characterized as function of velocity and fuel dilution. Experimental table varies Fuel MFC, N2 MFC, Fuel conc. Range across methane, ethylene, and improved-coflow campaigns.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "ACME overview lists: PMT modules (310 nm OH*, 430 nm CH*, neutral-density), radiometers (thermopile ~0.2-11 um), translating thin-filament pyrometry array, HD color camera, CIR gas chromatograph. PSI-21 approach confirms: flame chemiluminescence (OH*, CH*), soot luminosity, laser extinction, thin-filament pyrometry.",
+      "correction": null
+    }
+  ],
+  "summary": "Record is well-sourced overall. Two fields had confidence mislabeled as 'medium' where 'inferred' is correct: conditions.o2_percent (21% deduced from 'air coflow', not measured) and conditions.airflow (10-50 cm/s from ISRD hardware requirements, not experimental data; slides confirm 10-40 cm/s). Corrections applied to confidence and airflow max value. All other checked fields are supported by PSI-21 local record, experimental table, ACME overview, and cited publications."
+}

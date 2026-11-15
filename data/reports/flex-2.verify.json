@@ -1,0 +1,181 @@
+{
+  "id": "flex-2",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Seed id matches psi-map.json entry for flex-2 -> PSI-68",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json title 'Flame Extinguishment Experiment - 2' and investigationAcronym 'FLEX-2'",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json provides both the acronym and full title as aliases",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 uses MDCA hardware; AGENTS.md and brief confirm FLEX/FLEX-2/CFI are MDCA family; schema enum includes 'mdca'",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 investigation dates 2016-2019 on ISS; flown status correct",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 record exists in local PSI data",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for PSI-68",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps flex-2 to PSI-68; script-owned field but correct",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json projectType 'Microgravity Investigation'; script simplifies to 'Microgravity'",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json flightProgram 'International Space Station (ISS)'",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json objective field matches extracted text verbatim with itemized aims",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "partly",
+      "evidence_note": "Brief attributes suppression to FLEX (FLEX-1) via CO2/He dilution; FLEX-2 objective includes flame extinction mechanisms and flammability limits (prevention per brief). Medium confidence appropriate as brief names FLEX not FLEX-2 for suppression.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 experimentHardware is MDCA (droplet apparatus); brief explicitly states FLEX/FLEX-2/CFI burned liquid droplets",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 experimental table (PSI-68_Experimental table_Flex2.csv) lists 8 fuel entries matching extracted list (normalized naming)",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 table: Initial Droplet Diameter 1.5-5 mm; approach describes fiber-supported or freely deployed droplets with flow via translation",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json experimentHardware names Combustion Integrated Rack (CIR)",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-68.json experimentHardware names Multi-user Droplet Combustion Apparatus (MDCA); brief confirms",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Brief Hardware section: FLEX, FLEX-2, and CFI share MDCA in CIR; seed ids flex and cfi in psi-map.json",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 table Oxygen Mole Fraction 0.17, 0.21, 0.25, 0.30 -> 17-30%; script computes from table per AGENTS rule 11",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 table Ambient Pressure 0.5, 1.0, 1.5, 2.0, 3.0 atm -> 7.348-44.088 psi (1 atm = 14.696 psi); script computes from table",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 table Flow Velocity 0.1-5 cm/s; script computes from table",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 projectType 'Microgravity Investigation' on ISS; microgravity represented as 0 g per project convention",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 table Ambient Gas Mixture 'O2/N2 or O2/He'; approach states diluent gas makes up balance",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 table columns and approach text cover all 7 listed variables (fuel, diameter, O2, diluent, pressure, flow, ignition duration)",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "partly",
+      "evidence_note": "Table shows single Ambient Temperature 25 C across all rows; microgravity common to all tests; no explicit held-constant list in sources. Medium confidence for inferred constants appropriate.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 approach: high-speed photography for flame evolution; color camera downlink for deployment/ignition verification; chamber pressure/temperature recorded near real-time",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 subResearchArea 'Spacecraft Fire Safety'; objective covers extinction mechanisms and flammability limits; brief describes habitat fire safety needs and lunar atmosphere",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-68 researchImpacts lists cleaner combustion, fuel surrogates, jet-engine model validation, reduced emissions",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All 6 extracted publications with DOIs found in PSI-68.json publications array",
+      "correction": null
+    }
+  ],
+  "summary": "All non-null fields verified against PSI-68.json, PSI-68.search.json, experimental table CSV, and challenge brief. No contradictions found. Safety_functions and held_constant correctly at medium confidence due to inference from FLEX-1 brief statement and table omission respectively. Review status should be 'verified'."
+}

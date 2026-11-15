@@ -1,0 +1,337 @@
+{
+  "id": "acme-e-field",
+  "name": "ACME Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames)",
+  "aliases": [
+    "E-FIELD Flames",
+    "E-FIELD",
+    "ACME E-FIELD Flames"
+  ],
+  "family": "acme",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+  "psi_accession": "PSI-22",
+  "project_type": "Microgravity",
+  "platform": {
+    "value": "ISS",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record data/source/psi/PSI-22.json: flightProgram 'International Space Station (ISS)'"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': the six ACME experiments were conducted with the same modular ACME hardware in the CIR on the ISS"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Gain an improved understanding of flame ion production and learn how an electric field (acting on the ions naturally produced in the flame) can be used to control non-premixed laminar diffusion flames. Specific goals: relate electric-field voltage to chemi-ion current, analyze the dynamic flame response to electric forcing, evaluate soot formation, and characterize stabilized near-limit lifted flames.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record objective: understand the relationship between electric-field voltage and chemi-ion current, analyze dynamic flame response to electric-field changes, evaluate soot formation, and characterize stabilized near-limit lifted flames"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://science.nasa.gov/biological-physical/investigations/e-field-flames/",
+        "note": "NASA Science E-FIELD Flames page: gain improved understanding of flame ion production and learn how the electric field can control non-premixed flames"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record researchImpacts states the E-FIELD Flames research 'is not being conducted to serve any space applications', though findings could aid future space-based combustion devices"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME document frames ACME as fundamental microgravity research; the primary goal is efficiency and reduced pollutant emission, with fire prevention only a secondary objective for the project"
+      }
+    ],
+    "note": "Classed as fundamental: E-FIELD Flames targets flame-ion physics and flame control, not a prevention/detection/suppression method. The ACME project lists a secondary spacecraft fire-prevention objective, but that is stated for the project (and chiefly for BRE), not for E-FIELD Flames itself; the PSI record explicitly says no space application is intended."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record approach: 'The experiment is conducted with gas-fueled flames'"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': all six ACME experiments featured flames of gaseous fuels"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "methane (CH4)",
+      "ethylene (C2H4)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record approach: 'Methane and ethylene were used as fuels and diluted with nitrogen to control flame strength'"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "The PSI per-test table (data/source/psi/tables/PSI-22.csv) lists fuel bottles of 100% CH4, 40% CH4, 100% C2H4 and 30% C2H4, and fuel concentrations from 25% to 100%"
+      }
+    ],
+    "note": "Gaseous fuels methane and ethylene, diluted with nitrogen. Oxidizer is air (see conditions)."
+  },
+  "fuel_geometry": {
+    "value": "Gaseous non-premixed jet flames in two configurations: a gas-jet burner producing a small focused flame with no surrounding coflow, and a normal coflow flame using the same coflow burner as the CLD Flame experiment, where the fuel jet is surrounded by a weak synthetic air coflow. A flat circular copper mesh electrode is suspended downstream of the burner.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record approach: gas-jet burner makes a small focused flame for ion-driven convection studies; the coflow burner surrounds the fuel jet with a weak synthetic air flow for flame stability and soot analysis; tests done with and without a coflow of air"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME document: E-FIELD Flames conducted with a normal coflow flame (as in the CLD Flame experiment) or a simple gas-jet flame with no surrounding coflow; a flat circular mesh sits above the burner"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR), ISS",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+          "note": "Local PSI record experimentHardware: 'Combustion Integrated Rack (CIR), ACME'"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': the six ACME experiments were all conducted with the same modular ACME hardware in the Combustion Integrated Rack (CIR)"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "ACME modular chamber insert in the CIR: exchangeable burner (gas-jet or the CLD coflow burner), hot-wire igniter, gas delivery with mass flow controllers, and experiment-unique hardware including a high-voltage supply and a crew-removable electrode mesh settable between +10 and -10 kV, positioned about 35 or 50 mm downstream of the insulated burner. Flame instrumentation includes radiometers, photomultiplier tubes and thin-filament pyrometry fibers.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+          "note": "NASA ACME document: ACME chamber insert with exchangeable burner, hot-wire igniter, gas delivery; E-FIELD-specific high-voltage supply and crew-removable electrode mesh settable between +10 and -10 kV, mesh orthogonal to the chamber axis about 35 or 50 mm downstream of the insulated burner; ion current via voltage drop across a known resistor"
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+          "note": "Local PSI record approach: a high-voltage copper mesh electrode above the burner tip generated the electric field; high-voltage differential up to 10 kV between the burner and the mesh"
+        }
+      ]
+    },
+    "shared_with": [
+      "acme-bre",
+      "acme-cld-flame",
+      "acme-s-flames",
+      "acme-cfi-g"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states an oxygen-concentration range for E-FIELD Flames. The PSI per-test table (data/source/psi/tables/PSI-22.csv) has no O2 column (its headers are Test Type, Test Day, Year, Month, Date, Mesh Polarity, Fuel Bottle, Fuel Conc, Flames Ignited, Notes), and data/source/psi/tables/conditions.json lists null o2 for PSI-22. The 2022 foundation paper's abstract describes 'small diffusion flames of methane (in air)', implying an air-like atmosphere, but it states no numeric O2; left unknown rather than inferred."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states a chamber-pressure range for E-FIELD Flames. PSI gives no pressure, the per-test table has no pressure column, and conditions.json lists null pressure for PSI-22. The ACME document says the experiments are constant-volume studies with the pressure allowed to rise, but gives no pressure value; left unknown."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "PSI and the ACME document state that tests were run both with and without a coflow of air (a weak synthetic air coflow around the fuel jet) and that coflow velocity was a varied parameter, but no velocity value is given in a readable source, so it is left unknown."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+          "note": "Local PSI record projectType 'Microgravity Investigation'; approach says the microgravity environment isolates electric-field effects from buoyancy forces"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Partial-gravity data': the experiment flew in microgravity and only mimics partial gravity through the electric field"
+        }
+      ],
+      "note": "True microgravity (ISS, ~0 g). IMPORTANT: E-FIELD Flames only MIMICS partial gravity via the electric field's effect on flame ions; it is not partial-gravity data. The brief states PSI currently holds no true partial-gravity combustion data."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+          "note": "Local PSI record approach: methane and ethylene were 'diluted with nitrogen to control flame strength'; dilution levels were varied from highly stable to near-extinction flames"
+        }
+      ],
+      "note": "Nitrogen was used to dilute the fuel. The ACME chamber insert can also deliver inert gases such as helium or carbon dioxide for other ACME experiments, but nitrogen is the diluent stated for E-FIELD Flames."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Fuel type (methane vs ethylene)",
+      "Fuel dilution with nitrogen (fuel concentration from 25% to 100%)",
+      "Electric-field strength (high-voltage differential up to 10 kV)",
+      "Electric-field / mesh polarity (negative and positive)",
+      "Fuel flow rate",
+      "Coflow velocity (coflow vs no-coflow gas-jet tests)",
+      "Burner configuration (coflow burner vs gas-jet burner)",
+      "Electric-field forcing used to reach near-limit lifted / near-extinction flames"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record approach: 'Parameters such as fuel flow rate, coflow velocity, and field polarity were varied to isolate specific effects on ion production, flame stability, and soot behavior'; measurements made as a function of field strength and fuel"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "PSI per-test table data/source/psi/tables/PSI-22.csv varies mesh polarity (negative/positive), fuel bottle (100% CH4, 40% CH4, 100% C2H4, 30% C2H4) and fuel concentration (25-100%) across test days, and separates a first coflow-burner round from a second gas-jet-burner round"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Microgravity environment (ISS)",
+      "ACME modular hardware and the CIR combustion chamber (constant-volume, about 90-100 liters, roughly 0.5-2 minute tests)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record approach: 'All experiments were conducted in the combustion integrated rack (CIR)'"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME document: all ACME experiments are constant-volume studies with a chamber free volume of about 90 liters; tests are typically 0.5-2 minutes and use the same modular hardware"
+      }
+    ],
+    "note": "The chamber atmosphere composition is not stated, so it could not be listed as a held-constant condition with a source."
+  },
+  "sensors": {
+    "value": [
+      "Ion-current measurement (voltage drop across a known resistor, via Ohm's law)",
+      "High-resolution cameras (flame shape, luminosity, soot distribution)",
+      "Spectral imaging with filters (chemiluminescent emissions, soot volume fraction)",
+      "Thermopile / radiometer detectors (flame radiant emission)",
+      "Photomultiplier tube (PMT) array",
+      "Thin-filament pyrometry (TFP) fibers",
+      "CIR gas chromatograph (pre-/post-test chamber atmosphere: O2, N2, CO2, CO, fuel gases)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record approach: high-resolution cameras for flame shape/luminosity/soot, spectral imaging with filters for chemiluminescent emissions and soot volume fraction, thermopile detectors for flame radiant emission, and measurement of ion current through the flame"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME document: ion current via voltage drop across a known resistor; PMT array, thin-filament pyrometry fibers, radiometers; CIR gas chromatograph for pre-/post-test atmosphere analysis"
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Named in the challenge brief as the experiment that only MIMICS partial gravity, through the effect of an electric field on the ions that naturally occur in flames. The brief stresses that PSI currently has no true partial-gravity combustion data, so this record must never be presented as partial-gravity data. Its relevance to crew fire safety is indirect: it clarifies how flame ions, soot and stability can be manipulated, which informs fire-behaviour modelling rather than a specific prevention, detection or suppression method.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Partial-gravity data': partial gravity was mimicked in ACME E-FIELD Flames through the effect of the electric field on flame ions; there is currently no partial-gravity combustion data available in PSI"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "The use of electric fields to control flames can reduce the production of harmful pollutants in practical terrestrial combustion",
+      "Electric-field-assisted combustion may allow more efficient combustion, reducing fuel consumption as well as unwanted emissions",
+      "Improved understanding and modelling of ion-driven combustion could support soot control (soot is both useful and a health hazard)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+        "note": "Local PSI record researchImpacts: electric-field flame control can reduce harmful pollutants; combustion using electric fields may allow more efficient combustion and lower fuel consumption and emissions"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf?emrc=640d06",
+        "note": "NASA ACME document: the primary goal of ACME is to improve efficiency and reduce pollutant emission in practical terrestrial combustion"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Electric-field effects on methane coflow flames aboard the international space station (ISS): ACME E-FIELD flames",
+      "url": "https://doi.org/10.1016/j.combustflame.2022.112443"
+    },
+    {
+      "title": "Non-premixed axisymmetric flames driven by ion currents",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.10.036"
+    },
+    {
+      "title": "Ion Current and Flame Changes with Electric Fields in Microgravity",
+      "url": "https://doi.org/10.60555/se5a-8c73"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T15:11:37Z",
+    "notes": [
+      "Verified against PSI-22 JSON, PSI-22.csv, NASA ACME document, NASA Science page, and challenge brief. No contradictions found.",
+      "Minor: hardware.shared_with omits acme-flame-design (PSI-10, no seed record yet); conditions.gravity_g confidence upgraded from 'medium' to 'high' (PSI directly states 'Microgravity Investigation')."
+    ]
+  }
+}

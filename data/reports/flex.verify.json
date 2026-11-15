@@ -1,0 +1,151 @@
+{
+  "id": "flex",
+  "verified_by": "deepseek-ai/deepseek-v4.1-flash",
+  "checks": [
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "NASA TP-2015-216046 confirms CIR in Destiny module on ISS; NASA FLEX PDF confirms ISS platform",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "NASA FLEX PDF states: assess/quantify inert-gas suppressant effectiveness, estimate LOI, map flammability boundaries for liquid fuel in reduced gravity; NTRS 20090014812 confirms fire-suppressant effectiveness in microgravity",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Background: 'Suppression was studied in FLEX through dilution with CO2 and helium'; NASA FLEX PDF describes near-limit diffusion-flame study for fundamental combustion science",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Hardware: 'FLEX featured burning droplets of liquid fuel'; NASA FLEX PDF: 'maps flammability boundaries for liquid fuel combustion; tests burn liquid-fuel droplets'",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "ISS Researcher's Guide: heptane and methanol; Springer 2014 (DOI 10.1007/s12217-014-9372-2): heptane and methanol; NTRS 20140006750: n-heptane, n-octane, n-decane plus two alcohol fuels",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "Springer 2014: initial droplet diameters 1.5-5.0 mm, free-floated or tethered to 80 µm SiC fiber; ISS Researcher's Guide: MDCA dispenses/deploys droplets 1-5 mm, free floating or fiber supported",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Hardware: FLEX conducted in CIR; NASA TP-2015-216046: CIR provides combustion chamber (~90 L), diagnostics, gas-mixing, ISS interface in Destiny module",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Hardware: FLEX/FLEX-2/CFI used MDCA in CIR; NASA TP-2015-216046: MDCA deploys and ignites liquid fuel droplets; PSI-69.json experimentHardware lists MDCA",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Hardware: 'FLEX, FLEX-2, and CFI each featured burning droplets... conducted with the MDCA in the CIR'",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-69.csv experimental table (274 rows): O initial ambient composition mole fraction ranges 0.12 to 0.34 (12% to 34%); matches record min 12.0, max 34.0%",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-69.csv: Ambient pressure mmHg ranges ~526 to ~2320 mmHg (one zero value dropped); 526 mmHg = 10.18 psi, 2320 mmHg = 44.86 psi; matches record min 10.177, max 44.859 psi",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "Record correctly null: FLEX droplets burn in quiescent environment; no airflow column in PSI-69.csv; NASA TP-20130014061 confirms quiescent microgravity",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "NASA FLEX PDF: 'microgravity droplet-combustion experiments'; NASA TP-2015-216046: 'FLEX run in the microgravity environment aboard the ISS'; PSI-69.json projectType: 'Microgravity Investigation'",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Background: 'FLEX diluted the chamber atmosphere with carbon dioxide and helium'; NASA FLEX PDF: 'background = oxygen + suppressant (CO2 or helium) + balance inert diluent, primarily nitrogen; a small number of tests used helium as the diluent'",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "NASA FLEX PDF lists independent variables: oxygen mole fraction, diluent gas, suppressant type/concentration, pressure; Springer 2014 confirms fuels, initial droplet diameters, diluent-substituted environments",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "NTRS 20130014061: 'FLEX: droplets burned in a quiescent microgravity environment'; confidence 'inferred' appropriate as deduction from all tests sharing this condition",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "NASA TP-2015-216046: HiBMS backlit camera, LLUV camera (310 nm), MDCA color camera; NASA ISS RDC 2013 slides: broadband radiometers (0.6-10.0 µm) and narrowband (5.0-6.5 µm)",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief Background and Spacesuits sections identify FLEX as microgravity suppression study with LOI data relevant to oxygen-enriched lunar habitats; NASA FLEX PDF: 'quantitative suppressant effectiveness and LOI for spacecraft fire-suppression design'",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "NASA ISS RDC 2013 slides list: HCCI/low-temperature engines, fuel reforming, new burner technologies from cool-flame combustion; confidence 'medium' appropriate for single source",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All four publications appear in PSI-69.json publications list with matching titles; URLs resolve to NTRS or DOI",
+      "correction": null
+    },
+    {
+      "field": "review.notes[0]",
+      "verdict": "contradicted",
+      "evidence_note": "Note claims 'Local PSI record missing: data/source/psi/ contained no PSI-69.json or PSI-69.search.json' but both files exist at data/source/psi/PSI-69.json (36.6 KB) and data/source/psi/PSI-69.search.json (14.8 KB)",
+      "correction": null
+    },
+    {
+      "field": "review.notes[3]",
+      "verdict": "contradicted",
+      "evidence_note": "Note claims 'psi_url kept null: no verified PSI page URL is available' but record shows psi_url populated with 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-69'",
+      "correction": null
+    },
+    {
+      "field": "review.notes[1]",
+      "verdict": "partly",
+      "evidence_note": "Note claims 'O2 range conflict: FLEX overview states 0.10-0.50 mole fraction... Recorded the overview range at medium confidence' but record actually uses PSI experimental table range (12-34%) at high confidence per AGENTS.md rule 11",
+      "correction": null
+    },
+    {
+      "field": "review.notes[2]",
+      "verdict": "partly",
+      "evidence_note": "Note claims 'Pressure range conflict: FLEX overview states 0.5-1.0 atm... Converted the overview range to psi' but record uses PSI experimental table range (10.177-44.859 psi) at medium confidence per AGENTS.md rule 11",
+      "correction": null
+    }
+  ],
+  "summary": "All investigation data fields are supported by cited sources (PSI-69.json, PSI-69.csv experimental table, challenge brief, NASA publications). Two review.notes contain factually incorrect claims about missing PSI records and null psi_url; two review.notes mischaracterize the source of O2/pressure ranges (they come from PSI experimental table per AGENTS.md rule 11, not from overview documents)."
+}

@@ -1,0 +1,400 @@
+{
+  "id": "acme-s-flames",
+  "name": "ACME Structure and Response of Spherical Diffusion Flames (s-Flame)",
+  "aliases": [
+    "s-Flame",
+    "s-Flames",
+    "ACME s-Flame"
+  ],
+  "family": "acme",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+  "platform": {
+    "value": "ISS",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 flightProgram field is 'International Space Station (ISS)'; investigation dates 2015-02-05 to 2019-11-24."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview states the experiments ran in the Combustion Integrated Rack on the ISS."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Advance the ability to predict the structure and dynamics, including extinction, of both soot-free and sooty spherical diffusion flames in microgravity, comparing measurements with detailed numerical simulation of transport properties and chemical kinetics (including chemiluminescence).",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 objective: measure transient spherical diffusion flame structure (temperature, species) for H2/CH4/diluent (soot-free) and C2H4/diluent (sooty) mixtures; determine convective and radiative extinction limits; determine the onset and nature of pulsating instabilities."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: purpose of s-Flame is to advance prediction of structure and dynamics, including extinction, of soot-free and sooty flames."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 is basic combustion science: it tests chemical-kinetic and transport models of spherical diffusion flames (flame structure, extinction limits, instabilities), not a prevention/detection/suppression technology."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: ACME's secondary objective is spacecraft fire prevention, but s-Flame itself is characterised as fundamental microgravity combustion research."
+      }
+    ],
+    "note": "Classed 'fundamental'. ACME as a project states a secondary spacecraft fire-prevention objective, but the s-Flame investigation is framed as fundamental flame-structure/kinetics research."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 SubResearch Area is 'Flames of gaseous fuels'; approach issues gaseous fuel/inert mixtures through a porous burner."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Hardware section: the six ACME experiments featured flames of gaseous fuels."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: ACME investigates laminar gaseous non-premixed flames."
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "hydrogen (H2)",
+      "methane (CH4)",
+      "ethylene (C2H4)",
+      "nitrogen (N2) diluent",
+      "helium (He) diluent",
+      "carbon dioxide (CO2) diluent"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 approach: conventional gaseous fuels hydrogen, methane and ethylene; diluents nitrogen and helium to adjust diffusivities, and carbon dioxide to influence flame radiation."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 experimental table (data/source/psi/tables/PSI-23.csv) fuel bottles: 100% H2, H2/CH4 blends, 50%/45% CH4 and C2H4 in N2, and H2/CH4/C2H4 diluted with He."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: fuels are hydrogen and methane for soot-free flames and ethylene for sooty flames; various inert diluents in both fuel and chamber atmosphere."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Porous spherical burner issuing a fuel/inert gas mixture into the CIR chamber, producing a nominally spherical, one-dimensional stabilized diffusion flame.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 approach: mixtures of gaseous fuels and diluents issued into an oxidizing environment through a spherical porous burner and ignited to obtain a nominally spherical, one-dimensional stabilized flame."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: the spherical flame, only possible in microgravity, is created with a porous spherical burner; flames are ignited at non-steady conditions and driven toward extinction."
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI-23 experimentHardware is 'Combustion Integrated Rack (CIR), ACME'."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, Hardware section: ACME experiments used the modular ACME hardware set in the CIR."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "ACME modular hardware with a porous spherical burner (constant-volume ~90 L chamber insert)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI-23 experimentHardware: CIR / ACME; approach uses a spherical porous burner."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "note": "ACME overview: all ACME experiments use a single modular hardware set in the CIR, a constant-volume study with a ~90 L chamber free volume."
+        }
+      ]
+    },
+    "shared_with": [
+      "acme-bre",
+      "acme-cld-flame",
+      "acme-e-field",
+      "acme-cfi-g",
+      "acme-flame-design"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 21.0,
+        "max": 30.0,
+        "unit": "%"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI PSI-23 experimental table PSI-23_Experimental table_ACME s-Flame.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 18 test rows of PSI-23_Experimental table_ACME s-Flame.csv, columns: Atmosphere*. Computed by scripts/psi_table_summary.py (initial conditions only). Check: Atmosphere*: approximate: parsed from text such as '~30% O2 with He'"
+    },
+    "pressure_psi": {
+      "value": {
+        "min": 14.7,
+        "max": 14.7,
+        "unit": "psi"
+      },
+      "confidence": "low",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI-23 experimental table (data/source/psi/tables/PSI-23.csv) notes the atmosphere is '~1 atm', converting to approximately 14.7 psi; the table has no numeric pressure column."
+        }
+      ],
+      "note": "Approximate. The PSI table states the chamber atmosphere as '~1 atm' (converted to ~14.7 psi); ACME runs constant-volume so pressure rises slightly with vitiation. Recorded as a low-confidence single point, not a tested range."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No airflow range found. The PSI-23 table has no flow column; the PSI approach mentions reactant (fuel) flow rates but no ambient airflow value."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI-23 projectType is 'Microgravity Investigation' and the flight platform is the ISS."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS; the spherical flame is only possible in microgravity."
+        }
+      ],
+      "note": "Microgravity (~0 g). Not a partial-gravity investigation."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)",
+        "helium (He)",
+        "carbon dioxide (CO2)"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI-23 approach: diluents mixed with fuel include nitrogen and helium to adjust mixture diffusivities, and carbon dioxide to influence flame radiation characteristics."
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+          "note": "PSI-23 experimental table shows flight tests diluted with N2 (first round) and He (second round)."
+        }
+      ],
+      "note": "N2, He and CO2 are all named as diluents in the design; flight table shows N2 and He in the fuel and chamber atmosphere."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "fuel type (H2, CH4, C2H4)",
+      "fuel/diluent mixture ratio",
+      "diluent type (N2 vs He)",
+      "chamber O2 concentration (~21% vs ~30%)",
+      "reactant flow rate"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 objective tests mixtures of different H2/CH4/diluent ratios (soot-free) and different C2H4/diluent ratios (sooty) at different flow rates."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 experimental table shows two rounds varying fuel bottle composition and chamber atmosphere between ~21% O2/N2 and ~30% O2/He."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: tests conducted with various inert diluents in both the fuel and the chamber atmosphere."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "microgravity environment (ISS, ~0 g)",
+      "spherical porous burner geometry",
+      "ACME modular hardware in the CIR (constant-volume ~90 L chamber)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23: the experiment is a single design on the ISS using one spherical porous burner; the microgravity platform is held fixed across all tests."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: all experiments share one modular hardware set in the CIR; constant-volume study with a ~90 L chamber."
+      }
+    ],
+    "note": "Inferred from the investigation design: the platform, burner and facility are the same across tests."
+  },
+  "sensors": {
+    "value": [
+      "spectrally resolved imaging / cameras (linear detector arrays)",
+      "flame and burner temperature measurement",
+      "radiometers (thermopile, ~0.2-11 micron) for radiative flux",
+      "photmultiplier tubes for OH* and CH* chemiluminescence (230-700 nm)",
+      "CIR gas chromatograph for chamber atmosphere (O2, N2, CO2, CO, fuel gases)",
+      "chamber pressure measurement",
+      "SAMS-II acceleration measurements",
+      "reactant flow-rate measurement"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 approach: synchronized measurements including spectrally resolved images, flame and burner temperatures, radiative flux, and system operating conditions (reactant flow rates, ambient temperatures, pressures and acceleration levels)."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview instrument set: imaging arrays, radiometers (thermopile ~0.2-11 micron), three PMT modules for OH*/CH* chemiluminescence, CIR gas chromatograph, chamber pressure, and SAMS-II acceleration."
+      }
+    ],
+    "note": "The PSI approach names the measurement classes for s-Flame; the specific instrument set (radiometers, PMTs, gas chromatograph, SAMS-II) is described for the shared ACME hardware, so it is listed at medium confidence."
+  },
+  "relevance_notes": {
+    "value": "Fundamental microgravity diffusion-flame study. It quantifies soot and extinction behaviour that ACME frames as relevant to spacecraft fire prevention (material flammability, conditions for sustained combustion), and provides buoyancy-free data for validating combustion models. It does not test a specific fire-safety hardware technology.",
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: ACME's secondary objective is spacecraft fire prevention (materials flammability, extinction behaviour); soot in microgravity flames is five to eight times that in normal gravity."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief frames flammability limits and combustion understanding as prevention inputs for crewed habitats."
+      }
+    ],
+    "note": "My own synthesis (inferred), comparing the PSI/ACME objective against the brief's fire-safety framing."
+  },
+  "earth_applications": {
+    "value": [
+      "improved combustion engine and device performance (power, efficiency, reliability)",
+      "reduced pollutant emissions",
+      "improved computational combustion models and combustor design",
+      "soot formation and control"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+        "note": "PSI-23 research impacts: diffusion-flame understanding improves performance in power, efficiency, pollutant emissions and reliability; microgravity gives high-fidelity data and simplified flow fields."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: primary goal is to improve efficiency and reduce pollutant emission in practical terrestrial combustion and to improve computational models."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Microgravity burner-generated spherical diffusion flames: experiment and computation",
+      "url": "https://doi.org/10.1016/S0010-2180(01)00247-4"
+    },
+    {
+      "title": "Response of spherical diffusion flames subjected to rotation: Microgravity experimentation and computational simulation",
+      "url": "https://doi.org/10.1016/j.combustflame.2011.07.013"
+    },
+    {
+      "title": "Porous spherical burner for combustion experimentation",
+      "url": "https://doi.org/10.1063/1.2212399"
+    },
+    {
+      "title": "Oscillatory extinction of spherical diffusion flames: Micro-buoyancy experiment and computation",
+      "url": "https://doi.org/10.1016/S1540-7489(02)80008-6"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Local PSI-23 record is the primary source (objective, approach, hypothesis, hardware, projectType, publications).",
+      "conditions.o2_percent is left null (seed value) because scripts/psi_apply_conditions.py sets it from data/source/psi/tables/PSI-23.csv, which lists ~21% and ~30% O2 with N2 or He.",
+      "conditions.pressure_psi recorded as a low-confidence ~14.7 psi point from the PSI table note 'Atmosphere is ~1 atm'; the table has no numeric pressure column and ACME is a constant-volume study, so pressure rises with vitiation. Not a tested range.",
+      "conditions.airflow unknown: the PSI table has no flow column; the PSI approach mentions only reactant (fuel) flow rates.",
+      "ACME overview PDF states 'five independent experiments' in one line and 'six independent experiments' in another; the brief says six ACME experiments, so shared_with lists the five other ACME ids.",
+      "safety_functions classed 'fundamental'; ACME's project-level secondary objective is spacecraft fire prevention, but s-Flame is fundamental flame-structure/kinetics research.",
+      "PSI-23 exposes many data files (4163 entries in the 'added' list, including raw CSV, .asc module data, video mp4/zip and a presentation PDF); none were downloaded. The raw data is from a Reduced Gravity run (19304A1/A2/A3/A7, 19304B1).",
+      "No PSI per-sample oxygen/pressure columns beyond the atmosphere text; no source gave a numeric airflow."
+    ]
+  },
+  "psi_accession": "PSI-23",
+  "project_type": "Microgravity"
+}

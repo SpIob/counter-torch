@@ -1,0 +1,181 @@
+{
+  "id": "bass-2",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps bass-2 to PSI-25; extracted record id matches",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Title 'Burning and Suppression of Solids - II' and Acronym 'BASS-II' match",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "BASS-II and BASS II are reasonable aliases for the investigation",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Experiment Hardware shows MSG; brief lists BASS-II under MSG/SPICE duct investigations",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Investigation Start/End dates 2010-2022 and Flight Platform ISS confirm flown status",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json exists with full record; psi-map.json confirms mapping",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for PSI-25",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Flight Platform 'International Space Station (ISS)'",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Objectives field matches extracted text verbatim (four stated objectives)",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json SubResearch Area 'Spacecraft Fire Safety', keywords include 'Fire Suppression', objective cites fire detection/suppression systems; brief lists BASS/BASS-II as solid-material flammability studies for prevention/material selection",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json keywords 'Solid Fuels'; approach describes solid fuel samples; brief states BASS/BASS-II study solid materials",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.csv fuel-sample column lists PMMA films/rods/slabs/spherical section, SIBAL fabric, Nomex natural, Japan wax candle; matches extracted list",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json objectives list slabs, cylinders, spherical sections; CSV per-test rows give actual geometries and widths",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Experiment Hardware Name 'Microgravity Science Glovebox (MSG)'",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json approach: 'small wind tunnel which could impose airflow speeds up to 40 cm/s'; brief: 'modular fan-driven flow duct built for SPICE inside the MSG'",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Brief states BASS, BASS-II, SPICE, SLICE used same SPICE flow duct; bass-m is in same family though no PSI match yet",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.csv 'Calibrated initial O2 % by vol' column: 129 entries, min 13.6, max 22.2; matches extracted range",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "No pressure column in PSI-25.csv; BASS overview PDF and challenge brief both state BASS gives no pressure; correctly left null",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "partly",
+      "evidence_note": "PSI-25.search.json approach: 'up to 40 cm/s'; NTRS 20150008962 (SIBAL paper): 'flow speed from 40 cm/s down to 1 cm/s'; but BASS-II overview PDF (line 97) states 'crewmember adjusts the airflow from 5 to 50 cm/s'; challenge brief: 'BASS states ... airflow 5 to 50 cm/s only'. Extracted 1-40 cm/s is partly supported (by PSI approach and SIBAL paper) but contradicted by BASS-II-specific overview PDF and brief (5-50 cm/s).",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Project Type 'Microgravity Investigation'; brief frames BASS-II as microgravity study on ISS",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json approach: 'oxygen varied below 21% by adding nitrogen'; objective mentions 'working volume nitrogen vitiation'",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json objectives list forced flow velocity, ambient oxygen concentration, sample geometry; hypothesis mentions constant O2 with varying flow speed",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json hypothesis: 'Testing at constant O2 mole fractions permits studying flame spread and extinction at low and high flow speed'",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.csv has Radiometer gain column; file list shows raw video/still-sequence files; PSI publications include CSA-CP/CDM sensor paper; BASS overview PDF (BASS family) lists anemometer, radiometer, video/still cameras",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json SubResearch Area 'Spacecraft Fire Safety'; objectives cover flame spread/extinction and fire detection/suppression models; brief names BASS/BASS-II for solid-material flammability/prevention",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Research Impacts/Earth Benefits: models for wildfires, building fires, waste recycling; safer materials and firefighting methods",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Publication Title list matches extracted titles (formatted as individual entries with DOIs/NTRS URLs)",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps bass-2 to PSI-25; PSI-25.search.json Accession 'PSI-25'",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-25.search.json Project Type 'Microgravity Investigation'; simplified to 'Microgravity'",
+      "correction": null
+    }
+  ],
+  "summary": "All fields are well-supported by PSI-25.search.json, PSI-25.csv, BASS overview PDF, and challenge brief. Only conditions.airflow has a conflict: PSI approach and SIBAL paper support 1-40 cm/s, but BASS-II overview PDF and challenge brief state 5-50 cm/s. Extracted record's 1-40 cm/s at medium confidence is a reasonable synthesis but noted as partly supported."
+}

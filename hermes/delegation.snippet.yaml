@@ -1,0 +1,29 @@
+# Reference config for Hermes' advanced-delegation plugin (model_map mode).
+#
+# PREFERRED: create these routes interactively so Hermes validates them:
+#     hermes delegation config        # choose "Model routes", then "+ Add a route" x3
+#     hermes delegation config --show # prints the current mode and routes
+#
+# Replace `provider` and `model` with the exact values the `hermes model` picker shows for
+# your NVIDIA key; the ids below are the names you gave, which may carry a vendor prefix
+# in the NVIDIA catalog. Prefer `provider:` over `api_key:` (api_key is stored in plain text).
+# Route changes apply to NEW sessions (/new).
+delegation:
+  max_concurrent_children: 6        # default is 3; six ingestion groups run at once
+  backend: model_map
+  backends:
+    model_map:
+      options:
+        - name: fast
+          description: "Cheap and quick. Per-investigation extraction and routine UI components."
+          provider: nvidia                       # <- confirm in `hermes model`
+          model: deepseek-v4.1-flash             # <- confirm exact id
+        - name: deep
+          description: "Slow and careful. Verification against sources, backend and RAG design, hard integration bugs."
+          provider: nvidia
+          model: nemotron-3-ultra-550b-a55b
+        - name: alt
+          description: "Different model family. Second opinions, spot-check cross-verification, docs and copy."
+          provider: nvidia
+          model: glm-5-3-flash
+      default: fast

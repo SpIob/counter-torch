@@ -1,0 +1,384 @@
+{
+  "id": "acme-cld-flame",
+  "name": "ACME Coflow Laminar Diffusion Flame (CLD Flame)",
+  "aliases": [
+    "CLD Flame",
+    "ACME CLD Flame"
+  ],
+  "family": "acme",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+  "psi_accession": "PSI-21",
+  "project_type": "Microgravity",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record (data/source/psi/PSI-21.json), fields flightProgram and title: ACME CLD Flame flown on the International Space Station"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: the experiments are conducted with a single modular set of hardware in the Combustion Integrated Rack on the ISS"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Provide the benchmark experimental data needed to rigorously test computational models at the extremes of the fuel-dilution spectrum: (A) characterize weak coflow diffusion flames of methane and ethylene versus velocity and fuel dilution via flame shape, lift-off height, temperature and extinction limits; (B) characterize the sooting tendencies of diffusion flames with long residence times via flame shape, gas temperature in the soot-free region, soot luminosity, soot temperature and soot volume fraction.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, field objective (objectives A and B) and proposalTitle 'Fuel Dilution Studies of Coflow Laminar Diffusion Flames in a Microgravity Environment'"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: the general goal of CLD Flame is to extend the range of flame conditions that can be predicted by developing and verifying chemical-kinetic and soot-formation submodels"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental",
+      "prevention"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, field researchImpacts: understanding the factors that affect flame extinction in diffusion flames is critical in the suppression of fires; the study is fundamental laminar-diffusion-flame/soot research"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: a secondary ACME objective is fire prevention, especially for spacecraft; CLD Flame itself advances fundamental model/soot understanding"
+      }
+    ],
+    "note": "CLD Flame is a fundamental laminar-diffusion-flame study; 'prevention' reflects the ACME project's secondary spacecraft fire-prevention objective, not a CLD-specific flammability test. The brief lists ACME among investigations only indirectly relevant to fire safety."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': the six ACME experiments featured flames of gaseous fuels, all with the same modular ACME hardware in the CIR"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, field subResearchArea: 'Flames of gaseous fuel'"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "methane (CH4)",
+      "ethylene (C2H4)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, fields objective and approach: diluted methane and ethylene diffusion flames; experimentalTable uses fuel bottles 40% CH4, 100% CH4, 100% C2H4, 50% C2H4, 30% C2H4"
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20210021781",
+        "note": "Stocker, JASMAC 2021: measurements are made of the structure of diluted methane and ethylene flames in an air coflow"
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Axisymmetric (coaxial) coflow burner: gaseous fuel (or a fuel/nitrogen mixture) issues from a central small tube into an annular air coflow, with a gas-permeable (honeycomb) outlet across the annulus about 3 mm below the inner-tube tip. The inner fuel tube has a 2.1 mm inside diameter and a 2.4 mm outside diameter. Lifted (detached) flames are the focus so flame behaviour does not depend on heat loss to the burner.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: lifted flames are used as the basis for the research to avoid flame dependence on heat loss to the burner; measurements of methane and ethylene flames in an air coflow"
+      },
+      {
+        "kind": "other",
+        "url": "https://www1.grc.nasa.gov/wp-content/uploads/ACME_ISRD_revB_20130930_signed.pdf",
+        "note": "ACME Integrated Science Requirements Document (ISRD), section 1.4 Coflow Burner (CLD Flame): small inner tube (2.1 mm ID, 2.4 mm OD) inside a larger outer tube, coflow gas (e.g., air) through the annulus; honeycomb outlet ~3 mm below the inner-tube tip"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR), U.S. Laboratory (Destiny) module, ISS",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': the six ACME experiments were all conducted with the same modular ACME hardware in the Combustion Integrated Rack (CIR)"
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+          "note": "PSI-21 local record, field experimentHardware: 'Combustion Integrated Rack (CIR), ACME'"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Modular ACME hardware set: ACME chamber insert with an exchangeable axisymmetric coflow burner, fuel/oxidizer/inert mass-flow controllers, ACME avionics package (data acquisition and control) and a high-definition color camera; chamber free volume about 90 L (constant-volume tests).",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+          "note": "PSI-21 local record, field experimentHardware: 'Combustion Integrated Rack (CIR), ACME'"
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "note": "ACME overview: single modular hardware set; three main ACME elements are the chamber insert, a high-definition color camera and an avionics package; tests are constant-volume (~90 L), typically 0.5-2 min"
+        }
+      ]
+    },
+    "shared_with": [
+      "acme-bre",
+      "acme-cfi-g",
+      "acme-e-field",
+      "acme-flame-design",
+      "acme-s-flames"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 21.0,
+        "max": 21.0,
+        "unit": "%"
+      },
+      "confidence": "inferred",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "note": "ACME overview: measurements of the structure of diluted methane and ethylene flames in an air coflow; the oxidizer stream is air, i.e. about 21% O2 by volume balanced with nitrogen"
+        },
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20220005205",
+          "note": "Stocker, ACME CSSCI 2022: exploration of flames at the extremes of sooting and dilution used a coaxial coflow burner where the fuel and oxidizer velocities were typically matched"
+        }
+      ],
+      "note": "Inferred: oxidizer is air coflow (~21% O2); not a swept variable; PSI experimental table has no atmospheric-oxygen column."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No CLD-Flame-specific tested pressure was found. The PSI experimental table (tables/PSI-21.csv) has no pressure column and the ACME overview does not state one. The ACME ISRD requires an initial CIR chamber pressure of 0.1-3 bar absolute (about 1.45-43.5 psi) for ACME tests, but that is a hardware/design requirement, not measured test data, so it is not recorded here."
+    },
+    "airflow": {
+      "value": {
+        "min": 10.0,
+        "max": 40.0,
+        "unit": "cm/s"
+      },
+      "confidence": "inferred",
+      "sources": [
+        {
+          "kind": "other",
+          "url": "https://www1.grc.nasa.gov/wp-content/uploads/ACME_ISRD_revB_20130930_signed.pdf",
+          "note": "ACME ISRD, coflow burner requirements: burner flow profile measured/verified for velocities up to 50 cm/s, with matched inner/annulus velocities in 10 cm/s increments from 20 to 50 cm/s and an explicit 10 cm/s matched case; unmatched pairs span 0 to 50 cm/s"
+        },
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20220007191",
+          "note": "ACME summary slides (CSSCI 2022): CH* profiles reported as a function of matched fuel and coflow velocities at 10, 20, 30 and 40 cm/s"
+        }
+      ],
+      "note": "Inferred from hardware requirements (ISRD) and summary slides showing 10-40 cm/s matched velocities actually used; PSI experimental table reports only burner gas flows in slpm, not coflow velocity."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+          "note": "PSI-21 local record, field projectType: 'Microgravity Investigation'; flightProgram: International Space Station (ISS)"
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "note": "ACME overview: microgravity, buoyancy-free flames aboard the ISS; the absence of gravity changes flame shape and soot"
+        }
+      ],
+      "note": "Microgravity environment represented as 0 g per the project convention."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (fuel diluent)"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+          "note": "ACME overview: the fuel is diluted with an inert gas, nitrogen in our case; with increased dilution the flame lifts off, then forms a flat disk, then extinguishes"
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+          "note": "PSI-21 experimental table (tables/PSI-21.csv): columns 'N2 MFC' and 'Fuel conc. Range', with fuel bottles given as CH4/C2H4 diluted with nitrogen"
+        }
+      ]
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Fuel type (methane or ethylene)",
+      "Fuel dilution with nitrogen (fuel concentration varied, roughly 0% to 100% fuel on a volume basis)",
+      "Injection (fuel) velocity, typically matched to the coflow air velocity (about 10-50 cm/s)",
+      "Flame regime along the dilution spectrum (sooty pure-fuel flames through highly diluted, near-extinction and lifted flames)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, field objective: behaviour characterized as a function of velocity and fuel dilution; experimental table varies Fuel MFC, N2 MFC and Fuel conc. Range across methane, ethylene and improved-coflow test campaigns"
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20210021781",
+        "note": "Stocker, JASMAC 2021: the dependence of normal coflow flames on injection velocity and fuel dilution is examined for very dilute and highly sooting conditions"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Oxidizer = air coflow (about 21% O2, balance nitrogen)",
+      "Microgravity (ISS) environment",
+      "Axisymmetric coflow burner and lifted-flame configuration"
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview describes a single burner/hardware set and flames burned in an air coflow; it does not explicitly list held-constant variables"
+      }
+    ],
+    "note": "Inferred: no source explicitly lists held-constant variables. Deduced from the experiment description (fixed air-coflow oxidizer, fixed coflow burner, ISS microgravity)."
+  },
+  "sensors": {
+    "value": [
+      "High-definition color camera (ACME chamber-insert diagnostic)",
+      "Photomultiplier-tube (PMT) modules, 230-700 nm: one with a 310 nm bandpass filter (OH*), one with a 430 nm filter (CH*), one neutral-density-filtered",
+      "Thin-filament pyrometry (TFP) array of SiC fibers for temperature in soot-free flames",
+      "Radiometers (thermopile detectors, spectral range nominally 0.2-11 um) for soot luminosity/radiation",
+      "Laser extinction measurement for soot volume fraction",
+      "Thermocouple / S-type thermocouple probes for temperature",
+      "CIR gas chromatograph for pre- and post-test chamber-atmosphere analysis"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: PMT modules with 310 nm (OH*) and 430 nm (CH*) bandpass filters; radiometers (thermopile detectors, ~0.2-11 um); translating thin-filament pyrometry array; high-definition color camera; CIR gas chromatograph for pre/post-test atmosphere analysis"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, field approach: measurements of flame chemiluminescence (OH*, CH*), soot luminosity, laser extinction, and thin-filament pyrometry"
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "CLD Flame is fundamental laminar non-premixed-flame research whose secondary purpose (per the ACME project) is spacecraft fire prevention. Its microgravity soot and dilution/extinction-limit measurements provide benchmark data for flammability and flame-stability models that the brief says underpin material selection and fire safety. The brief names ACME only among investigations that are relevant to fire safety 'just not as strongly or directly', so treat it as supporting evidence rather than a direct prevention study.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Potential Considerations': the BRE experiment of ACME is the flammability study; other PSI combustion investigations such as CLD Flame are relevant to fire safety but less directly"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: a secondary objective is fire prevention, especially for spacecraft, via improved understanding of flames and combustion limits"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Improved chemical-kinetic and soot-formation submodels for turbulent reacting flows and practical combustion devices",
+      "Soot control and reduction, lowering pollutant emissions from terrestrial combustors",
+      "Better prediction of flame extinction, relevant to fire suppression and engine efficiency",
+      "Reduced time and cost for combustor design through improved modeling"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+        "note": "PSI-21 local record, field researchImpacts: predicting coupled transport and detailed chemical kinetics is critical for turbulent reacting flows, soot formation/radiative transfer, and flame extinction (fire suppression, engine efficiency)"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/advanced-combustion-via-microgravity-experiments-acme.pdf",
+        "note": "ACME overview: primary goal is improved efficiency and reduced pollutant emission in practical terrestrial combustion; soot particles have adverse health effects and contribute to climate change"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Analysis of CH* concentration and flame heat release rate in laminar coflow diffusion flames under microgravity and normal gravity (Giassi et al.)",
+      "url": "https://doi.org/10.1016/j.combustflame.2016.02.012"
+    },
+    {
+      "title": "A computational and experimental study of coflow laminar methane/air diffusion flames: Effects of fuel dilution, inlet velocity, and gravity (Cao et al., Proc. Combust. Inst.)",
+      "url": "https://doi.org/10.1016/j.proci.2014.05.138"
+    },
+    {
+      "title": "Effects of pressure and fuel dilution on coflow laminar methane-air diffusion flames: A computational and experimental study (Cao et al., Combustion Theory and Modelling)",
+      "url": "https://doi.org/10.1080/13647830.2017.1403051"
+    },
+    {
+      "title": "An experimental and computational study of soot formation in a coflow jet flame under microgravity and normal gravity (Ma et al., Proc. Combust. Inst.)",
+      "url": "https://doi.org/10.1016/j.proci.2014.05.064"
+    },
+    {
+      "title": "Laminar Non-Premixed Flames of Gaseous Fuel Aboard the International Space Station (Stocker, ACME CSSCI 2022)",
+      "url": "https://ntrs.nasa.gov/citations/20220005205"
+    },
+    {
+      "title": "Recent Research on Flames of Gaseous Fuel Aboard the International Space Station (Stocker, JASMAC 2021)",
+      "url": "https://ntrs.nasa.gov/citations/20210021781"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T15:11:49Z",
+    "notes": [
+      "Verified against PSI-21 local record (data/source/psi/PSI-21.json), experimental table (data/source/psi/tables/PSI-21.csv), conditions.json, ACME overview PDF, ACME ISRD, and cited publications.",
+      "Corrected conditions.o2_percent confidence from 'medium' to 'inferred' (21% deduced from 'air coflow', not measured; no O2 column in experimental table).",
+      "Corrected conditions.airflow confidence from 'medium' to 'inferred' and max from 50 to 40 cm/s (10-40 cm/s confirmed by ACME summary slides; 50 cm/s is ISRD hardware requirement not confirmed test data; no airflow column in experimental table).",
+      "conditions.pressure_psi correctly left null with explanatory note.",
+      "All other fields supported by sources. Record status updated to 'verified'."
+    ]
+  }
+}

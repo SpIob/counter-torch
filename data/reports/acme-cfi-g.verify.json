@@ -1,0 +1,160 @@
+{
+  "id": "acme-cfi-g",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "fuel_materials",
+      "verdict": "contradicted",
+      "evidence_note": "PSI objective/hypothesis list propane, n-butane, n-pentane as planned fuels, but experimental tables (PSI-159.csv, PSI-159_2.csv) show only ethane, butane (and mixtures 30%/50%), and propane (and 30% mixture) across 333 test rows. No n-pentane appears in actual test data; ethane appears extensively but is omitted from extracted record.",
+      "correction": {
+        "value": [
+          "propane",
+          "butane",
+          "ethane"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "psi",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+            "note": "PSI-159 experimental tables PSI-159_Experimental table_CFI-G_Normal Flames.csv and PSI-159_Experimental table_CFI-G_Inverse Flames.csv; Fuel column across 333 test rows shows ethane, butane (30%, 50% mixtures), propane (30% mixture) as actually tested fuels"
+          }
+        ],
+        "note": "Corrected from PSI objective (planned) to experimental tables (actual tests). n-pentane not present in test data; ethane added; butane not confirmed as n-butane isomer."
+      }
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "conditions.json (computed from PSI-159.csv XO2 before test and PSI-159_2.csv XO2 columns) gives min=12.0%, max=85.0% over 1194 combined rows. Matches extracted record exactly.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "conditions.json (computed from approx p (bar) columns in both tables, converted 1 bar = 14.5038 psi) gives min=7.185 psi, max=48.006 psi. Matches extracted record exactly.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 search record Project Type: 'Microgravity Investigation'; Flight Platform: 'International Space Station (ISS)'. Brief confirms microgravity on ISS. Value 0 g per project convention.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI experimental tables record fuel/oxidizer mass flow rates (mg/s) and O2 flow rate (mg/s), not an air velocity. conditions.json shows flow: null. Correctly left unknown.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 detail record approach: 'chamber of nitrogen plus a flammable gas'; brief: 'chamber was filled with a mixture of nitrogen and a flammable gas'. Nitrogen is the diluent.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 proposalTitle 'Spherical Cool Diffusion Flames Burning Gaseous Fuels'; objective names propane, n-butane, n-pentane; brief 'Hardware: all six ACME experiments featured flames of gaseous fuels'.",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 approach: 'spherical diffusion flame tests... normal and inverse convection directions'; experimental table file names 'CFI-G_Normal Flames.csv' and 'CFI-G_Inverse Flames.csv'; brief: 'oxygen-nitrogen mixture flowed from the spherical burner, creating an inside-out flame'.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 experimentHardware: 'ACME, Combustion Integrated Rack (CIR)'; brief: 'six ACME experiments were conducted in the Combustion Integrated Rack (CIR)'.",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 experimentHardware: 'ACME, Combustion Integrated Rack (CIR)'; NASA ACME PDF: 'all ACME experiments use a single modular hardware set; constant-volume studies, chamber free volume about 90 L'; brief confirms same modular hardware.",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "partly",
+      "evidence_note": "Brief states all six ACME experiments used the same modular ACME hardware in the CIR. The listed investigations (acme-bre, acme-cld-flame, acme-e-field, acme-s-flames, acme-flame-design) are the other five ACME experiments per psi-map.json. Inferred from brief, not explicitly stated in PSI-159 record.",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 detail record objective field matches extracted text verbatim (5 numbered objectives including cool diffusion flames for propane/n-butane/n-pentane, CFD support, kinetics mechanism). NASA ACME PDF corroborates cool-flame kinetics focus.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 objective and researchImpacts describe fundamental cool-flame kinetics research for engine efficiency. Brief: 'ACME is fundamental microgravity research whose secondary objective is spacecraft fire prevention; CFI-G itself is framed as cool-flame kinetics'. No source labels CFI-G with prevention, detection, or suppression; 'fundamental' is correct classification.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 approach field lists: multiple fuels, range of reactant dilutions, flow rates, pressures, normal and inverse convection directions; objective adds broad range of Zst and Tad. Matches extracted list.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "partly",
+      "evidence_note": "Extracted record correctly marks confidence 'inferred' and notes 'no source explicitly lists held-constant variables; the burner type and the microgravity environment were common to all CFI-G tests'. PSI-159 approach confirms spherical diffusion flame tests aboard ISS throughout.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 approach: 'broad suite of cameras, radiometers, photomultiplier tubes, and thermocouples'; NASA ACME PDF: 'thermopile radiometers (~0.2-11 micron), three PMT modules (310 nm and 430 nm bandpass for OH* and CH*), and the CIR gas chromatograph for pre-/post-test chamber analysis'. Matches extracted list.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Brief 'Spacesuits and oxygen concentration': 'highest-oxygen microgravity tests were part of ACME CFI-G; lunar habitats expected at 30%+ O2 and 10.2 psi or less'. PSI-159 objective confirms cool-flame focus. Matches extracted text.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 researchImpacts: 'better cool-flame kinetics could raise engine thermal efficiency toward 60% via ultra-lean combustion'; NASA ACME PDF: 'primary goal is to improve efficiency and reduce pollutant emissions in practical terrestrial combustion'. Matches extracted list.",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 publications list two entries with DOIs 10.1016/j.proci.2022.07.015 (Kim et al., 2022) and 10.1016/j.combustflame.2023.112852 (Waddell et al., 2023). Titles match extracted record.",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 search record Flight Platform: 'International Space Station (ISS)'. Brief frames combustion investigations as microgravity studies aboard ISS.",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 projectType: 'Microgravity Investigation'; flightProgram: 'International Space Station (ISS)'. Investigation flown on ISS.",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps acme-cfi-g to PSI-159; brief 'Hardware: the six experiments in the ACME project'. Family 'acme' is correct.",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "PSI-159 search record Acronym: 'ACME CFI-G'. Aliases 'CFI-G' and 'ACME CFI-G' match.",
+      "correction": null
+    }
+  ],
+  "summary": "Record is largely well-supported by PSI-159 detail record, experimental tables, and challenge brief. One significant contradiction: fuel_materials lists propane, n-butane, n-pentane from the PSI objective (planned fuels), but the experimental tables (333 test rows across normal/inverse flames) show only ethane, butane (with mixtures), and propane (with mixture) as actually tested. n-pentane does not appear in the test data; ethane appears extensively but was omitted. Corrected fuel_materials to [propane, butane, ethane] based on experimental tables. hardware.shared_with and held_constant are partly supported (inferred from brief/PSI). All condition ranges (O2, pressure, gravity) verified against conditions.json and source CSVs."
+}

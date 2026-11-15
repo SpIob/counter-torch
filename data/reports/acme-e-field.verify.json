@@ -1,0 +1,187 @@
+{
+  "id": "acme-e-field",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Matches seed id and psi-map.json mapping to PSI-22",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "Matches PSI-22.title 'Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames' and investigationAcronym 'ACME E-FIELD Flames'",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "Reasonable aliases drawn from PSI title and common usage",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps acme-e-field to PSI-22; brief lists E-FIELD as one of six ACME experiments",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-22.investigationEndDate is 11-17-2020, confirming flown status",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-22 record exists in local PSI data",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Correct PSI detail page URL format for PSI-22",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "Matches psi-map.json: acme-e-field -> PSI-22",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-22.projectType is 'Microgravity Investigation'; schema enum uses 'Microgravity'",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-22.flightProgram is 'International Space Station (ISS)'; brief confirms ACME experiments on ISS",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "Matches PSI-22.objective verbatim and NASA Science page paraphrase",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI researchImpacts states 'not being conducted to serve any space applications'; ACME doc says primary goal is terrestrial efficiency, secondary is fire prevention. Classification as 'fundamental' is correct; confidence 'medium' appropriate for interpretive step",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: 'experiment is conducted with gas-fueled flames'; brief: 'six ACME experiments featured flames of gaseous fuels'",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: 'Methane and ethylene were used as fuels'; PSI-22.csv fuel bottles: 100% CH4, 40% CH4, 100% C2H4, 30% C2H4",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI approach describes gas-jet burner (no coflow) and coflow burner (weak synthetic air coflow) with flat circular copper mesh electrode; NASA ACME doc confirms both configurations and mesh at 35 or 50 mm",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-22.experimentHardware: 'Combustion Integrated Rack (CIR), ACME'; brief: ACME hardware in CIR on ISS",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "NASA ACME doc: ACME chamber insert with exchangeable burner, hot-wire igniter, gas delivery, high-voltage supply, crew-removable electrode mesh settable +10/-10 kV at 35 or 50 mm; PSI approach confirms high-voltage copper mesh electrode up to 10 kV",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "partly",
+      "evidence_note": "Lists 4 of 5 other ACME experiments (acme-bre, acme-cld-flame, acme-s-flames, acme-cfi-g); missing acme-flame-design (PSI-10) which psi-map.json notes as 'sixth ACME experiment; no seed record yet'. Not incorrect but incomplete.",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "Correctly null: conditions.json shows null o2 for PSI-22; PSI-22.csv has no O2 column; no readable source states numeric O2 range",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Correctly null: conditions.json shows null pressure for PSI-22; PSI-22.csv has no pressure column; NASA ACME doc says constant-volume with pressure rise but gives no values",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "Correctly null: PSI-22.csv has no airflow column; PSI approach and NASA ACME doc state coflow velocity was varied but no numeric values given in readable sources",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-22.projectType 'Microgravity Investigation'; brief states flew in microgravity and only mimics partial gravity electrically. Value min=0, max=0 correct. Confidence could be 'high' (direct PSI statement) rather than 'medium'.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: 'Methane and ethylene were used as fuels and diluted with nitrogen to control flame strength'",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: 'Parameters such as fuel flow rate, coflow velocity, and field polarity were varied'; PSI-22.csv varies mesh polarity, fuel bottle, fuel concentration (25-100%), and burner type (coflow vs gas-jet rounds)",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: 'All experiments were conducted in the combustion integrated rack (CIR)'; NASA ACME doc: constant-volume studies, ~90 L chamber, 0.5-2 minute tests, same modular hardware. Note correctly states chamber atmosphere composition not stated.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: high-res cameras, spectral imaging, thermopile detectors, ion current measurement; NASA ACME doc: ion current via voltage drop, PMT array, thin-filament pyrometry fibers, radiometers, CIR gas chromatograph for pre/post atmosphere",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Accurately reflects brief: 'Partial gravity was mimicked in ACME's E-FIELD Flames experiment through the effect of the electric field on the ions that naturally occur in flames' and 'there is currently no partial-gravity combustion data available in PSI'",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI researchImpacts: electric field control reduces pollutants, enables more efficient combustion, soot control; NASA ACME doc: primary goal is improve efficiency and reduce pollutant emission in terrestrial combustion",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All three papers present in PSI-22.publications: (1) Chien et al. 2022 Combust Flame DOI 10.1016/j.combustflame.2022.112443, (2) Tinajero & Dunn-Rankin 2018 Combust Flame DOI 10.1016/j.combustflame.2018.10.036, (3) Chien et al. 'Ion Current and Flame Changes with Electric Fields in Microgravity' DOI 10.60555/se5a-8c73",
+      "correction": null
+    },
+    {
+      "field": "review.status",
+      "verdict": "supported",
+      "evidence_note": "Status 'extracted' matches workflow; extracted_by 'deepseek-ai/deepseek-v4.1-flash' recorded",
+      "correction": null
+    }
+  ],
+  "summary": "Record is well-sourced and accurate. All non-null fields supported by PSI-22 JSON, PSI-22.csv, NASA ACME document, NASA Science page, and challenge brief. Minor issues: hardware.shared_with omits acme-flame-design (PSI-10, no seed record yet); conditions.gravity_g confidence could be 'high' instead of 'medium'. No contradictions found."
+}

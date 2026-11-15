@@ -1,0 +1,175 @@
+{
+  "id": "bass",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI search Title 'Burning and Suppression of Solids' and Acronym 'BASS'; PDF title matches",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "BASS from PSI search Acronym; BASS-I is a reasonable historical alias for the first BASS investigation",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "Brief: BASS conducted within MSG using SPICE flow duct; PSI search Experiment Hardware Name 'Microgravity Science Glovebox'",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI search Investigation Start/End Dates 2009-2013 and Flight Platform ISS confirm flown status",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-26.json and PSI-26.search.json both exist locally",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for accession PSI-26; consistent with psi-map.json",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps bass -> PSI-26; PSI-26.json accession field confirms",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI search Project Type: 'Microgravity Investigation'",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI search Flight Platform: 'International Space Station (ISS)'; PDF: 'on board the ISS'",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI search Objectives field matches extracted text; PDF research summary confirms burning/extinction characteristics and extinguishment strategies",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PDF: 'guide strategies for extinguishing accidental fires' (suppression); Brief: BASS feeds prevention/material selection via NASA-STD-6001; PSI search: 'Assess effectiveness of inert gaseous extinguishing agent' (suppression) and 'bridge gap... material flammability' (prevention)",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PDF: 'observations of burning solid materials' and lists only solid sample types (fabric, PMMA, wax)",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PDF explicitly lists all 7: SIBAL cotton-fiberglass fabric, Nomex, Ultem, PMMA (thick flats and spheres), wax-saturated fiberglass, paraffin wax, Japan wax",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PDF gives three sample classes with dimensions: thin flats (12 cm x 1-2 cm), thick flats (5 cm x 1 cm x 1-2 mm), PMMA spheres (1 and 2 cm diameter), candles in ceramic tube (6 mm x 25 mm)",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI search Experiment Hardware Name 'Microgravity Science Glovebox'; PDF: 'within the Microgravity Science Glovebox (MSG)'",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI search Approach: 'slightly modified Smoke Point In Co-flow Experiment (SPICE) hardware'; PDF: 'slightly modified SPICE hardware: a small flow duct with an igniter and a nitrogen nozzle, and a fan that produces a co-flow'",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "partly",
+      "evidence_note": "Brief lists BASS, BASS-II, SPICE, SLICE sharing SPICE flow duct in MSG; bass-2 (PSI-25) and spice (PSI-107) and slice (PSI-106) confirmed; bass-m has no PSI match per AGENTS.md and is not mentioned in brief — inclusion is unverifiable",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null: PDF gives no oxygen concentration; PSI-26.csv has no O2 column; PSI search does not mention O2",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null: PDF gives no pressure; PSI-26.csv has no pressure column; PSI search does not mention pressure",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "partly",
+      "evidence_note": "PDF states crew-adjustable 5-50 cm/s; PSI search Approach says 'airflow speeds reaching as high as 40 cm/s' — max differs (50 vs 40). Extracted record captures PDF range at medium confidence and notes conflict",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "partly",
+      "evidence_note": "Sources state ISS microgravity (~0 g) but do not give an exact value; PSI search Project Type 'Microgravity Investigation'; Brief 'low-gravity combustion experiments on the ISS'. Recording exact 0 g is an inference (ISS ~10^-6 g), not a measured range",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "partly",
+      "evidence_note": "PDF: nitrogen supplied as flame suppressant (0-500 cc/min) through mass flow controller; PSI search: 'Using nitrogen as a flame suppressant'. The field labels nitrogen as a diluent but sources describe it as an injected suppressant, not a chamber diluent",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PDF lists varying fuel samples/geometry, tunnel flow speed, nitrogen flow rate, ignition location; NTRS 20140011099 confirms air flow speed, fuel thickness, fuel preheating, nitrogen dilution in opposed/concurrent flow",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null: sources describe varied conditions but do not enumerate which were held constant across all BASS-I tests",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PDF: 'an anemometer measures the actual flow rate and a radiometer measures flame output; video and still cameras record each test'",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Brief: 'flammability studies focus on solid materials such as fabrics and plastics (BASS and BASS-II)'; PDF: 'will guide strategies for extinguishing accidental fires in microgravity'",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PDF Earth Applications: 'validated models have wide applicability to the general understanding of many terrestrial combustion problems'; PSI Research Impacts: models validated in microgravity used to build complex normal-gravity models",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "Both NTRS citations appear in PSI search Publication Title list: 'Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment' (20140011099) and 'Concurrent flame growth, spread and extinction over composite fabric samples...' (20150008962)",
+      "correction": null
+    }
+  ],
+  "summary": "Most fields are well-supported by PSI record, BASS PDF, and challenge brief. Three fields are partly supported: hardware.shared_with includes unverifiable bass-m; conditions.airflow has conflicting max (50 vs 40 cm/s) between PDF and PSI search; conditions.gravity_g records exact 0 g as inference; conditions.diluents mislabels nitrogen suppressant as diluent. No contradictions requiring reset."
+}

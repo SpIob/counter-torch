@@ -1,0 +1,401 @@
+{
+  "id": "sofie",
+  "name": "Solid Fuel Ignition and Extinction (SoFIE)",
+  "aliases": [
+    "SoFIE"
+  ],
+  "family": "other",
+  "status": "active",
+  "in_psi": null,
+  "psi_url": null,
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE project abstract: an experiment insert designed for use within the existing Combustion Integrated Rack (CIR); slated to begin ISS operations."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20240007628",
+        "note": "GEL paper: the SoFIE insert is placed inside the Combustion Integrated Rack (CIR) aboard the ISS."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Study the ignition and flammability of solid spacecraft materials (mainly PMMA) in practical geometries and realistic atmospheric conditions aboard the ISS, to improve spacecraft fire safety: validate NASA-STD-6001 material flammability selection, improve understanding of early fire growth, validate numerical models, and determine optimal suppression techniques (diluents, flow reduction, venting).",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE abstract lists the applications: safer cabin-material selection and validating 1-g flammability protocols for low-g, early fire growth, model validation, suppression by diluents/flow reduction/venting, and burning behavior of engineering materials."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+        "note": "NASA SoFIE page: fire is a catastrophic hazard; NASA-STD-6001 implements a 1-g flame propagation test which some researchers believe is not conservative in low-g; five 2009 investigations on solid surface combustion."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention",
+      "suppression"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE abstract: safer selection of cabin materials and validating NASA materials flammability selection (prevention) and determining optimal suppression techniques by diluents, flow reduction and venting (suppression)."
+      }
+    ],
+    "note": "The source states material selection and suppression techniques in words; mapping those to the brief's prevention/suppression categories is my deduction, hence medium."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE abstract: ignition and flammability of solid spacecraft materials (fuels); PMMA cylinders, spheres and sheets; engineering-material sheet samples."
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "polymethyl methacrylate (PMMA / acrylic)",
+      "spacecraft engineering materials (sheet samples, SMuRF)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE slide: MIST acrylic cylinders (PMMA); NCA thick acrylic; RTDFS thin acrylic sheets; GEL acrylic spheres; SMuRF acrylic cylinders and engineering materials (sheets)."
+      },
+      {
+        "kind": "other",
+        "url": "https://engineering.berkeley.edu/news/2024/12/nasa-funded-project-offers-new-insights-into-fire-behavior-in-space/",
+        "note": "Berkeley Engineering: the SoFIE series aims to test flammability of materials ranging from cotton-based fabrics to plastics; PMMA rods chosen for clean, uniform burning."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Several solid geometries across the sub-experiments: thin flat sheets (~30 cm x 5 cm, RTDFS/SMuRF), thick slabs (~10 x 5 x 1 cm, NCA), cylinders/rods (~15 cm, MIST; ~30 cm, SMuRF), and PMMA spheres (4 cm diameter, GEL).",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE slides list sample geometries: NCA 10x5x1 cm block; SMuRF 30 cm rods; RTDFS/SMuRF 30x5 cm flat thin; MIST 15 cm rods; GEL sphere."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20240007628",
+        "note": "GEL paper states the GEL solid sample is a 4-cm diameter PMMA sphere (the SoFIE overview slide writes it as a 40 cm-dia sphere, a likely typo)."
+      }
+    ],
+    "note": "Geometry ranges are combined across the five sub-experiments, so medium confidence; the SoFIE slide's '40 cm-dia' GEL sphere conflicts with the GEL paper's 4 cm, and the paper was taken as correct."
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR), ISS Destiny laboratory",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20240007628",
+          "note": "GEL paper: the SoFIE insert is placed inside the Combustion Integrated Rack (CIR) aboard the ISS; CIR provides power, filters, lighting, gas cylinder intakes, radiometers and sensors."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://ntrs.nasa.gov/citations/20200000361",
+          "note": "NTRS SoFIE abstract: an experiment insert designed for use within the existing Combustion Integrated Rack (CIR)."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "SoFIE insert (a CIR insert) with a square flow duct (~13.3 x 13.3 cm cross-section, 24.6 cm long), two fan banks that generate forced flow, sample holders on a rotating index system, ceramic radiant heaters (up to 800 W), a Kanthal wire igniter, and internal/external cameras.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20240007628",
+          "note": "GEL paper: SoFIE insert has a square flow duct 13.3 x 13.3 cm by 24.6 cm; forced flow from two fan banks; spherical sample on a stainless tube; a 3-sample index system; coiled-wire igniter."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://ntrs.nasa.gov/citations/20200000361",
+          "note": "NTRS SoFIE slides: sample heaters are ceramic radiant heaters (max 800 W, power/temperature adjustable); 24 AWG Kanthal igniter; two internal and one external camera."
+        }
+      ]
+    },
+    "shared_with": [
+      "flex",
+      "flex-2",
+      "cfi",
+      "acme-bre",
+      "acme-cld-flame",
+      "acme-e-field",
+      "acme-s-flames",
+      "acme-flame-design",
+      "acme-cfi-g"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 13,
+        "max": 85,
+        "unit": "%"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20240007628",
+          "note": "GEL paper: PMMA spheres exposed to oxygen ranging from 13 to 28% at one atmosphere total pressure; five tests list measured O2 of 13.54-20.77%."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+          "note": "NASA SoFIE page (NCA): atmosphere is an oxygen-nitrogen mix with oxygen percentage ranging from atmospheric up to 85%, pressure varied to stay on/near the normoxic curve."
+        }
+      ],
+      "note": "Suite-wide range combining GEL's measured 13-28% O2 (1 atm) with NCA's stated design span up to 85%. The 85% upper bound is a design statement, not a measured flight value, hence medium."
+    },
+    "pressure_psi": {
+      "value": {
+        "min": null,
+        "max": 14.7,
+        "unit": "psi"
+      },
+      "confidence": "low",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20240007628",
+          "note": "GEL paper: tests run at 'one atmosphere total pressure' (test table lists ~1.03-1.07 atm, i.e. about 15.1-15.7 psi)."
+        },
+        {
+          "kind": "other",
+          "url": "https://engineering.berkeley.edu/news/2024/12/nasa-funded-project-offers-new-insights-into-fire-behavior-in-space/",
+          "note": "Berkeley Engineering: SoFIE-MIST varied pressure; one MIST microgravity test at 17.8% O2 was at 100 kPa (~14.5 psi) ambient."
+        }
+      ],
+      "note": "No source states a suite-wide pressure range. GEL ran near 1 atm (~14.7 psi nominal; its table shows up to ~1.07 atm) and SoFIE-MIST varied pressure down to sub-atmospheric. Highest tested ~1 atm (14.7 psi); the lower bound is not quantified in the sources read, so it is left null."
+    },
+    "airflow": {
+      "value": {
+        "min": 0.2,
+        "max": 80,
+        "unit": "cm/s"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20240007628",
+          "note": "GEL paper: forced flow ranging from 0.2 to 80 cm/s is generated by two fan banks in the SoFIE insert's flow duct."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://science.nasa.gov/biological-physical/investigations/sofie-mist/",
+          "note": "SoFIE-MIST: ignition and extinction boundaries determined as a function of flow speed, oxygen concentration and external radiant flux."
+        }
+      ],
+      "note": "0.2-80 cm/s is the SoFIE insert's forced-flow capability demonstrated in GEL; MIST also varies flow speed. Recorded at medium because the range is stated for the GEL runs/facility rather than every sub-experiment."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://ntrs.nasa.gov/citations/20240007628",
+          "note": "GEL paper: long-duration microgravity experiments aboard the ISS determine diffusion-flame extinction limits of PMMA spheres."
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments are conducted on the ISS."
+        }
+      ],
+      "note": "ISS platform treated as microgravity (~0 g). SoFIE-MIST also has a ground (1 g) companion study, which is not microgravity data (rule 9)."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+          "note": "NASA SoFIE page (NCA): the atmosphere is a mix of oxygen and nitrogen."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://ntrs.nasa.gov/citations/20200000361",
+          "note": "NTRS SoFIE abstract: interest in suppression of burning materials by diluents, flow reduction and venting; oxygen/nitrogen atmospheres for exploration."
+        }
+      ],
+      "note": "Nitrogen is the test-atmosphere balance/diluent gas across the sub-experiments; diluent-based suppression is an explicit objective. No other added diluent is stated for flight tests."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Oxygen concentration (about 13% up to 85% across sub-experiments)",
+      "Ambient pressure (sub-atmospheric up to about 1 atm)",
+      "Forced/opposed flow velocity (about 0.2 to 80 cm/s)",
+      "External radiant heat flux / level of external radiation",
+      "Fuel material, sample size and geometry (thin sheets, thick slabs, rods, spheres; PMMA and engineering materials)",
+      "Degree of internal heating / fuel thickness (thick solids, GEL)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE slides: MIST varies flow, O2 and external radiant flux; NCA varies opposed-flow velocity, O2 and pressure along the normoxic curve; GEL varies flow, O2, pressure and internal heating."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://science.nasa.gov/biological-physical/investigations/sofie-mist/",
+        "note": "SoFIE-MIST varies air flow speed, oxygen concentration, pressure and level of external radiation."
+      },
+      {
+        "kind": "other",
+        "url": "https://engineering.berkeley.edu/news/2024/12/nasa-funded-project-offers-new-insights-into-fire-behavior-in-space/",
+        "note": "Berkeley Engineering: MIST researchers varied sample size, oxygen concentration and pressure, and planned external radiation (heaters) in a later round."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Microgravity (~0 g) environment",
+      "Nitrogen as the test-atmosphere balance gas"
+    ],
+    "confidence": "low",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20240007628",
+        "note": "GEL paper: all reported tests are long-duration microgravity aboard the ISS with a reeled PMMA sphere; the flow duct and two-fan-bank arrangement are common."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+        "note": "NASA SoFIE page: NCA atmosphere is an oxygen-nitrogen mix; SMuRF and MIST also use O2/N2 exploration atmospheres."
+      }
+    ],
+    "note": "Only the microgravity environment and the nitrogen balance gas clearly stayed the same across SoFIE tests; which conditions each sub-experiment held fixed is not enumerated in the sources read, hence low."
+  },
+  "sensors": {
+    "value": [
+      "Oxygen concentration sensor",
+      "Pressure sensor",
+      "Flow-velocity sensor",
+      "CO sensor",
+      "CO2 sensor",
+      "Radiometer",
+      "Video/photographic cameras"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20240007628",
+        "note": "GEL paper: CIR is equipped with a power supply, filters, lighting, gas cylinder intakes, radiometers, and oxygen, pressure, velocity and CO/CO2 sensors; four fixed cameras image the flame."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE slides: two internal and one external camera image the entire flow tube and sample."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "SoFIE directly targets spacecraft fire prevention and suppression for the habitats in scope. It measures ignition and extinction limits of solid materials in exploration atmospheres (low pressure, elevated oxygen) in microgravity, tests whether NASA-STD-6001's 1-g flame-propagation screening is conservative in low-g, and studies suppression by diluents, flow reduction and venting. MIST found materials burn at lower oxygen in microgravity (~15%) than on Earth (~18%).",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://ntrs.nasa.gov/citations/20200000361",
+        "note": "NTRS SoFIE abstract: safer material selection, validate 1-g protocols for low-g fires, suppression techniques by diluents/flow/venting, engineering materials planned for spacecraft."
+      },
+      {
+        "kind": "other",
+        "url": "https://engineering.berkeley.edu/news/2024/12/nasa-funded-project-offers-new-insights-into-fire-behavior-in-space/",
+        "note": "Berkeley Engineering: in normal gravity materials are flammable at ~18% O2; on the ISS the limit is about 15%, so materials can burn in space that would not burn on Earth."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Refine combustion models that can be used in terrestrial settings",
+      "Material flammability screening in confined spaces such as aircraft and submarines",
+      "Improved normal-gravity combustion models for terrestrial applications"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://science.nasa.gov/biological-physical/investigations/sofie-mist/",
+        "note": "SoFIE-MIST 'Earth Applications': results may help scientists refine combustion models that could be used in terrestrial settings."
+      },
+      {
+        "kind": "publication",
+        "url": "https://doi.org/10.32865/2346/99050",
+        "note": "Ground companion study: data are crucial for flammability of combustible materials in confined spaces such as airplanes, submarines and spacecraft (this is a 1-g study)."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Solid Fuel Ignition and Extinction (SoFIE) Project on ISS",
+      "url": "https://ntrs.nasa.gov/citations/20200000361"
+    },
+    {
+      "title": "Extinction of solid diffusion flame in microgravity: Details of quenching and blowoff processes",
+      "url": "https://ntrs.nasa.gov/citations/20240007628"
+    },
+    {
+      "title": "Material Ignition and Suppression Test (MIST) in Space Exploration Atmospheres, Summary of Research",
+      "url": "http://hdl.handle.net/2060/20150023467"
+    },
+    {
+      "title": "Opposed flame spread limit over PMMA rods in normal and micro gravity",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0379711226000871"
+    },
+    {
+      "title": "The Effect of Ambient Pressure and External Heating on the Limiting Oxygen Concentration (LOC) of PMMA Rods Caused by Oxygen Depletion in Confined Fires",
+      "url": "https://doi.org/10.32865/2346/99050"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "No PSI record: sofie is in the no_psi_match_yet list of data/source/psi-map.json, so no PSI JSON, experimental table or psi.nasa.gov page was read and no psi_accession / project_type / psi_url was set (a script owns those). in_psi stays null.",
+      "SoFIE is a facility/insert that hosts five investigations (RTDFS, NCA, GEL, MIST, SMuRF); conditions here are combinable ranges across them, not a single test matrix, so oxygen/pressure/airflow are medium/low confidence.",
+      "Oxygen: GEL measured 13-28% at ~1 atm; NCA's page states a design span of atmospheric up to 85% along the normoxic curve. Recorded 13-85% (medium) because the 85% upper bound is a design statement, not a measured flight value.",
+      "Pressure: no suite-wide range is stated. GEL ran near 1 atm (~14.7 psi nominal; its table shows up to ~1.07 atm) and SoFIE-MIST varied pressure down to sub-atmospheric (e.g. 100 kPa). Highest tested taken as ~14.7 psi; lower bound left null because no source quantifies it.",
+      "Rule 9: the SoFIE-MIST ground companion study (DOI 10.32865/2346/99050) is a 1-g study (40-100 kPa, radiant flux 0-3.3 kW/m2) and its numbers were NOT recorded as microgravity conditions; it is cited only for earth applications and as a publication.",
+      "Geometry conflict: the NTRS SoFIE overview slide writes the GEL sample as a '40 cm-dia sphere' while the GEL 2024 paper states 4-cm diameter; the paper was taken as correct.",
+      "The ScienceDirect 2026 paper (S0379711226000871) was reached only as a search snippet / abstract, not the full text; it is cited as a publication and for the fact that MIST ran at sub-atmospheric pressures in a sealed chamber.",
+      "status kept from the seed ('active'); NASA's SoFIE page lists it as an Active Mission. The challenge brief does not name SoFIE directly, so relevance_notes relies on the NTRS and NASA pages."
+    ]
+  }
+}

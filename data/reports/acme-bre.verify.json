@@ -1,0 +1,181 @@
+{
+  "id": "acme-bre",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps acme-bre to PSI-20",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 investigationAcronym is 'ACME BRE'; title includes 'Burning Rate Emulator'",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "BRE, Burning Rate Emulator, ACME BRE are all used in PSI-20 and brief",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 is part of ACME project; brief lists six ACME experiments",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 investigationEndDate 02-08-2025 indicates flown",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-20.json exists and is a full record",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for PSI-20",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 accession in psi-map.json and PSI-20.json",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 projectType is 'Microgravity Investigation'",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 flightProgram is 'International Space Station (ISS)'",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 objective text matches extracted paraphrase: quiescent microgravity, CH4/N2 and C2H4/N2 on 25/50mm burners, three NASA atmospheres (14.7/21%, 10.2/26.5%, 8.2/34%), O2/CO2 desired, extinction limits",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "NASA ACME one-pager states BRE is focused on fire prevention; brief says 'study of materials flammability'",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 subResearchArea 'Flames of Gaseous Fuels'; objective names gaseous CH4/N2 and C2H4/N2; brief confirms 'burned gaseous fuels'",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 objective names CH4/N2 and C2H4/N2; experimental table lists 100% C2H4, 50% C2H4, 100% CH4 fuel bottles",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 objective: porous circular burners 25 and 50 mm; experimental table Burner Size column has 25 and 50; ACME one-pager describes flat porous burner",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 experimentHardware 'Combustion Integrated Rack (CIR), ACME'; brief: six ACME experiments used same modular hardware in CIR",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 experimentHardware mentions ACME hardware; ACME one-pager details: two heat-flux transducers per burner, surface thermocouple, internal porous-burner pressure, three mass flow controllers, ACME avionics",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Brief states six ACME experiments share CIR hardware; psi-map.json lists five other ACME IDs (acme-cld-flame, acme-e-field, acme-s-flames, acme-cfi-g, acme-flame-design)",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 experimental table CSV: Oxygen Conc values across 18 rows are 21, 25, 26.5, 34, 40 (after dropping 3400% and 2100% data-entry errors). Min 21, max 40 matches extracted record.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "partly",
+      "evidence_note": "Extracted range 8.2-14.7 psi comes from the three NASA atmospheres listed in PSI-20 objective (14.7/21%, 10.2/26.5%, 8.2/34%). CSV note states 'chamber pressures were also varied but are not identified in this summary table.' Actual per-test pressures unknown; the range reflects planned atmospheres, not measured test pressures.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 objective and approach describe 'quiescent microgravity ambient'; brief: 'still atmospheres'; CSV has no flow column. Recorded as 0 cm/s (no imposed flow) with appropriate note.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 projectType 'Microgravity Investigation'; flightProgram ISS; brief confirms no partial-gravity data in PSI",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "partly",
+      "evidence_note": "PSI-20 objective: O2/N2 ambients tested; O2/CO2 ambients 'desired' (planned, not confirmed flown). CSV note: 'diluted with nitrogen'. CO2 diluent not confirmed in flown tests; medium confidence appropriate.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 experimental table varies burner size (25/50), fuel bottle (100% C2H4, 50% C2H4, 100% CH4), oxygen concentration (21, 25, 26.5, 34, 40%); objective states pressures, diluent choice, fuel mixtures varied; table note confirms pressures varied.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 approach: ambient is quiescent across tests; fuel flow controlled from burner heat flux/temperature to emulate condensed-phase vaporization.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "ACME one-pager: two heat-flux transducers per burner, surface thermocouple, internal pressure, radiometers, color/CH*/OH* cameras, gas chromatograph, SAMS-II. PSI-20 approach confirms burner surface temperature and heat flux measured.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Brief: BRE studied materials flammability in still atmospheres. PSI-20 researchImpacts: quasi-steady burning of PMMA/Nylon in microgravity without airflow, elevated-O2 atmospheres sustained combustion while 21% O2 self-extinguished, suggests cone calorimeter (NASA Test 2) for material screening.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-20 researchImpacts recommends increased use of cone calorimeter (NASA Test 2), an Earth fire-test instrument; extracted record correctly marks confidence 'inferred' and notes terrestrial benefit implication.",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "PSI-20.json lists 16 publications with DOIs; extracted record includes first 6 with valid DOI links. Note acknowledges omission for brevity.",
+      "correction": null
+    }
+  ],
+  "summary": "Record is well-supported by PSI-20.json, experimental table CSV, ACME one-pager, and challenge brief. Two fields rated 'partly': pressure_psi range reflects planned NASA atmospheres from objective, not measured per-test pressures (CSV notes pressures varied but unlisted); diluents includes CO2 which was only 'desired' in objective, not confirmed flown. All other fields supported. No contradictions found."
+}

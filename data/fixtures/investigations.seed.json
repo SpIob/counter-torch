@@ -1,0 +1,4071 @@
+{
+  "schema_version": "0.1.0",
+  "notes": [
+    "Seed values come only from the challenge brief and NASA's PSI investigation list. Everything else is unknown until the ingestion workers fill it from PSI sources.",
+    "Gravity 0 means microgravity, approximated as 0 g.",
+    "Added Nov 14 from NASA pages: sofie, flare (status active, PSI presence unconfirmed) and bass-m. PSI lists 24 combustion investigations (challenge video); this seed does not map one to one.",
+    "The brief says ACME has six experiments; five are named in the sources used here (BRE, CLD Flame, E-FIELD Flames, s-Flames, CFI-G). Identify the sixth from PSI.",
+    "PSI also lists ground-based combustion entries (for example cool-flame transitions with counterflow flames, and SAME-data modeling) that are not seeded here."
+  ],
+  "investigations": [
+    {
+      "id": "saffire-1",
+      "name": "Spacecraft Fire Safety Demonstration (Saffire-I)",
+      "aliases": [
+        "Saffire-I",
+        "SAFFIRE I"
+      ],
+      "family": "saffire",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+      "platform": {
+        "value": "CRS OA-6",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list gives the carrier for this Saffire flight"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Spacecraft fire safety demonstration focused on solid-material flammability",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Brief groups Saffire under prevention / material selection."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Group-level statement in the brief; confirm per investigation."
+      },
+      "fuel_materials": {
+        "value": [
+          "fabrics",
+          "plastics"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Brief names fabrics and plastics for the group BASS/BASS-II/Saffire; confirm per investigation."
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "inferred",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief frames these as microgravity fire-safety investigations"
+            }
+          ],
+          "note": "Assumed microgravity; confirm from PSI documentation."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Cited directly in the brief as a flammability study of solids for prevention and material selection.",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-98",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "saffire-2",
+      "name": "Spacecraft Fire Safety Demonstration (Saffire-II)",
+      "aliases": [
+        "Saffire-II",
+        "SAFFIRE II"
+      ],
+      "family": "saffire",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+      "platform": {
+        "value": "CRS OA-5",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list gives the carrier for this Saffire flight"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Spacecraft fire safety demonstration focused on solid-material flammability",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Brief groups Saffire under prevention / material selection."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Group-level statement in the brief; confirm per investigation."
+      },
+      "fuel_materials": {
+        "value": [
+          "fabrics",
+          "plastics"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Brief names fabrics and plastics for the group BASS/BASS-II/Saffire; confirm per investigation."
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "inferred",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief frames these as microgravity fire-safety investigations"
+            }
+          ],
+          "note": "Assumed microgravity; confirm from PSI documentation."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Cited directly in the brief as a flammability study of solids for prevention and material selection.",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-99",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "saffire-3",
+      "name": "Spacecraft Fire Safety Demonstration (Saffire-III)",
+      "aliases": [
+        "Saffire-III",
+        "SAFFIRE III"
+      ],
+      "family": "saffire",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+      "platform": {
+        "value": "CRS OA-7",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list gives the carrier for this Saffire flight"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Spacecraft fire safety demonstration focused on solid-material flammability",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Brief groups Saffire under prevention / material selection."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Group-level statement in the brief; confirm per investigation."
+      },
+      "fuel_materials": {
+        "value": [
+          "fabrics",
+          "plastics"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Brief names fabrics and plastics for the group BASS/BASS-II/Saffire; confirm per investigation."
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "inferred",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief frames these as microgravity fire-safety investigations"
+            }
+          ],
+          "note": "Assumed microgravity; confirm from PSI documentation."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Cited directly in the brief as a flammability study of solids for prevention and material selection.",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-100",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "bass",
+      "name": "Burning and Suppression of Solids (BASS)",
+      "aliases": [
+        "BASS"
+      ],
+      "family": "msg",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Solid-material burning and suppression in microgravity (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention",
+          "suppression"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          },
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title includes 'Suppression'"
+          }
+        ],
+        "note": "Prevention per the brief; suppression inferred from the title."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": [
+          "fabrics",
+          "plastics"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Group-level statement in the brief; confirm per investigation."
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Microgravity Science Glovebox (MSG)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular fan-driven flow duct built for SPICE",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "bass-2",
+          "bass-m",
+          "spice",
+          "slice"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": [],
+          "note": "Brief says flow is fan-driven; speeds are not given in the brief."
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Cited directly in the brief as a flammability study of solids for prevention and material selection.",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-26",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "bass-2",
+      "name": "Burning and Suppression of Solids II (BASS-II)",
+      "aliases": [
+        "BASS-II"
+      ],
+      "family": "msg",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Solid-material burning and suppression in microgravity (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention",
+          "suppression"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          },
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title includes 'Suppression'"
+          }
+        ],
+        "note": "Prevention per the brief; suppression inferred from the title."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": [
+          "fabrics",
+          "plastics"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ],
+        "note": "Group-level statement in the brief; confirm per investigation."
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Microgravity Science Glovebox (MSG)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular fan-driven flow duct built for SPICE",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "bass",
+          "bass-m",
+          "spice",
+          "slice"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": [],
+          "note": "Brief says flow is fan-driven; speeds are not given in the brief."
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Cited directly in the brief as a flammability study of solids for prevention and material selection.",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': flammability studies focus on solid materials such as fabrics and plastics (BASS, BASS-II, Saffire-I/-II/-III)"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-25",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "spice",
+      "name": "Smoke Point In Co-flow Experiment (SPICE)",
+      "aliases": [
+        "SPICE"
+      ],
+      "family": "msg",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Smoke point in co-flowing gaseous-fuel flames (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": [],
+        "note": "Safety function not stated in the brief; ingestion worker to assign with a source."
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief says BASS, BASS-II, SPICE and SLICE collectively used solid and gaseous fuels; BASS/BASS-II are solid, so SPICE/SLICE are inferred to be gaseous."
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Microgravity Science Glovebox (MSG)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular fan-driven flow duct built for SPICE",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "bass",
+          "bass-2",
+          "bass-m",
+          "slice"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-107",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "slice",
+      "name": "Structure & Liftoff In Combustion Experiment (SLICE)",
+      "aliases": [
+        "SLICE"
+      ],
+      "family": "msg",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Flame structure and liftoff in gaseous-fuel flames (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": [],
+        "note": "Safety function not stated in the brief; ingestion worker to assign with a source."
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief says BASS, BASS-II, SPICE and SLICE collectively used solid and gaseous fuels; BASS/BASS-II are solid, so SPICE/SLICE are inferred to be gaseous."
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Microgravity Science Glovebox (MSG)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular fan-driven flow duct built for SPICE",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "bass",
+          "bass-2",
+          "bass-m",
+          "spice"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-106",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "bass-m",
+      "name": "Burning and Suppression of Solids, BASS-M (flame-retardant textiles)",
+      "aliases": [
+        "BASS-M"
+      ],
+      "family": "msg",
+      "status": "flown",
+      "in_psi": null,
+      "psi_url": null,
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "NASA BASS document: BASS-M ran in microgravity aboard the ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Examine how low gravity affects the flame-retardant behavior of treated cotton textiles and compare with terrestrial upward-burning tests",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "Objective stated in the NASA BASS document"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "Flame-retardant textile behavior relates to material selection"
+          }
+        ],
+        "note": "Inferred; the document does not label a safety function."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "Fuel is cotton textiles"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": [
+          "cotton textiles treated with flame retardants",
+          "untreated cotton controls"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "11 textile types, four samples each, including untreated controls"
+          }
+        ]
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Microgravity Science Glovebox (MSG)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+              "note": "BASS family hardware sits in the MSG"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modified SPICE hardware: flow duct, fan, integrated hot-wire igniters",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+              "note": "Hardware list in the NASA BASS document"
+            }
+          ]
+        },
+        "shared_with": [
+          "bass",
+          "bass-2",
+          "spice",
+          "slice"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": {
+            "min": 5,
+            "max": 50,
+            "unit": "cm/s"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+              "note": "Document gives 5 to 50 cm/s for the BASS family through a fan-driven co-flow duct"
+            }
+          ],
+          "note": "Stated for all three BASS investigations together."
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+              "note": "Microgravity aboard the ISS; the g level is not stated"
+            }
+          ]
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": [
+          "Textile material",
+          "Airflow rate"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "Variables listed for BASS-M"
+          }
+        ]
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": [
+          "Anemometer",
+          "Radiometer",
+          "Video camera",
+          "Still camera"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+            "note": "Sensors listed for BASS-M"
+          }
+        ]
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:nasa-combustion-pages",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      }
+    },
+    {
+      "id": "same",
+      "name": "Smoke and Aerosol Measurement Experiment (SAME)",
+      "aliases": [
+        "SAME"
+      ],
+      "family": "same",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Smoke and aerosol measurement to test fire detection in microgravity",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': fire detection was tested in microgravity through SAME and SAME-R"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "detection"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': fire detection was tested in microgravity through SAME and SAME-R"
+          }
+        ]
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": [
+          "same-r",
+          "daft"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": [
+          "Smoke-detection instrument (an instrument also used for dust detection in DAFT/DAFT-2)"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Other investigations in PSI'"
+          }
+        ]
+      },
+      "relevance_notes": {
+        "value": "Brief names SAME as the microgravity fire-detection study.",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': fire detection was tested in microgravity through SAME and SAME-R"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-102",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "same-r",
+      "name": "Smoke and Aerosol Measurement Experiment - Reflight (SAME-R)",
+      "aliases": [
+        "SAME-R"
+      ],
+      "family": "same",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Reflight of SAME: smoke and aerosol measurement for fire detection in microgravity",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': fire detection was tested in microgravity through SAME and SAME-R"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "detection"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': fire detection was tested in microgravity through SAME and SAME-R"
+          }
+        ]
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": [
+          "same",
+          "daft"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": [
+          "Smoke-detection instrument (an instrument also used for dust detection in DAFT/DAFT-2)"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Other investigations in PSI'"
+          }
+        ]
+      },
+      "relevance_notes": {
+        "value": "Brief names SAME-R as a microgravity fire-detection study.",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': fire detection was tested in microgravity through SAME and SAME-R"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-101",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "daft",
+      "name": "Dust and Aerosol Measurement Feasibility Test (DAFT / DAFT-2)",
+      "aliases": [
+        "DAFT",
+        "DAFT-2"
+      ],
+      "family": "daft",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Feasibility test that reused a SAME/SAME-R smoke-detection instrument to detect dust",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Other investigations in PSI'"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "detection"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief: instrument from SAME/SAME-R detection studies reused for dust"
+          }
+        ],
+        "note": "Category inferred from the shared detection instrument."
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": [
+          "same",
+          "same-r"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": [
+          "Instrument shared with SAME/SAME-R, used here for dust detection"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Other investigations in PSI'"
+          }
+        ]
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-47",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "flex",
+      "name": "Flame Extinguishment Experiment (FLEX)",
+      "aliases": [
+        "FLEX"
+      ],
+      "family": "mdca",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Suppression of burning liquid-fuel droplets by diluting the chamber atmosphere with CO2 and helium",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': FLEX studied suppression by diluting the chamber atmosphere with CO2 and helium"
+          },
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "suppression"
+        ],
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': FLEX studied suppression by diluting the chamber atmosphere with CO2 and helium"
+          }
+        ]
+      },
+      "fuel_phase": {
+        "value": "liquid_droplet",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Multi-user Droplet Combustion Apparatus (MDCA)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "flex-2",
+          "cfi"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": [
+            "carbon dioxide",
+            "helium"
+          ],
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Background': FLEX studied suppression by diluting the chamber atmosphere with CO2 and helium"
+            }
+          ],
+          "note": "Brief states both suppress fire."
+        }
+      },
+      "variables_swept": {
+        "value": [
+          "Diluent gas (CO2 vs helium)"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': FLEX studied suppression by diluting the chamber atmosphere with CO2 and helium"
+          }
+        ],
+        "note": "Inferred from the brief's description of dilution; confirm the actual test matrix."
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Brief names FLEX as the suppression study (CO2 and helium dilution).",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Background': FLEX studied suppression by diluting the chamber atmosphere with CO2 and helium"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-69",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "flex-2",
+      "name": "Flame Extinguishment Experiment 2 (FLEX-2)",
+      "aliases": [
+        "FLEX-2"
+      ],
+      "family": "mdca",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Follow-on flame extinguishment study (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "suppression"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title: Flame Extinguishment Experiment - 2"
+          }
+        ],
+        "note": "Inferred from the title."
+      },
+      "fuel_phase": {
+        "value": "liquid_droplet",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Multi-user Droplet Combustion Apparatus (MDCA)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "flex",
+          "cfi"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-68",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "cfi",
+      "name": "Cool Flames Investigation (CFI)",
+      "aliases": [
+        "CFI"
+      ],
+      "family": "mdca",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Cool-flame behavior in burning liquid-fuel droplets (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          },
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": [],
+        "note": "Safety function not stated in the brief; ingestion worker to assign with a source."
+      },
+      "fuel_phase": {
+        "value": "liquid_droplet",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Multi-user Droplet Combustion Apparatus (MDCA)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "flex",
+          "flex-2"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-39",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "acme-bre",
+      "name": "ACME Burning Rate Emulator (BRE)",
+      "aliases": [
+        "BRE",
+        "Burning Rate Emulator"
+      ],
+      "family": "acme",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Materials flammability in still atmospheres as a function of material properties, using gaseous fuels",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Other investigations in PSI'"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Brief describes BRE as a study of materials flammability"
+          }
+        ]
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief: all six ACME experiments featured flames of gaseous fuels."
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular ACME hardware set",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "acme-cld-flame",
+          "acme-e-field",
+          "acme-s-flames",
+          "acme-cfi-g"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "cm/s"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Brief: study in still atmospheres"
+            }
+          ],
+          "note": "Still atmosphere interpreted as zero imposed flow."
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Brief highlights BRE as materials-flammability research even though the fuel was gaseous.",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Other investigations in PSI'"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-20",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "acme-cld-flame",
+      "name": "ACME Coflow Laminar Diffusion Flame (CLD Flame)",
+      "aliases": [
+        "CLD Flame"
+      ],
+      "family": "acme",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Coflow laminar diffusion flames (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief: all six ACME experiments featured flames of gaseous fuels."
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular ACME hardware set",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "acme-bre",
+          "acme-e-field",
+          "acme-s-flames",
+          "acme-cfi-g"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-21",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "acme-e-field",
+      "name": "ACME Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames)",
+      "aliases": [
+        "E-FIELD Flames",
+        "E-FIELD"
+      ],
+      "family": "acme",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Electric-field effects on laminar diffusion flames; the field acts on flame ions and mimics partial gravity",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Partial-gravity data'"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief: all six ACME experiments featured flames of gaseous fuels."
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular ACME hardware set",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "acme-bre",
+          "acme-cld-flame",
+          "acme-s-flames",
+          "acme-cfi-g"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "Flown in microgravity; partial gravity is mimicked electrically, not produced by true partial gravity."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Brief cites it as mimicking partial gravity via flame ions. The brief also says PSI has no true partial-gravity data yet.",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Partial-gravity data'"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-22",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "acme-s-flames",
+      "name": "ACME Structure and Response of Spherical Diffusion Flames (s-Flames)",
+      "aliases": [
+        "s-Flames"
+      ],
+      "family": "acme",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Structure and response of spherical diffusion flames (name-derived; refine from PSI documentation)",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "Investigation title in the NASA PSI list"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief: all six ACME experiments featured flames of gaseous fuels."
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular ACME hardware set",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "acme-bre",
+          "acme-cld-flame",
+          "acme-e-field",
+          "acme-cfi-g"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-23",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "acme-cfi-g",
+      "name": "ACME Cool Flames Investigation with Gases (CFI-G)",
+      "aliases": [
+        "CFI-G"
+      ],
+      "family": "acme",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+      "platform": {
+        "value": "ISS",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+            "note": "NASA PSI investigation list names the carrier/platform as ISS"
+          }
+        ]
+      },
+      "objective": {
+        "value": "Highest-oxygen microgravity flame tests: inside-out flames from a spherical burner in a nitrogen/flammable-gas chamber",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Spacesuits and oxygen concentration'"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": "gas",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Hardware' section"
+          }
+        ],
+        "note": "Brief: all six ACME experiments featured flames of gaseous fuels."
+      },
+      "fuel_materials": {
+        "value": [
+          "propane (example flammable gas)"
+        ],
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Brief says the chamber held nitrogen and a flammable gas, e.g. propane"
+          }
+        ]
+      },
+      "fuel_geometry": {
+        "value": "Spherical burner producing an inside-out flame",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Spacesuits and oxygen concentration'"
+          }
+        ]
+      },
+      "hardware": {
+        "facility": {
+          "value": "Combustion Integrated Rack (CIR)",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "apparatus": {
+          "value": "Modular ACME hardware set",
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief, 'Hardware' section"
+            }
+          ]
+        },
+        "shared_with": [
+          "acme-bre",
+          "acme-cld-flame",
+          "acme-e-field",
+          "acme-s-flames"
+        ]
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": {
+            "min": null,
+            "max": 85,
+            "unit": "%"
+          },
+          "confidence": "high",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Brief: an oxygen-nitrogen mixture of up to 85% oxygen flowed from the burner"
+            }
+          ],
+          "note": "The 85% figure is the burner-supplied mixture, not necessarily the chamber average."
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0,
+            "max": 0,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+              "note": "NASA PSI investigation list names the carrier/platform as ISS"
+            },
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+            }
+          ],
+          "note": "ISS platform treated as microgravity (~0 g)."
+        },
+        "diluents": {
+          "value": [
+            "nitrogen (background gas)"
+          ],
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "brief",
+              "url": null,
+              "note": "Brief: chamber filled with a mixture of nitrogen and a flammable gas"
+            }
+          ]
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": "Brief identifies these as the highest-oxygen microgravity tests; lunar habitats are expected at 30% O2 or more.",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Spacesuits and oxygen concentration'"
+          }
+        ]
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      },
+      "psi_accession": "PSI-159",
+      "project_type": "Microgravity"
+    },
+    {
+      "id": "luci",
+      "name": "Lunar-g Combustion Investigation (LUCI)",
+      "aliases": [
+        "LUCI"
+      ],
+      "family": "other",
+      "status": "planned",
+      "in_psi": false,
+      "psi_url": null,
+      "platform": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "objective": {
+        "value": "Planned partial-gravity (lunar) combustion investigation; the brief expects its data to be added to PSI in the future",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Partial-gravity data'"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": [],
+          "note": "Lunar-g value not stated in the brief."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      }
+    },
+    {
+      "id": "fm2",
+      "name": "Flammability of Materials on the Moon (FM2)",
+      "aliases": [
+        "FM2"
+      ],
+      "family": "other",
+      "status": "planned",
+      "in_psi": false,
+      "psi_url": null,
+      "platform": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "objective": {
+        "value": "Planned partial-gravity (lunar) combustion investigation; the brief expects its data to be added to PSI in the future",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "brief",
+            "url": null,
+            "note": "Challenge brief, 'Partial-gravity data'"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": {
+            "min": 0.166,
+            "max": 0.166,
+            "unit": "g"
+          },
+          "confidence": "medium",
+          "sources": [
+            {
+              "kind": "nasa_page",
+              "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-of-materials-on-the-moon-fm2/",
+              "note": "NASA describes FM2 as burning behavior of materials in lunar gravity, about 1/6 g"
+            }
+          ],
+          "note": "About 1/6 g per NASA; no FM2 data is in PSI yet per the brief."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:challenge-brief+PSI-list",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      }
+    },
+    {
+      "id": "sofie",
+      "name": "Solid Fuel Ignition and Extinction (SoFIE)",
+      "aliases": [
+        "SoFIE"
+      ],
+      "family": "other",
+      "status": "active",
+      "in_psi": null,
+      "psi_url": null,
+      "platform": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "objective": {
+        "value": "Study fire growth and fire-safety techniques in space, including whether the 1-g flame propagation test in NASA-STD-6001 is conservative at low gravity",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+            "note": "Objective as described on NASA's SoFIE page"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+            "note": "Tests the material-screening standard"
+          }
+        ],
+        "note": "Inferred from the screening-test focus."
+      },
+      "fuel_phase": {
+        "value": "solid",
+        "confidence": "medium",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/solid-fuel-ignition-and-extinction-sofie/",
+            "note": "Page describes solid materials"
+          }
+        ]
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": [],
+          "note": "Not stated on the page."
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:nasa-combustion-pages",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      }
+    },
+    {
+      "id": "flare",
+      "name": "Flammability Limits at Reduced-g Experiment (FLARE)",
+      "aliases": [
+        "FLARE"
+      ],
+      "family": "other",
+      "status": "active",
+      "in_psi": null,
+      "psi_url": null,
+      "platform": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "objective": {
+        "value": "Develop a method to relate material flammability limits in normal gravity to those in microgravity, so microgravity limits can be estimated from ground data",
+        "confidence": "high",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+            "note": "Objective as described on NASA's FLARE page"
+          }
+        ]
+      },
+      "safety_functions": {
+        "value": [
+          "prevention"
+        ],
+        "confidence": "inferred",
+        "sources": [
+          {
+            "kind": "nasa_page",
+            "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/flammability-limits-at-reduced-g-experiment-flare/",
+            "note": "Flammability limits drive material selection"
+          }
+        ],
+        "note": "Inferred; the page does not label a safety function."
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "seed:nasa-combustion-pages",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": []
+      }
+    },
+    {
+      "id": "acme-flame-design",
+      "name": "Advanced Combustion via Microgravity Experiments / Flame Design",
+      "aliases": [
+        "ACME",
+        "Flame Design"
+      ],
+      "family": "acme",
+      "status": "flown",
+      "in_psi": true,
+      "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+      "platform": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "objective": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "safety_functions": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_phase": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_materials": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "fuel_geometry": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "hardware": {
+        "facility": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "apparatus": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "shared_with": []
+      },
+      "conditions": {
+        "o2_percent": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "pressure_psi": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "airflow": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "gravity_g": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        },
+        "diluents": {
+          "value": null,
+          "confidence": "unknown",
+          "sources": []
+        }
+      },
+      "variables_swept": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "held_constant": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "sensors": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "relevance_notes": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "earth_applications": {
+        "value": null,
+        "confidence": "unknown",
+        "sources": []
+      },
+      "publications": [],
+      "review": {
+        "status": "seed",
+        "extracted_by": "stub:scripts/make_stubs.py",
+        "verified_by": null,
+        "verified_at": null,
+        "notes": [
+          "Stub from the PSI record PSI-10; all fields unknown until ingestion."
+        ]
+      },
+      "psi_accession": "PSI-10",
+      "project_type": "Microgravity"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "id": "spice",
+  "name": "Smoke Point In Co-flow Experiment (SPICE)",
+  "aliases": [
+    "SPICE",
+    "Smoke Point In Co-flow Experiment"
+  ],
+  "family": "msg",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+  "psi_accession": "PSI-107",
+  "project_type": "Microgravity",
+  "platform": {
+    "value": "International Space Station (ISS), Microgravity Science Glovebox (MSG)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 search record: Flight Platform 'International Space Station (ISS)'; experimentHardware 'Microgravity Science Glovebox (MSG)'"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "NASA SPICE one-page investigation document"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Determine the laminar smoke-point properties of non-buoyant gas-jet diffusion flames under different co-flow conditions in microgravity; quantify the sooting propensity of different fuels and the effects of burner diameter and co-flow velocity on luminous flame length and smoke point.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 objective: identify laminar smoke-point properties of non-buoyant jet diffusion flames, quantify sooting propensity of different fuels, and validate luminous flame shape vs residence time"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "SPICE document: determines the point at which gas-jet flames begin to emit soot in microgravity"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 researchArea 'Combustion Science', subResearchArea 'Fire Safety'; objective and hypothesis study the fundamental smoke-point/sooting behaviour of laminar flames"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "SPICE document frames the work as continuing 'fundamental phenomena' on stability and extinction of jet diffusion flames"
+      }
+    ],
+    "note": "Classified as fundamental soot/smoke-point research; no prevention, detection or suppression hardware or limit test is stated."
+  },
+  "fuel_phase": {
+    "value": "gas",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 approach: gaseous fuels (methane, ethylene, propane, propylene and propylene mixtures) burned as jet diffusion flames"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': SPICE used the SPICE flow duct in the MSG"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "methane",
+      "ethylene",
+      "propane",
+      "propylene",
+      "propylene/nitrogen mixtures"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 approach: fuels tested included methane, ethylene, propane, propylene and propylene mixtures"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 experimental table PSI-107.csv 'Fuel' column: Methane, Ethylene, Propane, Propylene, 50% Propylene, 75% Propylene"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://nasa.gov/mission_pages/station/research/experiments/667.html",
+        "note": "NASA experiment page: gaseous fuel mixtures of ethane, ethylene, propane, propylene and propylene with nitrogen"
+      }
+    ],
+    "note": "NASA's experiment page also names ethane and propylene-with-nitrogen, which the PSI approach text and experimental table do not list as separate entries."
+  },
+  "fuel_geometry": {
+    "value": "Round gas-jet burner (nozzle) issuing into an enclosed co-flowing air duct; nozzle diameters 0.4064, 0.762 and 1.6002 mm.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 approach: burner diameters of 0.41 mm, 0.76 mm and 1.6 mm; enclosed laminar flame in a co-flow air environment"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 experimental table PSI-107.csv 'Nozzle (mm)' column: 0.4064, 0.762, 1.6002"
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+          "note": "PSI-107 experimentHardware: 'Microgravity Science Glovebox (MSG)'"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': SPICE used the SPICE flow duct in the MSG"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Modular fan-driven flow duct built for SPICE, with integrated nozzles, still/video cameras and a fuel delivery system; stabilises an enclosed laminar gas-jet flame in a co-flowing air stream.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief, 'Hardware': SPICE used the SPICE flow duct in the MSG"
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+          "note": "PSI-107 approach: apparatus with a flow duct with integrated nozzles, cameras and fuel delivery systems"
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+          "note": "SPICE document: stabilises an enclosed laminar flame in a co-flowing oxidizer"
+        }
+      ]
+    },
+    "shared_with": [
+      "bass",
+      "bass-2",
+      "slice"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states a test oxygen concentration. The co-flow oxidizer is air, but no numeric O2 value is given; the PSI experimental table PSI-107.csv has no O2 column. Left unknown rather than inferred."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No readable source states a chamber pressure for SPICE; the PSI experimental table PSI-107.csv has no pressure column. Left unknown rather than inferred from ISS cabin conditions."
+    },
+    "airflow": {
+      "value": {
+        "min": 0.28,
+        "max": 85.28,
+        "unit": "cm/s"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+          "note": "PSI PSI-107 experimental table PSI-107_Experimental table_Spice.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 469 test rows of PSI-107_Experimental table_Spice.csv, columns: Air Rate (cm/s). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+          "note": "PSI-107 projectType 'Microgravity Investigation'; flightProgram 'International Space Station (ISS)'"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+        }
+      ],
+      "note": "ISS microgravity, treated as ~0 g; the exact residual-g level is not stated."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen (N2)"
+      ],
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://nasa.gov/mission_pages/station/research/experiments/667.html",
+          "note": "NASA experiment page: propylene was tested mixed with nitrogen"
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+          "note": "PSI-107 experimental table PSI-107.csv 'Fuel' column lists 50% Propylene and 75% Propylene, i.e. propylene diluted with nitrogen"
+        }
+      ],
+      "note": "Nitrogen is listed as the fuel-stream diluent (propylene/nitrogen mixtures); it is not reported as a chamber-atmosphere diluent."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Fuel type (methane, ethylene, propane, propylene and propylene/nitrogen mixtures)",
+      "Burner (nozzle) diameter (0.4064, 0.762 and 1.6002 mm)",
+      "Co-flow air velocity (PSI approach cites 5.4 to 65 cm/s; table spans wider)",
+      "Fuel flow rate (adjusted to reach the smoke point)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 objective and approach: effects of burner diameter and co-flow velocity, sooting propensity of different fuels, and air/fuel flow-rate variations"
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 experimental table PSI-107.csv columns: Fuel, Nozzle (mm), Fuel Rate (sccm)/(mg/s), Air Rate (cm/s)"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Co-flowing air as the oxidizer",
+      "Microgravity (ISS) environment",
+      "Enclosed laminar flame inside the MSG flow duct"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 approach: each flame was ignited in a controlled co-flow air environment, i.e. air oxidizer held across tests"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "SPICE document: stabilises an enclosed laminar flame in a co-flowing oxidizer"
+      }
+    ],
+    "note": "Derived from the common setup described across tests; sources do not enumerate held-constant conditions explicitly."
+  },
+  "sensors": {
+    "value": [
+      "Still and video cameras (luminous flame length and shape)",
+      "Temperature field measurement",
+      "Co-flow air velocity distribution measurement",
+      "Radiative heat-loss measurement"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 approach: flame lengths recorded with still and video cameras; measurements included flame height, radiative heat losses and co-flow air velocity distributions"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "SPICE document: measure the temperature field to verify flame structure predictions"
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Fundamental soot/smoke-point study named in the challenge brief's hardware section (SPICE flow duct in the MSG). Soot controls the radiative heat emitted from microgravity flames, so smoke-point and luminous-flame-length data feed models of heat release and fire spread that support spacecraft fire safety and material selection.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': SPICE used the SPICE flow duct in the MSG"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "SPICE document: soot dominates heat emitted from flames and control of that heat is critical for preventing fire spread on Earth and in space"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "The smoke-point metric is a classical tool in Earth fire modelling and for understanding soot growth and emission by flames",
+      "Better prediction of heat release and soot behaviour in non-buoyant practical flames such as jet-engine and furnace combustors",
+      "Possible insights for fuel formulation and combustion processes"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+        "note": "PSI-107 researchImpacts: refine computational models, improve understanding of soot generation, and possible insights to better fuel formulations and combustion processes"
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-point-in-co-flow-experiment-spice.pdf?emrc=f30479",
+        "note": "SPICE document 'Earth Applications': smoke point is used in fire modelling and to predict heat release from non-buoyant flames in practical combustors"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Laminar smoke points of coflowing flames in microgravity (Dotson et al., Fire Safety Journal, 2011)",
+      "url": "https://doi.org/10.1016/j.firesaf.2011.08.002"
+    },
+    {
+      "title": "Laminar Smoke Points in Coflow Measured Aboard the International Space Station (Dotson et al., AIAA, 2010)",
+      "url": "https://doi.org/10.2514/6.2010-1105"
+    },
+    {
+      "title": "Scaling of Gas-Jet Flame Lengths in Elevated Gravity (Sunderland et al., 2008)",
+      "url": "https://doi.org/10.1007/978-1-4020-8682-3_22"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T14:56:13Z",
+    "notes": [
+      "Corrected hardware.shared_with: removed 'bass-m' which has no PSI match and is not mentioned in the challenge brief as sharing the SPICE flow duct. Retained 'bass', 'bass-2', 'slice' per brief 'Hardware' section.",
+      "All non-null fields verified against PSI-107 local JSON, experimental table (PSI-107.csv), NASA SPICE one-page PDF, and challenge brief.",
+      "Null fields (conditions.o2_percent, conditions.pressure_psi) correctly left unknown: no source states numeric values; PSI table has no O2 or pressure columns.",
+      "conditions.airflow range (0.28-85.28 cm/s) from script-computed PSI table summary; note acknowledges raw CSV has negative/zero entries clamped by script.",
+      "PSI fields (psi_accession, in_psi, psi_url, project_type) left as extracted; set by scripts per AGENTS.md rule 11."
+    ]
+  }
+}

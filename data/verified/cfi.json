@@ -1,0 +1,308 @@
+{
+  "id": "cfi",
+  "name": "Cool Flames Investigation (CFI)",
+  "aliases": [
+    "CFI",
+    "Cool Flames Investigation",
+    "Zarevo"
+  ],
+  "family": "mdca",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 search record: Flight Platform is 'International Space Station (ISS)' and Project Type is 'Microgravity Investigation'."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Characterize low-temperature ('cool flame') combustion of isolated n-dodecane and n-dodecane/iso-dodecane fuel droplets in microgravity: the effect of helium dilution on cool-flame behavior, the relationship between droplet size, pressure and flame extinction, and soot formation during cool-flame burning.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 search record 'Objectives' lists five aims: n-dodecane and n-dodecane/iso-dodecane combustion at 0.25-5 atm; helium-dilution effects on cool flames; combustion characteristics; droplet-size/pressure/extinction relationship; soot formation."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "fundamental"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Research Impacts': CFI provides 'critical validation for complex chemical kinetic mechanisms', advances low-temperature combustion understanding, and supports safer spacecraft systems. Framed as basic research, not a prevention/detection/suppression device."
+      }
+    ],
+    "note": "Classified as fundamental science: neither the challenge brief nor PSI assigns CFI a prevention, detection or suppression role."
+  },
+  "fuel_phase": {
+    "value": "liquid_droplet",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Approach': the MDCA 'facilitates the controlled combustion of fuel droplets'; droplets dispensed and suspended between needles or tethered on fibers."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Hardware': FLEX, FLEX-2 and the Cool Flames Investigation (CFI) each featured burning droplets of liquid fuel in the MDCA."
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "n-dodecane",
+      "iso-dodecane",
+      "n-dodecane/iso-dodecane mixtures",
+      "farnesane"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Approach' and 'Objectives': fuels observed include n-dodecane, farnesane, and mixtures of n-dodecane/iso-dodecane. Per-test table (PSI-39.csv) lists C12H26 and n-/iso-dodecane blends at 75/25 and 60/40."
+      }
+    ],
+    "note": "Farnesane is named in the PSI approach/objective text but does not appear in the per-test conditions table. 'iso-dodecane' as a pure fuel is not in the per-test table; only appears in mixtures."
+  },
+  "fuel_geometry": {
+    "value": "Isolated single fuel droplets, freely deployed between opposed hypodermic needles or supported on a silicon-carbide fiber tether",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Approach': droplets of fuel are dispensed and suspended between hypodermic needles or tethered using silicon-carbide fibers."
+      },
+      {
+        "kind": "publication",
+        "url": "https://doi.org/10.1007/s12217-024-10115-x",
+        "note": "Dietrich et al. 2024 (CFI results): large, isolated n-dodecane droplets; tests were both free-floated and fiber-supported."
+      }
+    ],
+    "note": "Initial droplet diameters were large (several mm per the CFI results paper); PSI states no firm size range."
+  },
+  "hardware": {
+    "facility": {
+      "value": "Combustion Integrated Rack (CIR)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "note": "PSI-39 'Experiment Hardware': 'Multi-User Droplet Combustion Apparatus (MDCA) / Combustion Integrated Rack (CIR)'."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Multi-User Droplet Combustion Apparatus (MDCA)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "note": "PSI-39 'Approach': the Combustion Integrated Rack contains the MDCA, which facilitates controlled combustion of fuel droplets."
+        }
+      ]
+    },
+    "shared_with": [
+      "flex",
+      "flex-2"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 17.0,
+        "max": 21.0,
+        "unit": "%"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "note": "PSI PSI-39 experimental table PSI-39_Experimental table_CFI.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 87 test rows of PSI-39_Experimental table_CFI.csv, columns: Oxygen. Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "PSI-39 per-test table gives Pressure 0.5-5 atm; left unknown here because scripts/psi_apply_conditions.py overwrites conditions from that table. The PSI 'Approach' text says 0.25-0.5 atm, inconsistent with the objectives and per-test table."
+    },
+    "airflow": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No airflow value is stated in the PSI-39 record or its per-test table; the MDCA is a quiescent chamber with no imposed flow reported."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "note": "PSI-39 search record 'Project Type': Microgravity Investigation; Flight Platform ISS. Cool flames need long microgravity times, obtainable only on the ISS."
+        }
+      ]
+    },
+    "diluents": {
+      "value": [
+        "nitrogen",
+        "helium"
+      ],
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+          "note": "PSI-39 'Objectives': analyze the effects of helium dilution on cool-flame behavior. Per-test table columns are Nitrogen and Helium (helium fraction 0-0.59, nitrogen 0.2-0.83)."
+        }
+      ]
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Chamber pressure (0.5-5 atm)",
+      "Oxygen mole fraction (0.17-0.21)",
+      "Helium diluent fraction (0-0.59)",
+      "Fuel composition (pure n-dodecane vs n-dodecane/iso-dodecane blends at 75/25 and 60/40)",
+      "Droplet support (free-floated vs silicon-carbide fiber tether)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 per-test conditions table (data/source/psi/tables/PSI-39.csv), 87 rows: Pressure, Oxygen, Nitrogen, Helium, Fiber and Fuel columns vary across tests."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Microgravity (free fall aboard the ISS)",
+      "MDCA / CIR hardware",
+      "Hot-wire ignition method"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Approach' describes a single common method throughout: MDCA inside the CIR, droplets ignited by a hot-wire igniter that is then retracted; Project Type is Microgravity."
+      }
+    ],
+    "note": "Inferred as the conditions common to all tests from the one method described."
+  },
+  "sensors": {
+    "value": [
+      "Black-and-white camera (droplet diameter)",
+      "UV camera (OH* emission and flame size)",
+      "High-resolution cameras (monitoring/documentation)",
+      "Narrow-band and wide-band radiometers (flame radiation)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Approach': black-and-white camera for droplet size, UV camera for OH* radical emissions and flame size, other high-resolution cameras for monitoring, and narrow-/wide-band radiometers for flame radiation. Raw-data file list includes Radiometer_Readings and Chamber_Readings."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Fundamental low-temperature (cool-flame) droplet-combustion and soot study, listed by PSI as related to FLEX (PSI-69). It supplies droplet extinction-diameter and burning-rate data plus chemical-kinetic validation relevant to spacecraft fire safety, since cool flames can precede hot ignition.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 search record 'Related Investigations': PSI-69 (FLEX); 'Research Impacts' ties CFI to safer spacecraft systems and low-temperature combustion understanding."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://gipoc.grc.nasa.gov/wp/fcf-cir/mdca/cfi/",
+        "note": "NASA CIR operations page: cool flames occur when hydrocarbons are heated in air; their reaction rate first rises then falls with temperature, and they are a precursor to hot ignition."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Understanding ignition/autoignition of practical fuels and fuel additives",
+      "Design of clean, high-efficiency HCCI engines",
+      "Interpretation of octane and cetane numbers",
+      "Validation of detailed chemical-kinetic mechanisms for low-temperature hydrocarbon combustion"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+        "note": "PSI-39 'Research Impacts/Earth Benefits': cool-flame understanding aids new-fuel selection, HCCI engine design, octane/cetane interpretation for spark-ignition and diesel engines, and computational model development."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Can cool flames support quasi-steady alkane droplet burning?",
+      "url": "https://doi.org/10.1016/j.combustflame.2012.07.012"
+    },
+    {
+      "title": "Cool-flame extinction during n-alkane droplet combustion in microgravity",
+      "url": "https://doi.org/10.1016/j.combustflame.2015.01.012"
+    },
+    {
+      "title": "Partial-Burning Regime for Quasi-Steady Droplet Combustion Supported by Cool Flames",
+      "url": "https://doi.org/10.2514/1.J054437"
+    },
+    {
+      "title": "The role of cool-flame chemistry in quasi-steady combustion and extinction of n-heptane droplets",
+      "url": "https://doi.org/10.1080/13647830.2014.934296"
+    },
+    {
+      "title": "Asymptotic analysis of quasi-steady n-heptane droplet combustion supported by cool-flame chemistry",
+      "url": "https://doi.org/10.1080/13647830.2016.1248494"
+    },
+    {
+      "title": "Low Temperature n-Dodecane Droplet Combustion Experiments Aboard the International Space Station",
+      "url": "https://doi.org/10.1007/s12217-024-10115-x"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T14:42:53Z",
+    "notes": [
+      "Verified all non-null fields against PSI-39.json, PSI-39.csv, conditions.json, and challenge brief.",
+      "fuel_materials: 'iso-dodecane' listed as separate material but only appears in mixtures in per-test table; noted in field.",
+      "Pressure range discrepancy: PSI approach text says 0.25-0.5 atm, but objective and per-test table show 0.5-5 atm; variables_swept correctly uses CSV range and note explains.",
+      "conditions.pressure_psi and conditions.airflow correctly left null for script overwrite / no data.",
+      "No fields contradicted or reset; review status set to 'verified'."
+    ]
+  },
+  "psi_accession": "PSI-39",
+  "project_type": "Microgravity"
+}

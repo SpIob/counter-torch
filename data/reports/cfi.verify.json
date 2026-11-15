@@ -1,0 +1,169 @@
+{
+  "id": "cfi",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps seed 'cfi' to PSI-39",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.json accession and search record title: 'Cool Flames Investigation (CFI)'",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "CFI and Cool Flames Investigation from PSI; Zarevo confirmed by Russian paper (doi.org/10.1134/S1990793118030223) as Russian name for the joint Roscosmos-NASA CFI experiment",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 experimentHardware lists MDCA; challenge brief line 44 confirms CFI used MDCA in CIR",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.csv test dates March-August 2017 on ISS; projectType Microgravity Investigation",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.json flightProgram: 'International Space Station (ISS)'",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.json objective lists five aims: n-dodecane/iso-dodecane at 0.25-5 atm; helium dilution effects; combustion characteristics; droplet size/pressure/extinction; soot formation. Extracted value paraphrases all five.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 researchImpacts: 'basic understanding', 'critical validation for complex chemical kinetic mechanisms', 'support the design of safer spacecraft systems' — framed as fundamental research, not prevention/detection/suppression. Challenge brief does not assign CFI a safety function.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 approach: 'facilitates the controlled combustion of fuel droplets'; challenge brief line 44: 'burning droplets of liquid fuel'",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "partly",
+      "evidence_note": "PSI-39 objective/approach and CSV confirm n-dodecane (C12H26), n-dodecane/iso-dodecane blends (75/25, 60/40), and farnesane (in text only). 'iso-dodecane' as a pure fuel is not in CSV or explicitly stated; only appears in mixtures. Farnesane noted as text-only.",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 approach: 'droplets of fuel are dispensed and suspended between hypodermic needles or tethered using silicon-carbide fibers'; Dietrich et al. 2024 confirms free-floated and fiber-supported.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 experimentHardware: 'Multi-User Droplet Combustion Apparatus (MDCA), Combustion Integrated Rack (CIR)'",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 experimentHardware and approach both name MDCA",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Challenge brief line 44: FLEX, FLEX-2, and CFI each used MDCA in CIR",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.csv Oxygen column values 0.17-0.21 (mole fraction) = 17-21%; conditions.json confirms min 17.0, max 21.0, unit '%', converted from fraction",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Correctly left null with note: PSI-39.csv Pressure column shows 0.5-5 atm; conditions.json has min 0.5, max 5.0, unit 'unknown' (not converted). Script psi_apply_conditions.py will overwrite. PSI approach text says 0.25-0.5 atm (inconsistent with objective/CSV).",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.csv has no airflow column; PSI approach describes quiescent MDCA chamber with no imposed flow. Correctly null.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 projectType: 'Microgravity Investigation'; flightProgram: ISS. Microgravity = 0 g.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 objective: 'analyze the effects of helium dilution'; CSV has Helium (0-0.59) and Nitrogen (0.2-0.83) columns",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.csv 87 rows show variation in Pressure (0.5-5 atm), Oxygen (0.17-0.21), Helium (0-0.59), Fuel (C12H26, 75/25 blend, 60/40 blend), Fiber (Yes/No). All five listed variables match.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 approach describes single method: MDCA in CIR, microgravity on ISS, hot-wire ignition retracted after ignition. Inferred as common to all tests.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 approach: B&W camera (droplet size), UV camera (OH* emission, flame size), high-res cameras (monitoring), narrow-/wide-band radiometers (flame radiation). Raw data files include Radiometer_Readings, Chamber_Readings.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 related investigations lists PSI-69 (FLEX); researchImpacts ties CFI to safer spacecraft systems and low-temperature combustion. NASA CIR page: cool flames are precursors to hot ignition.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-39 researchImpacts/Earth Benefits: cool-flame understanding aids new-fuel selection, HCCI engine design, octane/cetane interpretation, computational model development.",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All 6 DOIs in extracted record match PSI-39.json publications list (Nayagam et al. 2012, 2015; Nayagam et al. 2015 AIAA; Paczko et al. 2014; Paczko et al. 2016; Dietrich et al. 2024).",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.json accession field: 'PSI-39'; psi-map.json confirms cfi -> PSI-39",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-39.json projectType: 'Microgravity Investigation'; script simplifies to 'Microgravity'",
+      "correction": null
+    }
+  ],
+  "summary": "All non-null fields are well-supported by PSI-39.json, PSI-39.csv, conditions.json, and the challenge brief. One minor qualification: fuel_materials lists 'iso-dodecane' as a separate material but only mixtures appear in the per-test table; this is noted in the record. Pressure range discrepancy between PSI approach text (0.25-0.5 atm) and CSV/objective (0.5-5 atm) is properly documented. No fields contradicted or requiring reset."
+}

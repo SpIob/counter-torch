@@ -1,0 +1,370 @@
+{
+  "id": "same-r",
+  "name": "Smoke Aerosol Measurement Experiment-Reflight (SAME-R)",
+  "aliases": [
+    "SAME-R",
+    "SAME-2",
+    "SAME Reflight"
+  ],
+  "family": "same",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+  "platform": {
+    "value": "International Space Station (ISS)",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 (SAME-R) record: Flight Platform is International Space Station (ISS); Project Type Microgravity Investigation."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+        "note": "NASA SAME one-pager, SAME-R section: the reflight (SAME-2) was conducted on the ISS during Expedition 24 (July-September 2010)."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Quantify the sizes of liquid smoke particulate in low gravity and relate the droplet-size distribution to the smoke generation and transport conditions; the reflight of SAME with a new material (Pyrell), broadened test conditions and improved diagnostics (M-pass) after the original TEM grids returned contaminated.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Objectives: primary objective was to quantify the sizes of liquid smoke particulate in low gravity and relate droplet size distribution to smoke generation and transport; TEM grids from SAME were contaminated so SAME-R changed materials, conditions and diagnostics."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "Urban et al. 2012 (SAME-2 particle morphology): the reflight built on the original flight by adding diagnostic measurements and expanding the test matrix."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "detection"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Background': fire detection was tested in microgravity through the SAME and SAME-R studies."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 is filed under SubResearch Area 'Spacecraft Fire Safety'; its hypothesis concerns how smoke size and number density affect smoke-detector response."
+      }
+    ],
+    "note": "Named in the brief as a microgravity fire-detection investigation."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Approach: a new solid test material, Pyrell (an intumescent fire-retardant foam), was introduced to replace the DBP samples used in SAME."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "SAME-2 paper: five solid spacecraft materials (Teflon, Kapton, cotton, silicone rubber, Pyrell) heated below the ignition point."
+      }
+    ],
+    "note": "Samples were heated below ignition (oxidative pyrolysis/smoldering) to generate smoke, not burned as a flame."
+  },
+  "fuel_materials": {
+    "value": [
+      "Teflon (PTFE)",
+      "Kapton (polyimide)",
+      "cotton (cellulose lamp wick)",
+      "silicone rubber",
+      "Pyrell (intumescent fire-retardant foam)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Approach and Keywords: Pyrell (Foamex intumescent foam) added in place of DBP; keywords list Pyrell, Silicon Rubber, Teflon, Cotton, Kapton."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "SAME-2 paper: materials were Teflon, Kapton, cotton, silicone rubber and Pyrell."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Solid material samples including a cotton lamp wick and Pyrell intumescent foam, heated below ignition by the SAME sample-heating hardware inside the SAME flow duct.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Approach: SAME-R used the SAME on-orbit hardware; Pyrell foam replaced DBP samples."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 experimental table PSI-101.csv lists sample types Kapton, Silicone, Lampwick, Teflon and Pyrell."
+      }
+    ],
+    "note": "Sample shape and dimensions were not stated in the readable sources; only the material forms (foam, wick) are named."
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG) aboard the ISS",
+      "confidence": "inferred",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "note": "NASA SAME one-pager: SAME was conducted in the Microgravity Science Glovebox (MSG) on the ISS during Expedition 15."
+        },
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "note": "PSI-101 Approach: SAME-R utilized the SAME hardware used on-orbit."
+        }
+      ],
+      "note": "Inferred (my deduction): SAME operated in the MSG and SAME-R reused the same SAME hardware, so the MSG is the likely facility. No readable source states the SAME-R facility explicitly."
+    },
+    "apparatus": {
+      "value": "SAME flight hardware (flow duct with sample heater and an aging chamber); SAME-R added the in-house GRC M-pass two-moment detector and replaced one Commercial Diagnostic Enclosure (a DustTrak plus an ionization detector used in SAME).",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "note": "PSI-101 Approach: SAME-R used SAME hardware and replaced one of the two Commercial Diagnostic Enclosures (DustTrak + ionization detector) with the in-house GRC M-pass instrument."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+          "note": "NASA SAME-R section: measurements taken with returned flight diagnostic equipment plus a commercial smoke detector."
+        }
+      ]
+    },
+    "shared_with": [
+      "same",
+      "daft"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Not stated in the PSI-101 record, the PSI-101 per-test table (which has no O2 column), or the readable NASA/NTRS sources; left unknown per AGENTS.md rule 9."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "Not stated in the PSI-101 record, the PSI-101 per-test table (which has no pressure column), or the readable NASA/NTRS sources; left unknown."
+    },
+    "airflow": {
+      "value": {
+        "min": 0.0,
+        "max": 8.1,
+        "unit": "cm/s"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "note": "PSI PSI-101 experimental table PSI-101_Experimental table_SAME-R.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 109 test rows of PSI-101_Experimental table_SAME-R.csv, columns: Inlet velocity (cm/s). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+          "note": "PSI-101 record: Project Type 'Microgravity Investigation', Flight Platform ISS. Microgravity treated as 0 g."
+        }
+      ],
+      "note": "PSI states the project type directly; no partial-gravity data is implied."
+    },
+    "diluents": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No diluent gases (for example CO2 or helium) are stated for SAME-R; tests produced smoke in the spacecraft atmosphere and no readable source names a chamber diluent."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "sample material (Teflon, Kapton, cotton, silicone rubber, Pyrell)",
+      "air flow past the sample (quiescent to about 8 cm/s)",
+      "sample heating/baseline surface temperature",
+      "smoke aging (transport) time, about 11 to 1800 s"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "SAME-2 paper: flow past the sample ranged from quiescent to 8 cm/s; aging chamber held smoke for 11 to 1800 s; sample surface temperature controlled and varied."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Approach: test conditions were broadened, including higher heating temperatures and no-flow during sample heating."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101.csv per-test rows differ in inlet velocity (0 to 8.1 cm/s), sample type and aging times."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "solid samples heated below the ignition point (oxidative pyrolysis, no flame)",
+      "sample heating duration of about 60 s per test",
+      "moment diagnostics of the particle-size distribution (number, diameter and mass concentration)"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "SAME-2 paper: samples heated below the ignition point with conditions controlled for repeatable surface temperatures and air flow; three moment diagnostics used throughout."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101.csv: Duration (sec) is 60 for nearly all rows (one 120 s run)."
+      }
+    ]
+  },
+  "sensors": {
+    "value": [
+      "thermal precipitator with Transmission Electron Microscope (TEM) grids (post-flight particle morphology and size)",
+      "aerosol instruments measuring moments of the size distribution: number concentration (zeroth), diameter concentration (first) and mass concentration (third)",
+      "MPASS prototype two-moment smoke detector",
+      "commercial smoke detector",
+      "ISS photoelectric (near-IR forward-scattering) smoke detector",
+      "Space Shuttle ionization smoke detector",
+      "Scanning Mobility Particle Sizer (SMPS, ground reference only)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+        "note": "NASA SAME-R section: returned flight diagnostics - thermal precipitator for TEM, several aerosol instruments, a commercial smoke detector, and ISS and Space Shuttle smoke detectors; moments of the size distribution measured."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "SAME-2 paper: prototype two-moment detector (MPASS), three moment diagnostics, ISS and Shuttle detectors; SMPS used in ground testing only."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Approach: M-pass (in-house GRC) replaced a Commercial Diagnostic Enclosure that held a DustTrak and an ionization detector."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "SAME-R is the reflight of the microgravity fire-detection study named in the brief. It provides the reduced-gravity smoke baseline used to evaluate how spacecraft smoke detectors respond to smoke from overheated materials, and its results indicate that detectors measuring more than one moment of the particle-size distribution may detect more reliably.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, 'Background': fire detection was tested in microgravity through the SAME and SAME-R studies."
+      },
+      {
+        "kind": "publication",
+        "url": "https://ntrs.nasa.gov/citations/20130000422",
+        "note": "SAME-2 paper: broad smoke size distributions are expected from pre-fire overheat events; multi-moment detection may be more successful and false-alarm resistant than single-moment detectors."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Research Impacts: SAME-R provides the reduced-gravity baseline data against which future fire-detection technology can be evaluated."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "advanced fire detector technology for future long-duration spacecraft",
+      "smoke detectors for other extreme Earth environments such as submarines or underwater laboratories"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+        "note": "PSI-101 Research Impacts/Earth Benefits: results can lead to advanced spacecraft fire detectors and detectors useful in extreme Earth environments such as submarines or underwater laboratories."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf?emrc=b828be",
+        "note": "NASA SAME one-pager, Earth Applications: smoke detectors developed from SAME results can be useful in submarines or underwater laboratories."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2 (AIAA 2012-3536)",
+      "url": "https://ntrs.nasa.gov/citations/20130000422"
+    },
+    {
+      "title": "Smoke Aerosol Measurement Experiment-2: Comparison of Flight Experiment Results with Ground Test Results (AIAA 2013-3433)",
+      "url": "https://doi.org/10.2514/6.2013-3433"
+    },
+    {
+      "title": "Evaluation of spacecraft smoke detector performance in the low-gravity environment (Fire Safety Journal 98, 2018)",
+      "url": "https://doi.org/10.1016/j.firesaf.2018.04.004"
+    },
+    {
+      "title": "Measurement of Smoke Particle Size under Low-Gravity Conditions (SAE 2008-01-2089)",
+      "url": "https://doi.org/10.4271/2008-01-2089"
+    },
+    {
+      "title": "Pyrolysis smoke generated under low-gravity conditions (Aerosol Science and Technology 49(5), 2015)",
+      "url": "https://doi.org/10.1080/02786826.2015.1025125"
+    },
+    {
+      "title": "Smoke characterization and feasibility of the moment method for spacecraft fire detection (Aerosol Science and Technology 49(5), 2015)",
+      "url": "https://doi.org/10.1080/02786826.2015.1025124"
+    }
+  ],
+  "psi_accession": "PSI-101",
+  "project_type": "Microgravity",
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Primary source is the local PSI record data/source/psi/PSI-101.json and PSI-101.search.json (PSI-101 = SAME-R) plus the per-test table data/source/psi/tables/PSI-101.csv.",
+      "SAME-R is the reflight of SAME (PSI-102) and flew as 'SAME-2' on ISS Expedition 24, July-September 2010 (66 test points per PSI).",
+      "O2 concentration and pressure are not given in the PSI record or PSI-101.csv and were not stated in the readable NASA/NTRS sources, so they are left unknown (AGENTS.md rule 9). Overview PDFs commonly omit these.",
+      "conditions.airflow is left as in the seed because it is written by scripts/psi_apply_conditions.py from PSI-101.csv (inlet velocity 0 to 8.1 cm/s); the value is not hand-set (AGENTS.md rule 11).",
+      "fuel_phase is 'solid': the five SAME-R materials are solids heated below ignition (oxidative pyrolysis/smoldering), unlike SAME which used a liquid DBP reference. No flame is involved.",
+      "hardware.facility (MSG) is marked 'inferred': SAME operated in the Microgravity Science Glovebox and SAME-R reused the same SAME hardware, but no readable source states the SAME-R facility explicitly.",
+      "gravity_g is 0 g from the PSI Project Type 'Microgravity Investigation'; no partial-gravity claim is made (brief: PSI has no true partial-gravity combustion data).",
+      "Source conflicts: none found; the PSI record, PSI-101.csv and the NASA/NTRS documents agree on materials, conditions ranges and diagnostics."
+    ]
+  }
+}

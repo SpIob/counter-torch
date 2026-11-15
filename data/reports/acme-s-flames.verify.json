@@ -1,0 +1,181 @@
+{
+  "id": "acme-s-flames",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Seed id matches psi-map.json entry for PSI-23.",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 proposalTitle is 'Structure and Response of Spherical Diffusion Flames'; ACME overview uses 's-Flame' shorthand.",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "Common shorthand forms (s-Flame, s-Flames, ACME s-Flame) are reasonable variants of the official name.",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps acme-s-flames to PSI-23; challenge brief lists six ACME experiments.",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 flightProgram is ISS with investigation dates 2015-2019; flown on ISS.",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-23.json exists locally with full record; psi-map.json confirms mapping.",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI detail page URL pattern for PSI-23.",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 flightProgram field is 'International Space Station (ISS)'; ACME overview confirms ISS.",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 objective lists three specific objectives (A, B, C) covering transient structure, extinction limits, and pulsating instabilities for soot-free and sooty flames; ACME overview paraphrases as advancing prediction of structure/dynamics/extinction. Extracted text is an accurate synthesis.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 is basic combustion science (flame structure, kinetics, extinction limits); challenge brief says ACME's secondary objective is fire prevention but s-Flame itself is fundamental research. 'fundamental' is a valid schema value.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 SubResearch Area is 'Flames of gaseous fuels'; approach uses gaseous fuel/inert mixtures; challenge brief states ACME experiments featured flames of gaseous fuels.",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 approach names hydrogen, methane, ethylene as fuels; nitrogen, helium, carbon dioxide as diluents. Experimental table (PSI-23.csv) shows fuel bottles: 100% H2, H2/CH4 blends, 50%/45% CH4 and C2H4 in N2, H2/CH4/C2H4 diluted with He.",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 approach: 'mixtures of gaseous fuels and diluents issued into an oxidizing environment through a spherical porous burner and ignited to obtain a nominally spherical, one-dimensional stabilized flame.' ACME overview confirms porous spherical burner.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 experimentHardware is 'Combustion Integrated Rack (CIR), ACME'; challenge brief confirms ACME used CIR.",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 approach describes spherical porous burner; ACME overview describes constant-volume ~90 L chamber insert with modular ACME hardware.",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json lists five other ACME experiment ids (acme-bre, acme-cld-flame, acme-e-field, acme-cfi-g, acme-flame-design); challenge brief says six ACME experiments shared hardware.",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-23.csv Atmosphere* column shows '~21% O2 with N2/He' and '~30% O2 with N2/He' across 18 test rows. Extracted min 21, max 30 is a correct parse of the approximate values. Confidence 'medium' appropriate for text-parsed approximations.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-23.csv notes 'Atmosphere is ~1 atm' (no numeric pressure column). 1 atm = 14.7 psi. ACME is constant-volume so pressure rises with vitiation. Extracted single point 14.7 psi with 'low' confidence and note is appropriate.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-23.csv has no airflow column; PSI approach mentions reactant (fuel) flow rates only. Correctly left null with unknown confidence.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 projectType is 'Microgravity Investigation'; flight platform ISS. Challenge brief: spherical flame only possible in microgravity. Value 0 g with high confidence is correct.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 approach names nitrogen, helium, carbon dioxide as diluents. Experimental table shows N2 and He in fuel and chamber atmosphere.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 objective tests H2/CH4/diluent and C2H4/diluent ratios at different flow rates. Experimental table shows two rounds varying fuel bottle composition and chamber atmosphere (~21% vs ~30% O2, N2 vs He).",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "Inferred from investigation design: single platform (ISS), single burner geometry, shared ACME hardware in CIR. Medium confidence appropriate for inference.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 approach lists spectrally resolved images, flame/burner temperatures, radiative flux, system operating conditions (flow rates, temperatures, pressures, acceleration). ACME overview details specific instruments (imaging arrays, radiometers, PMTs for OH*/CH*, gas chromatograph, pressure, SAMS-II). Medium confidence appropriate as instrument set is for shared ACME hardware.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Marked 'inferred' confidence; synthesizes PSI/ACME fundamental objectives against brief's fire-safety framing. Note acknowledges this is own synthesis.",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 researchImpacts: diffusion flame understanding improves power, efficiency, pollutant emissions, reliability. ACME overview: primary goal is improved terrestrial combustion efficiency and reduced emissions.",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All four DOIs in extracted record are present in PSI-23.publications: (1) 10.1016/S0010-2180(01)00247-4, (2) 10.1016/j.combustflame.2011.07.013, (3) 10.1063/1.2212399, (4) 10.1016/S1540-7489(02)80008-6.",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps acme-s-flames to PSI-23.",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-23 projectType is 'Microgravity Investigation'; simplified to 'Microgravity' per schema.",
+      "correction": null
+    }
+  ],
+  "summary": "All non-null fields are supported by PSI-23 local record, experimental table (PSI-23.csv), challenge brief, and/or ACME overview PDF. No contradictions found. Conditions fields (O2, pressure) correctly reflect approximate values from the PSI table with appropriate confidence levels. Airflow correctly left unknown. Record is ready for verification."
+}

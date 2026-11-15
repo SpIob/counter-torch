@@ -1,0 +1,145 @@
+{
+  "id": "saffire-2",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Matches seed id in data/source/psi-map.json (saffire-2 -> PSI-99).",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-99 title is 'Spacecraft Fire Experiment-II'; commonly referenced as Saffire-II in NASA docs and brief.",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-99 flightProgram 'Cygnus Spacecraft'; NASA PDF confirms Orbital ATK Cygnus OA-5/CRS-6, Oct 2016.",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-99 objective matches verbatim; NTRS paper (Ruff & Urban 2016) adds NASA-STD-6001 Test 1 comparison.",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "PSI researchImpacts: 'Results determine microgravity flammability limits... help to validate NASA's material selection criteria' (prevention). Brief groups Saffire under prevention/material selection.",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI approach lists solid materials (SIBAL, silicone, PMMA, Nomex); CSV shows 9 solid samples; brief explicitly states Saffire studies solid materials.",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "partly",
+      "evidence_note": "SIBAL (75% cotton/25% fiberglass), silicone (4 thicknesses), PMMA (flat/structured), PMMA & Nomex all supported by CSV and NTRS. 'Nomex' listed separately was only tested as part of PMMA & Nomex composite (CSV sample 2-7, Note 2: 'Nomex was not ignited').",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI approach: '9 samples, each 5 cm x 29 cm'; CSV confirms 5 cm width, 29 cm length for all 9 samples.",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI experimentHardware 'Cygnus Pressurized Cargo Module, SAFFIRE'; NASA PDF confirms Cygnus vehicle after ISS departure.",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI approach describes flow duct, fans at top, flow straighteners at bottom, sample card, two cameras. NTRS presentation (20170008805) gives dimensions ~53x90x133 cm, two cameras, four radiometers.",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "CSV column 'Percent O2' across 9 samples: ~21.5 to ~22.1. Min 21.5, max 22.1 matches extracted range. Computed by scripts/psi_table_summary.py.",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Correctly null. CSV has no pressure column; PSI approach mentions pressure sensors but no values; NASA PDF and NTRS give no pressure. Unknown per rules.",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "CSV column 'Air Flow (cm/s)' shows 20 cm/s for all 9 samples. Extracted min=max=20 cm/s matches table. PSI approach mentions '20 or 30 cm/s' but table (stronger source for actual tests) shows only 20 cm/s. Conflict noted in record.",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI projectType 'Microgravity Investigation'; NASA PDF: experiment runs after Cygnus departs ISS in free drift. Microgravity = 0 g.",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "Inferred from ~21% O2 (air-like). Confidence 'inferred' correctly assigned. Not explicitly stated in sources.",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "partly",
+      "evidence_note": "Sample material, thickness, flow direction (concurrent/opposed) all in CSV. 'Air flow velocity (20 or 30 cm/s)' from PSI approach, but CSV only shows 20 cm/s; NTRS presentation mentions 20 and 25 cm/s for SIBAL. Partly supported.",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "Sample dimensions (5x29 cm), ignition method (hot wire), flow duct geometry, microgravity environment all consistent across PSI approach and NTRS paper.",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI approach lists: thermocouples (flow/flame/plume), two cameras, two radiometers, solid-state sensors (pressure, CO2, O2), two anemometers. NTRS presentation shows four radiometers; conflict noted in record.",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Accurately summarizes PSI objective, brief categorization, and key distinction (29 cm samples vs earlier index-card scale).",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI researchImpacts explicitly: 'Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines.'",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All 7 publications match PSI-99 publications list (DOIs and NTRS PDF).",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "PSI-99 per psi-map.json and PSI-99.json accession field.",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-99 projectType 'Microgravity Investigation' -> 'Microgravity'. Set by scripts/psi_fill.py.",
+      "correction": null
+    }
+  ],
+  "summary": "Record is well-supported. All high-confidence fields verified against PSI-99 JSON, experimental CSV, NASA PDF, and NTRS publications. Two medium-confidence fields (fuel_materials, variables_swept) are partly supported due to minor source discrepancies (Nomex tested only in composite; airflow design included 30 cm/s but table shows only 20 cm/s). Conflicts (radiometer count, airflow design vs actual) are acknowledged in record notes. No fields require reset. Status: verified."
+}

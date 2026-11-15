@@ -1,0 +1,181 @@
+{
+  "id": "same-r",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Acronym is SAME-R; psi-map.json maps same-r to PSI-101",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Title: \"Smoke Aerosol Measurement Experiment-Reflight\"",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Acronym SAME-R; keywords include SAME-2; brief mentions reflight as SAME-2",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps same-r to PSI-101; family 'same' is correct per schema enum and SAME/SAME-R relation",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Investigation dates July-Sep 2010; flown on ISS Expedition 24",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-101 record exists; psi-map.json confirms mapping",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for PSI-101",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Flight Platform: \"International Space Station (ISS)\"; NASA one-pager confirms ISS",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Objectives field matches extracted value; NTRS 20130000422 confirms reflight with new material and diagnostics",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "supported",
+      "evidence_note": "Brief explicitly names SAME/SAME-R as fire detection studies; PSI-101.search.json SubResearch Area is \"Spacecraft Fire Safety\"; hypothesis concerns smoke detector response",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Approach: Pyrell foam and other solid materials; keywords list solid materials (Pyrell, Silicon Rubber, Teflon, Cotton, Kapton); NTRS paper confirms five solid materials heated below ignition",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json keywords list Pyrell, Silicon Rubber, Teflon, Cotton, Kapton; NTRS 20130000422 lists same five materials",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "partly",
+      "evidence_note": "PSI-101.csv Sample Type column lists Kapton, Silicone, Lampwick, Teflon, Pyrell; PSI-101.search.json Approach mentions Pyrell foam and cotton lamp wick; but no source gives sample dimensions or detailed geometry beyond material forms",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "partly",
+      "evidence_note": "NASA one-pager states SAME (original) used MSG; PSI-101.search.json Approach: \"SAME-R utilized the SAME hardware used on-orbit\"; facility not explicitly stated for SAME-R, so 'inferred' confidence is appropriate",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Approach: M-pass replaced one Commercial Diagnostic Enclosure (DustTrak + ionization detector); NASA one-pager confirms returned flight diagnostics plus commercial smoke detector",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Related Investigations: PSI-102 (SAME); brief states DAFT used same instrument as SAME/SAME-R",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.csv has no O2 column; PSI-101.search.json does not mention O2; NASA one-pager does not state O2; correctly left null with confidence unknown per AGENTS.md rule 9",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.csv has no pressure column; PSI-101.search.json does not mention pressure; NASA one-pager does not state pressure; correctly left null",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.csv column 'Inlet velocity (cm/s)' ranges from 0 to 8.1 across 109 rows; matches extracted min=0, max=8.1, unit=cm/s",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Project Type: \"Microgravity Investigation\"; Flight Platform ISS; brief states microgravity combustion data; correctly set to 0 g",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "No source mentions diluent gases (CO2, helium) for SAME-R; tests used spacecraft atmosphere; correctly left null",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.csv rows vary by Sample Type, Inlet velocity (0-8.1), Duration (60/120), Primary aging time (11-1800+); NTRS paper confirms flow range, aging time 11-1800 s, surface temperature controlled",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "supported",
+      "evidence_note": "NTRS paper: samples heated below ignition point, controlled surface temperatures and air flow, three moment diagnostics; PSI-101.csv Duration is 60 sec for nearly all rows (one 120 s)",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "NASA one-pager: thermal precipitator for TEM, aerosol instruments, commercial smoke detector, ISS and Shuttle detectors; NTRS paper: MPASS two-moment detector, three moment diagnostics, SMPS ground reference; PSI-101.search.json: M-pass replaced DustTrak+ionization detector",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "supported",
+      "evidence_note": "Brief names SAME/SAME-R as fire detection studies; NTRS paper: multi-moment detection more successful; PSI-101.search.json Research Impacts: provides reduced-gravity baseline for future detection technology evaluation",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Research Impacts/Earth Benefits: advanced spacecraft fire detectors, detectors for submarines/underwater labs; NASA one-pager confirms same",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Publication Title list matches extracted titles; NTRS citations confirm URLs",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "psi-map.json maps same-r to PSI-101; PSI-101.search.json Accession is PSI-101",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-101.search.json Project Type: \"Microgravity Investigation\"; mapped to \"Microgravity\" per schema",
+      "correction": null
+    }
+  ],
+  "summary": "All non-null fields are supported by PSI-101.search.json, PSI-101.csv, NASA one-pager, and NTRS publications. Two fields (fuel_geometry, hardware.facility) are partly supported due to limited source detail, but their confidence ratings (medium, inferred) correctly reflect this. No contradictions found. Fields correctly left null where sources lack data (O2, pressure, diluents)."
+}

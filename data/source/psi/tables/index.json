@@ -1,0 +1,430 @@
+[
+ {
+  "accession": "PSI-10",
+  "file": "data/source/psi/tables/PSI-10.csv",
+  "rows": 207,
+  "columns": [
+   "Flame Type",
+   "Day",
+   "Fuel",
+   "Test",
+   "Xfuel",
+   "mfuel (mg/s)",
+   "mN2 (mg/s)",
+   "mtot (mg/s)",
+   "XO2 (init)",
+   "XO2 (final)",
+   "pinit (atm)",
+   "pfinal (atm)",
+   "pmean (atm)",
+   "mean Zst",
+   "Tad (K)"
+  ]
+ },
+ {
+  "accession": "PSI-10",
+  "file": "data/source/psi/tables/PSI-10_2.csv",
+  "rows": 120,
+  "columns": [
+   "Flame Type",
+   "Day",
+   "Test",
+   "XO2",
+   "mO2 (mg/s)",
+   "mN2 (mg/s)",
+   "mtot (mg/s)",
+   "XC2H4 initial",
+   "XC2H4 final",
+   "pinit (atm)",
+   "pfinal (atm)",
+   "pmean (atm)",
+   "mean Zst",
+   "Tad (K)"
+  ]
+ },
+ {
+  "accession": "PSI-20",
+  "file": "data/source/psi/tables/PSI-20.csv",
+  "rows": 18,
+  "columns": [
+   "Year",
+   "Month",
+   "Date",
+   "Burner Size (mm)",
+   "Fuel Bottle",
+   "Oxygen Conc (percent)",
+   "Flames Ignited",
+   "Notes"
+  ]
+ },
+ {
+  "accession": "PSI-21",
+  "file": "data/source/psi/tables/PSI-21.csv",
+  "rows": 32,
+  "columns": [
+   "Test Type",
+   "Test Day",
+   "Fuel MFC",
+   "N2 MFC",
+   "Fuel Bottle",
+   "Fuel conc. Range",
+   "Flames ignited",
+   "Notes"
+  ]
+ },
+ {
+  "accession": "PSI-22",
+  "file": "data/source/psi/tables/PSI-22.csv",
+  "rows": 32,
+  "columns": [
+   "Test Type",
+   "Test Day",
+   "Year",
+   "Month",
+   "Date",
+   "Mesh Polarity",
+   "Fuel Bottle",
+   "Fuel Conc",
+   "Flames Ignited",
+   "Notes"
+  ]
+ },
+ {
+  "accession": "PSI-23",
+  "file": "data/source/psi/tables/PSI-23.csv",
+  "rows": 18,
+  "columns": [
+   "Test Type",
+   "Test Day*",
+   "Year",
+   "Month",
+   "Date",
+   "Atmosphere*",
+   "Fuel Bottle",
+   "Flames Ignited*",
+   "Notes"
+  ]
+ },
+ {
+  "accession": "PSI-25",
+  "file": "data/source/psi/tables/PSI-25.csv",
+  "rows": 129,
+  "columns": [
+   "PI",
+   "Test #",
+   "Date",
+   "GMT",
+   "Sample #",
+   "Fuel Sample Material",
+   "Flow restrictor",
+   "Fan display",
+   "Air display",
+   "Radiometer gain   (1000   250   50   10)",
+   "Total Frames Shot",
+   "Calibrated  initial O2 % by vol ",
+   "Calibrated final O2 % by vol",
+   "Initial CO2 % by vol",
+   "Final CO2 % by vol",
+   "Initial CO (ppm)",
+   "Final CO (ppm)"
+  ]
+ },
+ {
+  "accession": "PSI-26",
+  "file": "data/source/psi/tables/PSI-26.csv",
+  "rows": 122,
+  "columns": [
+   "Date",
+   "GMT",
+   "As Run Test #",
+   "Test #",
+   "Sample #",
+   "Fuel Sample Material"
+  ]
+ },
+ {
+  "accession": "PSI-39",
+  "file": "data/source/psi/tables/PSI-39.csv",
+  "rows": 87,
+  "columns": [
+   "Flex Number",
+   "Test Date",
+   "Local Time",
+   "CIR ",
+   "Pressure",
+   "Oxygen",
+   "Nitrogen",
+   "Helium",
+   "Fiber",
+   "Fuel "
+  ]
+ },
+ {
+  "accession": "PSI-47",
+  "file": "data/source/psi/tables/PSI-47.csv",
+  "rows": 2,
+  "columns": [
+   "Session Name",
+   "Actual Day",
+   "Hardware Description",
+   "Sample Material",
+   "Sampled Location"
+  ]
+ },
+ {
+  "accession": "PSI-68",
+  "file": "data/source/psi/tables/PSI-68.csv",
+  "rows": 8,
+  "columns": [
+   "Sample (Fuel Type)",
+   "Initial Droplet Diameter (mm)",
+   "Ambient Gas Mixture ",
+   "Oxygen Mole Fraction",
+   "Ambient Pressure (atm)",
+   " Ambient Temperature (C)",
+   "Flow Velocity (cm/s)"
+  ]
+ },
+ {
+  "accession": "PSI-69",
+  "file": "data/source/psi/tables/PSI-69.csv",
+  "rows": 274,
+  "columns": [
+   "FLEX Test #",
+   "FLEX Identifier",
+   "Test Date",
+   "Test GMT",
+   "Fuel",
+   "Ambient pressure; mmHg",
+   "O initial ambient composition; mole fraction",
+   "N initial ambient composition; mole fraction",
+   "CO initial ambient composition; mole fraction",
+   "He initial ambient composition; mole fraction",
+   "Droplet initial diameter; mm",
+   "Visible flame extinction diameter; mm",
+   "Burning rate; mm",
+   "Burn time; s",
+   "Test end"
+  ]
+ },
+ {
+  "accession": "PSI-98",
+  "file": "data/source/psi/tables/PSI-98.csv",
+  "rows": 4,
+  "columns": [
+   "Sample Number ",
+   "Material",
+   "Sample Thickness (cm)",
+   "Sample Length (cm)",
+   "Sample Width (cm)",
+   "Air Flow (cm/s)",
+   "Percent O2",
+   "Ignition Power (W)",
+   "Ignition Time (s)",
+   "Burn Time (s)",
+   "Flow Direction ",
+   "Camera 1",
+   "Camera 2"
+  ]
+ },
+ {
+  "accession": "PSI-99",
+  "file": "data/source/psi/tables/PSI-99.csv",
+  "rows": 15,
+  "columns": [
+   "Sample Number",
+   "Material",
+   "Samle Thickness ",
+   "Sample Length ",
+   "Sample Width (cm)",
+   "Air Flow (cm/s)",
+   "Percent O2 (Note 1)",
+   "Ignition Power (W)",
+   "Ignition Time (s)",
+   "Burn Time (s)",
+   "Flow Direction",
+   "?-g Burn Length",
+   "?-g Spread Length",
+   "1-g Burn Length",
+   "1-g Spread Rate",
+   "Camera 1",
+   "Camera 2"
+  ]
+ },
+ {
+  "accession": "PSI-100",
+  "file": "data/source/psi/tables/PSI-100.csv",
+  "rows": 2,
+  "columns": [
+   "Sample Number ",
+   "Material",
+   "Sample Thickness",
+   "Sample Length",
+   "Sample Width",
+   "Air Flow ",
+   "Direction",
+   "Camera 1",
+   "Camera 2"
+  ]
+ },
+ {
+  "accession": "PSI-101",
+  "file": "data/source/psi/tables/PSI-101.csv",
+  "rows": 109,
+  "columns": [
+   "Sample Type",
+   "SAME Test #",
+   "Description",
+   "Date",
+   "Inlet velocity (cm/s)",
+   "Rt/R0",
+   "Duration (sec)",
+   "Primary aging time (sec)",
+   "Primary mixing time (sec)",
+   "Net aging time (sec)"
+  ]
+ },
+ {
+  "accession": "PSI-102",
+  "file": "data/source/psi/tables/PSI-102.csv",
+  "rows": 8,
+  "columns": [
+   "Sample #",
+   "Sample Material  ",
+   "Air Flow (cm/s)",
+   "Weight loss rate (mg/min)",
+   "Aging Duration (minutes)"
+  ]
+ },
+ {
+  "accession": "PSI-106",
+  "file": "data/source/psi/tables/PSI-106.csv",
+  "rows": 12,
+  "columns": [
+   "Test Date",
+   "Fuel Type"
+  ]
+ },
+ {
+  "accession": "PSI-107",
+  "file": "data/source/psi/tables/PSI-107.csv",
+  "rows": 469,
+  "columns": [
+   "GMT date",
+   "GMT ignition",
+   "GMT  Flame Off ",
+   "Fuel",
+   "Nozzle (mm)",
+   "Fuel Rate (sccm)",
+   "Fuel Rate (mg/s)",
+   "HC Fuel Rate (mg/s)",
+   "Air Rate (cm/s)"
+  ]
+ },
+ {
+  "accession": "PSI-108",
+  "file": "data/source/psi/tables/PSI-108.csv",
+  "rows": 38,
+  "columns": [
+   "Run#",
+   "Test#",
+   "Configuration",
+   "Heating Mode",
+   "Free Surface Shape",
+   "Power (W)",
+   "Laser Diameter (cm)",
+   "Results",
+   "Key Observations & References"
+  ]
+ },
+ {
+  "accession": "PSI-108",
+  "file": "data/source/psi/tables/PSI-108_2.csv",
+  "rows": 38,
+  "columns": [
+   "Run",
+   "Test",
+   "Configuration",
+   "Heating Mode",
+   "Free Surface Shape",
+   "Power (W)",
+   "Laser Diameter (cm)",
+   "Results",
+   "Key Observations & References"
+  ]
+ },
+ {
+  "accession": "PSI-142",
+  "file": "data/source/psi/tables/PSI-142.csv",
+  "rows": 8,
+  "columns": [
+   "Data ID",
+   "Data Description",
+   "Reference Publication Link",
+   "Figure ID in Reference"
+  ]
+ },
+ {
+  "accession": "PSI-159",
+  "file": "data/source/psi/tables/PSI-159.csv",
+  "rows": 179,
+  "columns": [
+   "Flame Type",
+   "Day",
+   "Fuel",
+   "Test",
+   "Cool flame?",
+   " XO2 before test",
+   "XO2  after test",
+   "approx p (bar)",
+   "Xf",
+   "mHC (mg/s)",
+   "TFP",
+   "Tad (K)",
+   "Zst",
+   "Hot ignition",
+   "burn time (sec)",
+   "Self-ext or flow term",
+   "Peak burner T (C )",
+   "Comments"
+  ]
+ },
+ {
+  "accession": "PSI-159",
+  "file": "data/source/psi/tables/PSI-159_2.csv",
+  "rows": 1015,
+  "columns": [
+   "Flame Type",
+   "Day",
+   "Fuel",
+   "Test",
+   "Xf  before test",
+   "Xf  after test",
+   "approx p (bar)",
+   "XO2",
+   "HC burnrate (mg/s)",
+   "O2 flow rate (mg/s)",
+   "TFP",
+   "Tad (K)",
+   "Zst",
+   "Hot ignition",
+   "burn time (sec)",
+   "Self -ext or flow term",
+   "Peak burner Temp (C)",
+   "Peak burner temp (K)",
+   "Color",
+   "Comments"
+  ]
+ },
+ {
+  "accession": "PSI-181",
+  "file": "data/source/psi/tables/PSI-181.csv",
+  "rows": 8,
+  "columns": [
+   "Sample ID",
+   "Composition",
+   "Sample Type",
+   "Sample Method"
+  ]
+ }
+]

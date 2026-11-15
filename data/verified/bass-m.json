@@ -1,0 +1,289 @@
+{
+  "id": "bass-m",
+  "name": "Burning and Suppression of Solids-Milliken (BASS-M)",
+  "aliases": [
+    "BASS-M",
+    "Burning and Suppression of Solids-Milliken"
+  ],
+  "family": "msg",
+  "status": "flown",
+  "in_psi": null,
+  "psi_url": null,
+  "platform": {
+    "value": "ISS",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document (BASS-M section): observations of burning solid materials on board the International Space Station"
+      }
+    ]
+  },
+  "objective": {
+    "value": "Test how flame-retardant-treated cotton textiles burn and self-extinguish in microgravity, and compare the results with the terrestrial upward-burning screening test. The stated hypothesis is that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions (pressure, oxygen concentration, temperature) identical.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document (BASS-M section): tests ten treated textiles at various air flow rates, evaluates each textile's self-extinguishment, and compares microgravity results to the terrestrial upward-burning screen; states the microgravity burning hypothesis"
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention"
+    ],
+    "confidence": "inferred",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document: NASA selects spacecraft materials from ground flammability tests; BASS-M measures how low gravity changes a textile's flame-retardant behaviour, improving procedures for testing new materials"
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief: prevention is achieved through material selection, which depends on understanding flammability limits"
+      }
+    ],
+    "note": "Deduced, not labelled by the source: the experiment supports material selection / flammability screening, which the brief defines as prevention."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document: BASS-M consists of textile samples; space-based burning and flame extinguishment tests on cotton textiles"
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "cotton textiles treated with flame retardants",
+      "untreated cotton textile (control and igniter piece)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document: 44 textile samples, four of each of eleven textile types, one set untreated controls; ten treated textiles; the untreated piece is ignited and its flame impinges on the adjacent treated textile"
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Flat textile coupons. Each treated sample is paired with a small adjacent untreated textile piece that is ignited by an integrated hot-wire igniter, and the flame impinges on the treated textile. A magazine report puts the samples at about 1 cm by 3 cm.",
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document: each sample set has a small untreated textile ignited by an integrated hot wire igniter, with the flame impinging on the immediately adjacent treated textile"
+      },
+      {
+        "kind": "other",
+        "url": "https://www.smithsonianmag.com/air-space-magazine/nasa-plans-light-fire-inside-spacecraft-then-watch-what-happens-180958165/",
+        "note": "Smithsonian Air & Space magazine article: BASS-M small samples are about one centimeter by three centimeters (secondary source, not NASA/PSI)"
+      }
+    ],
+    "note": "The arrangement is stated in the NASA BASS document; the 1 cm x 3 cm size comes only from a secondary magazine article."
+  },
+  "hardware": {
+    "facility": {
+      "value": "Microgravity Science Glovebox (MSG)",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "NASA BASS document: BASS-M is conducted inside the sealed MSG work volume on the ISS"
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Slightly modified Smoke Point In Co-flow Experiment (SPICE) hardware: a small flow duct with an igniter and a small nozzle, exchangeable textile samples, a fan that produces a co-flow of air through the duct, and integrated hot-wire igniters.",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "NASA BASS document: BASS-M utilises slightly modified SPICE hardware in the MSG; the crew installs SPICE and BASS hardware consisting of a small flow duct with an igniter and a small nozzle, exchangeable textile samples, and a fan producing a co-flow of air"
+        }
+      ]
+    },
+    "shared_with": [
+      "bass",
+      "bass-2",
+      "spice",
+      "slice"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": null,
+        "max": 22,
+        "unit": "%"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://science.nasa.gov/wp-content/uploads/2023/05/217_5dda37a2b088281953e769f275061ac8_MillerFletcherJ.pdf",
+          "note": "Miller & Fletcher, 'Topical: Spacecraft Materials Fire Safety' (2023-2032 decadal survey): the BASS series of experiments were limited to 1 atmosphere and oxygen concentrations below 22% due to MSG constraints"
+        }
+      ],
+      "note": "Group statement for the BASS series (BASS, BASS-II, BASS-M) under MSG constraints; only the upper bound (below 22%) is stated, so min is null. No BASS-M-specific oxygen range was found."
+    },
+    "pressure_psi": {
+      "value": {
+        "min": null,
+        "max": 14.7,
+        "unit": "psi"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "publication",
+          "url": "https://science.nasa.gov/wp-content/uploads/2023/05/217_5dda37a2b088281953e769f275061ac8_MillerFletcherJ.pdf",
+          "note": "Miller & Fletcher decadal-survey topical: the BASS series of experiments were limited to 1 atmosphere due to MSG constraints"
+        }
+      ],
+      "note": "Group statement for the BASS series. Only the upper bound (1 atmosphere) is stated; converted to psi (1 atm = 14.7 psi) and the lower bound left null. No BASS-M-specific pressure was found."
+    },
+    "airflow": {
+      "value": {
+        "min": 5,
+        "max": 50,
+        "unit": "cm/s"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "NASA BASS document (BASS-M protocol): a fan produces a co-flow of air through the duct, an anemometer measures the actual flow rate, and the crew member adjusts the airflow from 5 to 50 cm/s"
+        }
+      ],
+      "note": "Stated for the BASS-M textile tests."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "medium",
+      "sources": [
+        {
+          "kind": "nasa_page",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+          "note": "NASA BASS document: BASS-M is a microgravity observation of burning solid materials on board the ISS; the exact g level is not stated"
+        },
+        {
+          "kind": "brief",
+          "url": null,
+          "note": "Challenge brief: low-gravity combustion experiments conducted on the ISS"
+        }
+      ],
+      "note": "ISS platform treated as microgravity (~0 g)."
+    },
+    "diluents": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No chamber diluent is stated for BASS-M. Unlike the BASS and BASS-II protocols, the BASS-M protocol in the NASA BASS document does not describe a nitrogen suppressant or glovebox nitrogen vitiation, so diluents were left unknown rather than inferred from the other BASS investigations."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Textile material (ten treated flame-retardant cotton textiles plus untreated controls)",
+      "Airflow velocity (about 5 to 50 cm/s)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document: BASS-M tests ten different treated textiles at various air flow rates; 44 sample test points"
+      }
+    ]
+  },
+  "held_constant": {
+    "value": null,
+    "confidence": "unknown",
+    "sources": [],
+    "note": "Sources describe the varied variables but do not enumerate the conditions held constant across BASS-M tests. The hypothesis names pressure, oxygen concentration and temperature as conditions expected to be identical, but this is a hypothesis statement, not a recorded held-constant list."
+  },
+  "sensors": {
+    "value": [
+      "Anemometer (flow rate)",
+      "Radiometer (flame output)",
+      "Video camera",
+      "Still camera"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document: an anemometer measures the actual flow rate and a radiometer measures flame output; data is downlinked by video during or after each flame test and digital still photos are downlinked after selected tests"
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Directly targets spacecraft material selection: it measures how low gravity changes the flame-retardant behaviour of real cotton textiles and compares microgravity self-extinguishment with the terrestrial upward-burning screen (worst-case geometry on Earth), which underpins NASA-STD-6001-based material screening.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document (BASS-M): compares microgravity results to the terrestrial upward burning used to screen materials; NASA selects materials from ground tests that do not consider microgravity effects"
+      },
+      {
+        "kind": "publication",
+        "url": "https://science.nasa.gov/wp-content/uploads/2023/05/217_5dda37a2b088281953e769f275061ac8_MillerFletcherJ.pdf",
+        "note": "Miller & Fletcher decadal-survey topical: standard material screening uses the NASA-STD-6001B Test 1 upward flame spread test, whose conservatism for microgravity is uncertain"
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "New information on how low gravity affects a material's flame-retardant behaviour, benefiting materials-science research on Earth",
+      "Supports improvement of procedures for testing new flame-retardant materials"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "nasa_page",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/burning-and-suppression-of-solids-bass.pdf?emrc=3a5c2c",
+        "note": "NASA BASS document 'Earth Applications': the investigation provides new information on how low gravity affects flame-retardant material behaviour, which benefits materials science research on Earth"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Topical: Spacecraft Materials Fire Safety (Decadal Survey on Biological and Physical Sciences Research in Space 2023-2032)",
+      "url": "https://science.nasa.gov/wp-content/uploads/2023/05/217_5dda37a2b088281953e769f275061ac8_MillerFletcherJ.pdf"
+    }
+  ],
+  "review": {
+    "status": "verified",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+    "verified_at": "2026-11-14T15:21:29Z",
+    "notes": [
+      "Verified all non-null fields against cited sources (NASA BASS PDF, Miller & Fletcher decadal topical, Smithsonian article, challenge brief).",
+      "O2 and pressure ranges rely on a BASS-series group statement (Miller & Fletcher), not BASS-M-specific data; correctly noted with medium confidence.",
+      "Fuel geometry size (1 cm x 3 cm) from secondary source (Smithsonian); noted in record.",
+      "Gravity inferred from ISS platform; medium confidence noted.",
+      "No contradicted or unsupported fields found. Record honestly reflects source limitations."
+    ]
+  },
+  "psi_accession": null,
+  "project_type": null
+}

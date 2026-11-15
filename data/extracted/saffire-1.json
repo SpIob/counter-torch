@@ -1,0 +1,351 @@
+{
+  "id": "saffire-1",
+  "name": "Spacecraft Fire Safety Demonstration (Saffire-I)",
+  "aliases": [
+    "Saffire-I",
+    "SAFFIRE I",
+    "SAFFIRE-I",
+    "Spacecraft Fire Safety Experiment-I"
+  ],
+  "family": "saffire",
+  "status": "flown",
+  "in_psi": true,
+  "psi_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "platform": {
+    "value": "Cygnus cargo vehicle, Orbital ATK OA-6 (CRS-6), uncrewed; experiment run after the vehicle departed the ISS",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'approach': Saffire-I was performed on Orbital Sciences' Cygnus resupply vehicle after it deberthed from the ISS; flightProgram International Space Station (ISS)."
+      },
+      {
+        "kind": "nasa_page",
+        "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+        "note": "NASA PSI investigation list gives the carrier for this Saffire flight (CRS OA-6)."
+      }
+    ]
+  },
+  "objective": {
+    "value": "Determine how rapidly a large-scale fire grows in low gravity, and investigate low-gravity flammability limits compared with NASA's normal-gravity material flammability screening test.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'objective': (1) determine how rapidly a large-scale fire grows in low gravity and (2) investigate the low-g flammability limits vs those from NASA's normal-gravity material flammability screening test."
+      }
+    ]
+  },
+  "safety_functions": {
+    "value": [
+      "prevention"
+    ],
+    "confidence": "medium",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'researchImpacts': results determine microgravity flammability limits and help validate NASA's material selection criteria (prevention via material selection)."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: Saffire-I/-II/-III are flammability studies of solid materials (fabrics, plastics) that inform prevention via material selection."
+      }
+    ],
+    "note": "PSI ties the results to flammability limits and material selection criteria (prevention); the brief groups Saffire under prevention/material selection. The PSI proposal title mentions improved fire detection, but the flown Saffire-I experiment is a flame-spread/flammability study."
+  },
+  "fuel_phase": {
+    "value": "solid",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'approach': the sample is a composite solid fabric (SIBAL) that burns like cotton."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 experimental table data/source/psi/tables/PSI-98.csv: two samples of SIBAL fabric (solid material)."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: Saffire-I/-II/-III study solid materials (fabrics, plastics)."
+      }
+    ]
+  },
+  "fuel_materials": {
+    "value": [
+      "SIBAL composite fabric (75% cotton, 25% fiberglass by weight)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'approach': the Saffire-I sample material is SIBAL, a composite fabric of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight); it burns like cotton but keeps structural integrity."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 experimental table data/source/psi/tables/PSI-98.csv: both samples are 'SIBAL Fabric'."
+      }
+    ]
+  },
+  "fuel_geometry": {
+    "value": "Single flat rectangular sample about 0.94 m long x 0.4 m wide (thickness 0.37 cm), mounted on a sample card in the middle of a large flow duct",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'approach': the sample was ~0.94 m long and 0.4 m wide, simulating a large piece of flammable fabric, on a sample card in the middle of a large flow duct."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 experimental table data/source/psi/tables/PSI-98.csv: sample thickness 0.37 cm, sample length 40.6 cm, sample width 94 cm (the wide flat card orientation)."
+      }
+    ]
+  },
+  "hardware": {
+    "facility": {
+      "value": "Cygnus Pressurized Cargo Module (expendable, uncrewed cargo vehicle), operated after ISS departure",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+          "note": "PSI-98 'experimentHardware': 'Saffire 1 enclosure in Cygnus'; the experiment ran on the Cygnus resupply vehicle after it deberthed from the ISS, with no crew aboard."
+        },
+        {
+          "kind": "nasa_page",
+          "url": "https://science.nasa.gov/physical-sciences-informatics-psi/nasa-psi-research-opportunity/",
+          "note": "NASA PSI investigation list gives the carrier for this Saffire flight (CRS OA-6)."
+        }
+      ]
+    },
+    "apparatus": {
+      "value": "Saffire-I flow duct enclosure: sample card holding the fabric, fans at the top of the duct, flow straighteners at the bottom, and two cameras viewing the sample",
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+          "note": "PSI-98 'approach': sample card installed in the middle of a large flow duct; air drawn by fans at the top; flow straighteners at the bottom; two cameras captured flame images."
+        }
+      ]
+    },
+    "shared_with": [
+      "saffire-2",
+      "saffire-3",
+      "bass"
+    ]
+  },
+  "conditions": {
+    "o2_percent": {
+      "value": {
+        "min": 21.5,
+        "max": 21.7,
+        "unit": "%"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+          "note": "PSI PSI-98 experimental table PSI-98_Experimental table_SAFFIRE-1.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 4 test rows of PSI-98_Experimental table_SAFFIRE-1.csv, columns: Percent O2. Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "pressure_psi": {
+      "value": null,
+      "confidence": "unknown",
+      "sources": [],
+      "note": "No source read states a pressure value. The PSI-98 experimental table has no pressure column; the PSI approach lists a pressure sensor but gives no number, and no NASA/NTRS overview read names a pressure."
+    },
+    "airflow": {
+      "value": {
+        "min": 20.0,
+        "max": 20.0,
+        "unit": "cm/s"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+          "note": "PSI PSI-98 experimental table PSI-98_Experimental table_SAFFIRE-1.csv; per-test conditions, min and max of the listed columns"
+        }
+      ],
+      "note": "Range over 4 test rows of PSI-98_Experimental table_SAFFIRE-1.csv, columns: Air Flow (cm/s). Computed by scripts/psi_table_summary.py (initial conditions only)."
+    },
+    "gravity_g": {
+      "value": {
+        "min": 0,
+        "max": 0,
+        "unit": "g"
+      },
+      "confidence": "high",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+          "note": "PSI-98 Project Type 'Microgravity Investigation'; objective and approach describe a low-gravity, large-scale fire experiment."
+        }
+      ],
+      "note": "Microgravity (~0 g). Saffire flies in an uncrewed Cygnus cargo vehicle after it leaves the ISS, so the tests are microgravity rather than ground."
+    },
+    "diluents": {
+      "value": [
+        "nitrogen"
+      ],
+      "confidence": "inferred",
+      "sources": [
+        {
+          "kind": "psi",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+          "note": "PSI-98 experimental table data/source/psi/tables/PSI-98.csv: test atmosphere at ~21.5% O2 (air-like)."
+        }
+      ],
+      "note": "Inferred: the ~21.5% O2 atmosphere implies air, so the balance (diluent) gas is nitrogen. No source names the diluent explicitly."
+    }
+  },
+  "variables_swept": {
+    "value": [
+      "Flow direction relative to flame spread (concurrent for sample 1, opposed for sample 2)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 experimental table data/source/psi/tables/PSI-98.csv: sample S1 flow direction 'Concurrent' (burn time 420 s) vs sample S2 'Opposed' (burn time 70 s)."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'approach': flame images captured with two cameras per test (S1C1/S1C2, S2C1/S2C2), i.e. two runs differing in flow direction."
+      }
+    ]
+  },
+  "held_constant": {
+    "value": [
+      "Sample material (SIBAL fabric)",
+      "Sample thickness (0.37 cm)",
+      "Sample dimensions (40.6 x 94 cm)",
+      "Air flow velocity (20 cm/s)",
+      "Oxygen concentration (~21.5%)",
+      "Ignition power (182 W) and duration (8 s)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 experimental table data/source/psi/tables/PSI-98.csv: S1 and S2 share material, thickness, dimensions, air flow 20 cm/s, O2 ~21.5-21.7%, and ignition power 182 W / time 8 s; only flow direction differs."
+      }
+    ]
+  },
+  "sensors": {
+    "value": [
+      "Two video cameras (flame imaging)",
+      "Thermocouples (flow, flame and plume temperatures)",
+      "Two radiometers (flame radiation)",
+      "Solid-state sensors (pressure, CO2 and O2 mole fraction)",
+      "Two anemometers (flow velocity)"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'approach': two cameras; thermocouples for flow, flame and plume temperature; two radiometers for flame radiation; solid-state sensors for pressure, CO2 and O2 mole fraction; two anemometers for flow velocity."
+      },
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'researchImpacts': instruments on the uncrewed cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth; two video cameras view the flame."
+      }
+    ]
+  },
+  "relevance_notes": {
+    "value": "Cited in the brief as a solid-material flammability study for prevention and material selection. Saffire-I burned a single large (0.94 m) fabric sample in microgravity at ~21.5% O2 to measure how fast a large fire grows and to set low-gravity flammability limits against NASA's normal-gravity screening test, at a scale far larger than earlier ISS flame-spread experiments.",
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'objective' and 'approach': large-scale fire growth and low-g flammability limits using a ~0.94 m fabric sample in microgravity."
+      },
+      {
+        "kind": "brief",
+        "url": null,
+        "note": "Challenge brief, Background: Saffire-I/-II/-III are flammability studies of solid materials (fabrics, plastics) that inform prevention via material selection."
+      }
+    ]
+  },
+  "earth_applications": {
+    "value": [
+      "Fire safety and prevention in small sealed environments such as mines, airplanes and submarines",
+      "Validation of material flammability selection and screening criteria"
+    ],
+    "confidence": "high",
+    "sources": [
+      {
+        "kind": "psi",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "note": "PSI-98 'researchImpacts': results help validate NASA's material selection criteria; studying fire in small sealed environments such as the Cygnus cargo vehicle benefits fire safety and prevention on Earth, including inside mines, airplanes or submarines."
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+      "url": "https://www1.grc.nasa.gov/space/iss-research/msg/saffire/"
+    },
+    {
+      "title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)",
+      "url": "https://www1.grc.nasa.gov/space/iss-research/msg/saffire/"
+    },
+    {
+      "title": "Flame spread: Effects of microgravity and scale",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.10.012"
+    },
+    {
+      "title": "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity - Model versus experiment",
+      "url": "https://doi.org/10.1016/j.proci.2018.05.168"
+    },
+    {
+      "title": "Fire safety in space - beyond flammability testing of small samples",
+      "url": "https://doi.org/10.1016/j.actaastro.2014.11.025"
+    },
+    {
+      "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)",
+      "url": "https://www1.grc.nasa.gov/space/iss-research/msg/saffire/"
+    }
+  ],
+  "review": {
+    "status": "extracted",
+    "extracted_by": "deepseek-ai/deepseek-v4.1-flash",
+    "verified_by": null,
+    "verified_at": null,
+    "notes": [
+      "Source: local PSI record data/source/psi/PSI-98.json and its experimental table data/source/psi/tables/PSI-98.csv. No web fetches were needed; all facts come from the local PSI files plus the challenge brief.",
+      "conditions.o2_percent and conditions.airflow were left at the seed value and are filled by scripts/psi_apply_conditions.py from conditions.json (O2 21.5-21.7%, airflow 20 cm/s); per AGENTS.md rule 11 these PSI-table fields are script-owned and not hand-edited.",
+      "conditions.pressure_psi is unknown: the PSI-98 experimental table has no pressure column and no source read gives a pressure value (the PSI approach mentions a pressure sensor but no number).",
+      "Only two test rows exist in the PSI-98 experimental table (sample S1 concurrent, sample S2 opposed); the F1C1/F1C2 and F2C1/F2C2 rows are pre-test flow-visualisation data with no conditions.",
+      "The sample size is stated two ways: the approach text says ~0.94 m long x 0.4 m wide, while the table lists sample length 40.6 cm and width 94 cm (same card, axes transposed).",
+      "PSI-98 'added' lists 74 data files totalling ~12.25 GB (image/JPEG datasets, distortion grids, telemetry xlsx/docx and PDFs); not downloaded. Two files are raw image sets up to ~1.5 GB each.",
+      "PSI dataset DOI (PSI record 'doi'): 10.60555/0t15-1z43.",
+      "psi_accession PSI-98, project_type Microgravity Investigation (set by scripts/psi_fill.py; not edited here)."
+    ]
+  },
+  "psi_accession": "PSI-98",
+  "project_type": "Microgravity"
+}

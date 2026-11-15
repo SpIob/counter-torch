@@ -1,0 +1,181 @@
+{
+  "id": "acme-flame-design",
+  "verified_by": "nvidia/nemotron-3-ultra-550b-a55b",
+  "checks": [
+    {
+      "field": "id",
+      "verdict": "supported",
+      "evidence_note": "Matches accession PSI-10 and follows naming pattern",
+      "correction": null
+    },
+    {
+      "field": "name",
+      "verdict": "supported",
+      "evidence_note": "Matches PSI-10 Title field exactly",
+      "correction": null
+    },
+    {
+      "field": "aliases",
+      "verdict": "supported",
+      "evidence_note": "Acronym field is 'ACME/Flame Design'; 'ACME' and 'Flame Design' are reasonable components",
+      "correction": null
+    },
+    {
+      "field": "family",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 is part of ACME project per brief and local record",
+      "correction": null
+    },
+    {
+      "field": "status",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 Project Type 'Microgravity Investigation', flight platform ISS, investigation end date 2025",
+      "correction": null
+    },
+    {
+      "field": "in_psi",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 record exists in local PSI data",
+      "correction": null
+    },
+    {
+      "field": "psi_url",
+      "verdict": "supported",
+      "evidence_note": "Standard PSI URL pattern for PSI-10",
+      "correction": null
+    },
+    {
+      "field": "platform",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 search record Flight Platform 'International Space Station (ISS)'; local record confirms",
+      "correction": null
+    },
+    {
+      "field": "objective",
+      "verdict": "supported",
+      "evidence_note": "Matches PSI-10 local record objective field verbatim (soot-inception limits, extinction limits, C2H4/CH4, flow rate, Zst, inert, pressure)",
+      "correction": null
+    },
+    {
+      "field": "safety_functions",
+      "verdict": "partly",
+      "evidence_note": "No source explicitly assigns prevention/detection/suppression; brief says ACME gas-flame work is relevant but 'not as strongly or directly'; inference to 'fundamental' is reasonable and marked as such",
+      "correction": null
+    },
+    {
+      "field": "fuel_phase",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 SubResearchArea 'Flames of Gaseous Fuels'; experimental tables list C2H4 and C3H8",
+      "correction": null
+    },
+    {
+      "field": "fuel_materials",
+      "verdict": "partly",
+      "evidence_note": "PSI-10 objective names ethylene (C2H4) and methane (CH4); normal flame table lists C2H4 and C3H8 (propane); inverse table only C2H4. Record combines all three at medium confidence with discrepancy noted",
+      "correction": null
+    },
+    {
+      "field": "fuel_geometry",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 objective describes 'normal and inverse spherical diffusion flames'; ACME PDF confirms porous spherical burner (burner_1003 in file paths)",
+      "correction": null
+    },
+    {
+      "field": "hardware.facility",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 experimentHardware lists 'Combustion Integrated Rack (CIR)'; brief confirms ACME used CIR",
+      "correction": null
+    },
+    {
+      "field": "hardware.apparatus",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 experimentHardware: 'Advanced Combustion via Microgravity Experiments (ACME), Combustion Integrated Rack (CIR), Reconfiguration of CIR'; brief confirms modular ACME hardware",
+      "correction": null
+    },
+    {
+      "field": "hardware.shared_with",
+      "verdict": "supported",
+      "evidence_note": "Brief states six ACME experiments used same modular hardware in CIR; list of five other ACME IDs matches known ACME investigations",
+      "correction": null
+    },
+    {
+      "field": "conditions.o2_percent",
+      "verdict": "supported",
+      "evidence_note": "Combined range from both experimental tables: Normal flame XO2 (init) 19.8–40.0%, Inverse flame XO2 21.2–85.0%; extracted min 19.805%, max 84.998% matches computed union exactly",
+      "correction": null
+    },
+    {
+      "field": "conditions.pressure_psi",
+      "verdict": "supported",
+      "evidence_note": "Combined range from both tables: Normal flame pinit 13.7–19.1 psi, Inverse flame pinit 6.2–44.2 psi; extracted min 6.24, max 44.2 matches computed union exactly",
+      "correction": null
+    },
+    {
+      "field": "conditions.airflow",
+      "verdict": "supported",
+      "evidence_note": "PSI tables report reactant mass flow rates (mg/s), not chamber airflow velocity; correctly left unknown with explanatory note",
+      "correction": null
+    },
+    {
+      "field": "conditions.gravity_g",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 Project Type 'Microgravity Investigation'; approach mentions drop towers and ISS; no partial gravity claimed",
+      "correction": null
+    },
+    {
+      "field": "conditions.diluents",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 objective explicitly varies 'amount of inert (N2 or CO2)'; normal flame table has mN2 column confirming N2 dilution",
+      "correction": null
+    },
+    {
+      "field": "variables_swept",
+      "verdict": "supported",
+      "evidence_note": "Matches PSI-10 objective (flow rate, Zst, inert amount, pressure) and approach (normal/inverse convection, reactant dilutions)",
+      "correction": null
+    },
+    {
+      "field": "held_constant",
+      "verdict": "partly",
+      "evidence_note": "Reasonable inference: file subcategories name burner_1003 for both normal/inverse series; same ACME/CIR hardware used throughout; not explicitly stated in sources",
+      "correction": null
+    },
+    {
+      "field": "sensors",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 approach lists 'broad suite of cameras, radiometers, photomultiplier tubes, and thermocouples'; ACME PDF adds camera/filter detail (12-bit, CH*, 430/450 nm bandpass)",
+      "correction": null
+    },
+    {
+      "field": "relevance_notes",
+      "verdict": "partly",
+      "evidence_note": "Reasonable synthesis: PSI-10 is fundamental gaseous flame study; brief groups ACME gas-flame work as relevant to fire safety but 'not as strongly or directly'",
+      "correction": null
+    },
+    {
+      "field": "earth_applications",
+      "verdict": "supported",
+      "evidence_note": "Matches PSI-10 researchImpacts: 'improving efficiency and reducing pollutant emissions in terrestrial combustors... novel designs of future coal power plants'",
+      "correction": null
+    },
+    {
+      "field": "publications",
+      "verdict": "supported",
+      "evidence_note": "All 7 extracted DOIs present in PSI-10 publications list (33 entries with DOIs)",
+      "correction": null
+    },
+    {
+      "field": "psi_accession",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 accession confirmed by local record and search record",
+      "correction": null
+    },
+    {
+      "field": "project_type",
+      "verdict": "supported",
+      "evidence_note": "PSI-10 projectType is 'Microgravity Investigation'; search record Project Type 'Microgravity Investigation'",
+      "correction": null
+    }
+  ],
+  "summary": "All fields are supported by PSI-10 local records, experimental tables, or the challenge brief. Three fields (safety_functions, fuel_materials, held_constant, relevance_notes) involve reasonable inferences or combine sources with minor discrepancies, all properly noted with appropriate confidence levels. No contradictions found. O2 and pressure ranges verified against both experimental CSV tables and match exactly."
+}
