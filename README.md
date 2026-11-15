@@ -77,7 +77,7 @@ The result is 24 records: 22 verified and 2 seed records (FM2 and LUCI) built fr
 - Five Ground investigations (PSI-60, 62, 115, 117 and 142) are not loaded, and some values remain unknown.
 - The ranking measures how relevant and well sourced the evidence is. It is not a safety rating and does not predict flame spread.
 
-The full list is in [docs/data-limitations.md](docs/data-limitations.md).
+The full list is in [data-limitations.md](data-limitations.md).
 
 ## Layout
 
